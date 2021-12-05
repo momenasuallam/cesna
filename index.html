@@ -8,6 +8,7 @@
     <title>Cesna</title>
     <link rel="shortcut icon" type="image/x-icon" href="./img/logo.svg" />
     <link rel="stylesheet" href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" />
     <link rel="stylesheet" href="./css/navbar.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/app.css" />
@@ -21,47 +22,465 @@
         <div>
             <nav class="navbar header">
                 <div class="container">
-                    <div class="logo"><a href="index.html"><img src="./img/logo.jpg" alt="LOGO"></a></div>
-                    <div class="push-left">
-                        <button id="menu-toggler" data-class="menu-active" class="hamburger">
-                            <span class="hamburger-line hamburger-line-top"></span>
-                            <span class="hamburger-line hamburger-line-middle"></span>
-                            <span class="hamburger-line hamburger-line-bottom"></span>
-                        </button>
+                    <div class="logo"><a href="index.html"><img src="img/logo.svg" alt="LOGO"></a></div>
+                    <!-- <div class="push-left"> -->
+                    <button id="menu-toggler" data-class="menu-active" class="hamburger">
+                        <span class="hamburger-line hamburger-line-top"></span>
+                        <span class="hamburger-line hamburger-line-middle"></span>
+                        <span class="hamburger-line hamburger-line-bottom"></span>
+                    </button>
 
-                        <!--  Menu compatible with wp_nav_menu  -->
-                        <ul id="primary-menu" class="menu nav-menu">
-                            <li class="menu-item current-menu-item"><a class="nav__link" href="#videossec">Videos</a>
-                            </li>
-                            <li class="menu-item current-menu-item"><a class="nav__link" href="#newssec">News</a></li>
-                            <li class="menu-item current-menu-item"><a class="nav__link" href="#pricessec">Price</a>
-                            </li>
-                            <li class="menu-item current-menu-item"><a class="nav__link"
-                                    href="#scholarsection">Scholarship</a></li>
-                            <li class="menu-item current-menu-item"><a class="nav__link" href="login.html">Login</a>
-                            </li>
-                            <li class="menu-item current-menu-item"><a class="nav__link"
-                                    href="register.html">Register</a></li>
+                    <!--  Menu compatible with wp_nav_menu  -->
+                    <ul id="primary-menu" class="menu nav-menu">
+                        <li class="menu-item current-menu-item active-menu"><a class="nav__link"
+                                href="search-jobs.html">Search
+                                Jobs</a>
 
-                            </li>
-                        </ul>
+                        </li>
+                        <li class="menu-item current-menu-item"><a class="nav__link" href="job-seekers.html">Job
+                                Seekers</a></li>
+                        <li class="menu-item current-menu-item"><a class="nav__link" href="employers.html">Employers</a>
+                        </li>
+                        <li class="menu-item current-menu-item"><a class="nav__link" href="about-us.html">About Us</a>
+                        </li>
+                        <li class="menu-item current-menu-item"><a class="nav__link" href="career.html">Careers</a>
+                        </li>
+                        <li class="menu-item current-menu-item"><a class="nav__link" href="contact-us.html">Contact
+                                Us</a></li>
 
+                        </li>
+                    </ul>
 
+                    <div class="sidebtn">
+                        <a class="btnpri btnoutline btn-border-hover" href="login.html"><img
+                                src="./img/user-icon.svg" /> Login</a>
+                        <a class="btnpri btnfull" href="register.html"><img src="./img/user-icon.svg" /> Register</a>
                     </div>
+
+
+                    <!-- </div> -->
                 </div>
             </nav>
         </div>
         <div class="bgbanner position-relative w-100">
-            <div class="position-absolute text-white d-flex flex-column align-items-center justify-content-center"
-                style="top: 0; right: 0; bottom: 0; left: 0; ">
-                <span>Welcome</span>
-                <h1 class="mb-4 mt-2 font-weight-bold text-center">Lorem ipsum dolor sit amet</h1>
-                <div class="text-center">
-                    <a href="#" id="filled" class="btn btn1 text-white mt-2">Get Started</a>
+            <div class="position-absolute text-white d-flex flex-column justify-content-center positingd1">
+                <div class="container">
+                    <div class="headerdivtxt">
+                        <h1 class="fontjost">Worldwide recruitment company</h1>
+                        <p class="fontrale">We are a global network of leading executive search professionals in
+                            Asia/Pacific, China, Europe and America.</p>
+
+                        <div class="btnshead">
+                            <a href="#" class="fontrale">latest jobs</a>
+                            <a href="#" class="fontrale">register now</a>
+                        </div>
+
+                        <div class="jobform">
+                            <h2 class="fontrale">Job Search</h2>
+                            <form>
+                                <div class="groupinputf">
+                                    <input type="text" placeholder="Job Title, Skills or Key words" />
+                                    <span class="lineborder"></span>
+                                    <input type="text" placeholder="Location" class="" />
+                                    <button type="submit" class="btnpri showondesk">Search</button>
+                                    <button type="submit" class="btnpri showoffdesk"><img
+                                            src="./img/search.svg" /></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
+
+    <section class="linkingsec">
+        <img class="printimg" src="./img/home-print.svg" />
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="linkedd1">
+                        <img src="./img/hp-1.png" />
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="linkedd2">
+                        <h2 class="h2tag">Linking top-level candidates to the best companies worldwide</h2>
+                        <hr class="hrwid" />
+                        <p class="ptag1">
+                            Cesna Recruitment was incorporated in Seoul in 1999 and founded its first international
+                            branch in New York, United States in 2003. Since then, we have helped over 4,000 companies
+                            shape the global industry landscape, and have expanded to business offices in San Jose, New
+                            Jersey, Dallas, Washington DC, Shanghai, and Singapore.
+                        </p>
+                        <p class="ptag1">We help our clients search for successful and motivated employees who will
+                            contribute to a dynamic, productive, and efficient professional environment.</p>
+
+                        <a href="#" class="btnpri btnfull btnsec">Register now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <section class="latestjobmain">
+       <section class="latest-jobs">
+        <div class="container">
+            <div class="ljobsflex">
+                <div>
+                    <h2 class="h2tag">Latest Jobs</h2>
+                    <hr class="hrwid" />
+                </div>
+                <div>
+                    <a class="viewall" href="#">View all<i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+            </div>
+            </section>
+
+    <section class="latest-jobs latest-jobs2">
+        <div class="container">
+          <div class="">
+                <div class="jobsartdiv">
+                <div class="singlejobd">
+                    <h3>A Global Leader of Solar Cell & Module Production</h3>
+                    <h6>United States / Irvine, CA</h6>
+                    <p>The Assistant Manager Business Development will be responsible assisting with the development and
+                        execution of strategy for business...</p>
+                    <a>Read more<i class="fa fa-arrow-right"></i></a>
+                </div>
+                <div class="singlejobd">
+                    <h3>A Global Leader of Solar Cell & Module Production</h3>
+                    <h6>United States / Irvine, CA</h6>
+                    <p>The Assistant Manager Business Development will be responsible assisting with the development and
+                        execution of strategy for business...</p>
+                    <a>Read more<i class="fa fa-arrow-right"></i></a>
+                </div>
+                <div class="singlejobd">
+                    <h3>A Global Leader of Solar Cell & Module Production</h3>
+                    <h6>United States / Irvine, CA</h6>
+                    <p>The Assistant Manager Business Development will be responsible assisting with the development and
+                        execution of strategy for business...</p>
+                    <a>Read more<i class="fa fa-arrow-right"></i></a>
+                </div>
+                <div class="singlejobd">
+                    <h3>A Global Leader of Solar Cell & Module Production</h3>
+                    <h6>United States / Irvine, CA</h6>
+                    <p>The Assistant Manager Business Development will be responsible assisting with the development and
+                        execution of strategy for business...</p>
+                    <a>Read more<i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+          </div>
+        </div>
+
+    </section>
+   </section>
+
+    <section class="aboutxt1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="abtxt1d1">
+                        <h2 class="h2tag">Recruitment experts worldwide</h2>
+                        <p class="ptag1">Cesna Recruitment is a multinational talent recruitment service company which
+                            operates in the Asia-Pacific region, the United States, and China. We specialize in
+                            identifying and recruiting senior- and executive-level employees, including directors,
+                            managers, C-level executives, and SVPs, to give our clients the invaluable advantage of
+                            strong and dynamic leadership.</p>
+                        <a href="#" class="btnsec">Register now</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="abtxt1d2">
+                        <h5>Register with us to receive job alerts or contact a Cesna career consultant to help you take
+                            the next step.</h5>
+                        <img src="./img/hp-2.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="corporate-social">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="movtopimg">
+                        <img src="./img/hp-3.png" />
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="textcoso">
+                        <h2 class="h2tag whitecolor">
+                            Corporate Social Responcibility Shanghai Emerald FC Football
+                        </h2>
+                        <p class="ptag2">
+                            Have a deep understanding of needs of society Hold on to creating better values for society
+                            Aggregation of enterprise resourses
+                            Actively support sports related sponsorship
+                        </p>
+                        <a href="#" class=" btnoutline2 btn-border-hover">Discover</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="weare">
+      <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="wearetxt">
+                 <h2 class="h2tag">We are</h2>
+                 <div class="wearedetail">
+                    <div>
+                        <h5>8000+</h5>
+                        <p>Successful talent placements in worldwide base</p>
+                    </div>
+                    <div>
+                        <h5>20,000,000+</h5>
+                        <p>Resumes & Profiles reviewed by professional recruitment consultants</p>
+                    </div>
+                      <div>
+                        <h5>2,000,000+</h5>
+                        <p>Talents’ information in our database and network</p>
+                    </div>
+                     <div>
+                        <h5>4,000+</h5>
+                        <p>Global clients we serve and connect</p>
+                    </div>
+                     <div>
+                        <h5>100%</h5>
+                        <p>Pre-screen interview before recommendation to clients</p>
+                    </div>
+                     <div>
+                        <h5>200+</h5>
+                        <p>Combined years of HR & recruitment field expertise</p>
+                    </div>
+                 </div> 
+                </div>
+            </div>
+            <div class="col-md-3"><div class="weareimg">
+                <img src="./img/hp-4.png" />
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ourspec">
+          <div class="container">
+            <h2 class="h2tag">
+              Our specializations
+            </h2>
+            <hr class="hrwid" />
+            <div class="row">
+               <div class="col-md-3">
+                   <div class="specrowdiv">
+                      <img src="./img/sp1.svg" />
+                      <h4>Human Resources & Back Office Operation</h4>
+                      <ul>
+                          <li>Corporate Planning</li>
+                          <li>Internal Audit</li>
+                          <li>Office manager/General affairs</li>
+                          <li>HRD, HRM, HRBP</li>
+                      </ul>
+                   </div>
+               </div>
+                <div class="col-md-3">
+                   <div class="specrowdiv">
+                      <img src="./img/sp2.svg" />
+                      <h4>Accounting & Finance</h4>
+                      <ul>
+                          <li>Accounting</li>
+                          <li>Treasury & Controller</li>
+                          <li>Financial analyst</li>
+                          <li>CFO</li>
+                      </ul>
+                   </div>
+               </div>
+                <div class="col-md-3">
+                   <div class="specrowdiv">
+                      <img src="./img/sp3.svg" style="width: 40px;" />
+                      <h4>Banking & Financial Services</h4>
+                      <ul>
+                          <li>Commercial & Investment banking</li>
+                          <li>Insurance</li>
+                          <li>Asset/ Fund Management</li>
+                          <li>Securities</li>
+                      </ul>
+                   </div>
+               </div>
+                <div class="col-md-3">
+                   <div class="specrowdiv">
+                      <img src="./img/sp4.svg" />
+                      <h4>Healthcare</h4>
+                      <ul>
+                          <li>Life Science & Bio</li>
+                          <li>Pharmaceutical</li>
+                          <li>Dentistry</li>
+                          <li>Medical devices</li>
+                      </ul>
+                   </div>
+               </div>
+
+                  <div class="col-md-3">
+                   <div class="specrowdiv">
+                      <img src="./img/sp5.svg" />
+                      <h4>Manufacturing & Engineering</h4>
+                      <ul>
+                          <li>Automotive</li>
+                          <li>Capital equipment & Machinery</li>
+                          <li>Chemicals & Electronics</li>
+                          <li>Energy/ Plant</li>
+                          <li>Semiconductors</li>
+                          <li>Electrical Components</li>
+                      </ul>
+                   </div>
+               </div>
+
+                  <div class="col-md-3">
+                   <div class="specrowdiv">
+                      <img src="./img/sp6.svg" />
+                      <h4>IT & Technology</h4>
+                      <ul>
+                          <li>Hardware/ Software</li>
+                          <li>Technical Support</li>
+                          <li>Database/ Big Data</li>
+                          <li>ERP</li>
+                      </ul>
+                   </div>
+               </div>
+                  <div class="col-md-3">
+                   <div class="specrowdiv">
+                      <img src="./img/sp7.svg" />
+                      <h4>Consumer & Retails</h4>
+                      <ul>
+                          <li>Food & Beverage</li>
+                          <li>Personal Care/ Health</li>
+                          <li>Household Products</li>
+                          <li>Consumer electronics</li>
+                          <li>Sports/ Outdoors</li>
+                          <li>Media/ Entertainment</li>
+                      </ul>
+                   </div>
+               </div>
+                  <div class="col-md-3">
+                   <div class="specrowdiv">
+                      <img src="./img/sp8.svg" />
+                      <h4>Real Estate & Construction</h4>
+                      <ul>
+                          <li>Construction Development</li>
+                          <li>Facilities Management</li>
+                          <li>Property/ Asset Advisory</li>
+                          <li>Energy Consulting</li>
+                      </ul>
+                   </div>
+               </div>
+                  <div class="col-md-3">
+                   <div class="specrowdiv">
+                      <img src="./img/sp9.svg" />
+                      <h4>Supply Chain</h4>
+                      <ul>
+                          <li>Logistics</li>
+                          <li>Procurement</li>
+                          <li>OEM Management</li>
+                          <li>Data Analyst</li>
+                      </ul>
+                   </div>
+               </div>
+                  <div class="col-md-3">
+                   <div class="specrowdiv">
+                      <img src="./img/sp10.svg" />
+                      <h4>Legal & Professional Services</h4>
+                      <ul>
+                          <li>Business consulting</li>
+                          <li>Patent/ Compliance</li>
+                          <li>IT consulting</li>
+                      </ul>
+                   </div>
+               </div>
+                  <div class="col-md-3">
+                   <div class="specrowdiv">
+                      <img src="./img/sp11.svg" />
+                      <h4>Sales & Marketing</h4>
+                      <ul>
+                          <li>Online & E-commerce MKT</li>
+                          <li>CRM</li>
+                          <li>Direct/ Agent sales</li>
+                          <li>Online sales</li>
+                          <li>Advertising/ Media</li>
+                          <li>Exhibitions/ Events</li>
+                      </ul>
+                   </div>
+               </div>
+                  <div class="col-md-3">
+                   <div class="specrowdiv">
+                      <img src="./img/sp12.svg" />
+                      <h4>Executive Search</h4>
+                      <ul>
+                          <li>CEO, CFO, CMO, COO</li>
+                          <li>President, EVP, VP</li>
+                          <li>Director</li>
+                      </ul>
+                   </div>
+               </div>
+            </div>
+             <a class="btnpri btnfull btnsec" href="#"> Upload your CV</a>
+          </div>
+    </section>
+
+    <section class="uploadcv">
+        <div class="upcvdiv">
+          <h2 class="h2tag whitecolor">Upload your CV</h2>
+            <hr class="hrwid2" />
+          <p>
+              Register with us to receive job alerts or contact a Cesna career consultant to help you take the next step.
+          </p>
+          <a href="#" class=" btnoutline2 btn-border-hover">Register now</a>
+        </div>
+    </section>
+
+    <section class="latestnews">
+        <img src="./img/cesna2-print1.png" class="newsabpic" />
+      <div class="container">
+        <div class="ljobsflex">
+                <div>
+                    <h2 class="h2tag">Latest News</h2>
+                    <hr class="hrwid">
+                </div>
+                <div>
+                    <a class="viewall" href="#">View all<i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+        <div class="row">
+           <div class="col-md-4">
+               <div class="latestnewdiv">
+                    <img src="./img/news1.png" />
+                    <span>09.07.2019</span>
+                    <p>Cesna 20th anniversary celebration</p>
+                    <a href="#">Read more<i class="fa fa-arrow-right"></i></a>
+               </div>
+           </div>
+             <div class="col-md-4">
+               <div class="latestnewdiv">
+                    <img src="./img/news2.png" />
+                    <span>02.09.2021</span>
+                    <p>shanghai emerald fc football sponsorship</p>
+                    <a href="#">Read more<i class="fa fa-arrow-right"></i></a>
+               </div>
+           </div>
+             <div class="col-md-4">
+               <div class="latestnewdiv">
+                    <img src="./img/news3.png" />
+                    <span>16.10.2021</span>
+                    <p>kita job fair</p>
+                    <a href="#">Read more<i class="fa fa-arrow-right"></i></a>
+               </div>
+           </div>
+        </div>
+      </div>
+    </section>
 
 
 
@@ -70,74 +489,90 @@
 
     <footer class="footer-section">
         <div class="container">
-            <div class="footer-content pt-5 pb-5">
+            <div class="footer-top">
+                <div>
+                    <a href="index.html"><img src="./img/logo-footer.svg" /></a>
+                </div>
+                <div class="socialmediafooter">
+                    <a href="https://www.linkedin.com/company/cesna/" target="_blank"><img
+                            src="./img/linkedin-icon.svg" /></a>
+                    <a href="https://twitter.com/CESNA_Group" target="_blank"><img src="./img/twitter-icon.svg" /></a>
+                    <a href="https://www.facebook.com/Cesna-Recruitment-Global-201572080777004" target="_blank"><img
+                            src="./img/facebook-icon.svg" /></a>
+                    <a href="https://www.instagram.com/cesnagroup.usa/" target="_blank"><img
+                            src="./img/instagram-icon.svg" /></a>
+                    <a href="https://www.youtube.com/channel/UC-xaOpTN26DbPNWFnt0LTdg" target="_blank"><img
+                            src="./img/youtube-icon.svg" /></a>
+                    <a href="https://mp.weixin.qq.com/s/s-GEsGa2gwTpGFY2aWQN6g" target="_blank"><img
+                            src="./img/weixin-icon.svg" /></a>
+                    <a href="https://weibo.com/5592511674/profile?topnav=1&wvr=6" target="_blank"><img
+                            src="./img/weibo-icon.svg" /></a>
+                </div>
+            </div>
+            <div class="footer-main">
                 <div class="row">
-                    <div class="col-xl-4 col-lg-4">
-                        <div class="footerabuimg">
-                            <img src="./img/1.png" />
-                        </div>
-                        <div class="footer-widget">
-
-                            <div class="footer-logo">
-                                <a href="index.html"><img src="./img/logo.jpg" class="img-fluid" alt="logo"></a>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="footerabuimg2">
-                            <img src="./img/2.png" />
-                        </div>
-                        <div class="footer-widget">
-                            <div class="footer-widget-heading">
-                                <h3>Axie Infinity</h3>
-                            </div>
-                            <p>JOIN THE EXPERIENCE <br>GAMMING FOR LIFE</p>
-                            <div class="linksblock">
-                                <a href="#">Terms and Conditions</a>
-                                <a href="#">Privacy Policy</a>
+                    <div class="col-md-3">
+                        <div class="footerdiv">
+                            <h4>site map</h4>
+                            <div class="footerlinks">
+                                <p><a href="search-jobs.html">Search Jobs</a></p>
+                                <p><a href="job-seekers.html">Job seekers</a></p>
+                                <p><a href="employers.html">Employers</a></p>
+                                <p><a href="about-us.html">About Us</a></p>
+                                <p><a href="join-us.html">Join Us</a></p>
+                                <p><a href="contact-us.html">Contacts</a></p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="footerabuimg3">
-                            <img src="./img/3.png" />
+                    <div class="col-md-3">
+                        <div class="footerdiv">
+                            <h4>CESNA Locations</h4>
+                            <div class="footerlinks">
+                                <p><a href="#">United States</a></p>
+                                <p><a href="#">Korea</a></p>
+                                <p><a href="#">China</a></p>
+
+                            </div>
                         </div>
-                        <div class="footer-widget">
-                            <div class="footer-social-icon">
-                                <span>SOCIAL NETWORKS</span>
-                                <a href="#"><i class="fa fa-instagram "></i></a>
-                                <a href="#"><i class="fa fa-twitch "></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-youtube "></i></a>
-                                <a href="#"><i class="fa fa-discord fa-fw"></i></a>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footerdiv">
+                            <h4>Contact Us</h4>
+                            <div class="footerlinks">
+                                <p><b>Global HQ</b></p>
+                                <p>560 Sylvan Ave. 2nd Floor </p>
+                                <p>Englewood Cliffs, NJ</p>
+                                <p>07632 USA </p>
+                                <p><a href="tel:+12015678886">+1 201 567 8886</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footerdiv">
+
+                            <div class="footerlinks martopfooter">
+                                <p><b>China Branch</b></p>
+                                <p>Suntime International Tower 8F. 8F-1</p>
+                                <p>450 Fushan Road, Pudong,</p>
+                                <p>Shanghai, 200120 China</p>
+                                <p><a href="tel:+862168527877">+86 21 6852 7877</a></p>
+                                <p><a href="mailto:sh@cesna.com">sh@cesna.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright-area">
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 text-center text-lg-left">
+                            <div class="copyright-text">
+                                <p>© 2021 Cesna Group – Recruitment experts worldwide</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="copyright-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-                        <div class="copyright-text">
-                            <p>Copyright &copy; 2021, All Right Reserved <a href="index.html">Axie Infinity</a></p>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-                        <div class="footer-menu">
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="#">Terms</a></li>
-                                <li><a href="#">Privacy</a></li>
-                            </ul>
-                        </div>
 
-                    </div>
-                </div>
-            </div>
-        </div>
     </footer>
 
 
