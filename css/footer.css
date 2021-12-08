@@ -33,6 +33,10 @@ align-items: center;
 }
 .socialmediafooter a img{
   width: 20px;
+   transition: all 0.5s;
+}
+.socialmediafooter a:hover img{
+    transform: scale(1.3);
 }
 .footer-main{
   padding: 3rem 0 0;

@@ -85,9 +85,9 @@ button:focus {
   background-position: center;
   background-repeat: no-repeat;
 }
-.aboutbanner{
+.aboutbanner {
   height: 80vh;
-   background-image: linear-gradient(
+  background-image: linear-gradient(
       rgba(89, 47, 47, 0.4),
       rgba(89, 47, 47, 0.4)
     ),
@@ -96,9 +96,9 @@ button:focus {
   background-position: center;
   background-repeat: no-repeat;
 }
-.conatctbanner{
+.conatctbanner {
   height: 80vh;
-   background-image: linear-gradient(
+  background-image: linear-gradient(
       rgba(89, 47, 47, 0.4),
       rgba(89, 47, 47, 0.4)
     ),
@@ -107,9 +107,9 @@ button:focus {
   background-position: center;
   background-repeat: no-repeat;
 }
-.empbanner{
+.empbanner {
   height: 80vh;
-   background-image: linear-gradient(
+  background-image: linear-gradient(
       rgba(89, 47, 47, 0.4),
       rgba(89, 47, 47, 0.4)
     ),
@@ -118,9 +118,9 @@ button:focus {
   background-position: center;
   background-repeat: no-repeat;
 }
-.jobseekerbanner{
+.jobseekerbanner {
   height: 80vh;
-   background-image: linear-gradient(
+  background-image: linear-gradient(
       rgba(89, 47, 47, 0.4),
       rgba(89, 47, 47, 0.4)
     ),
@@ -129,9 +129,9 @@ button:focus {
   background-position: center;
   background-repeat: no-repeat;
 }
-.joinusbanner{
+.joinusbanner {
   height: 80vh;
-   background-image: linear-gradient(
+  background-image: linear-gradient(
       rgba(89, 47, 47, 0.4),
       rgba(89, 47, 47, 0.4)
     ),
@@ -140,9 +140,9 @@ button:focus {
   background-position: center;
   background-repeat: no-repeat;
 }
-.searchjobsbanner{
+.searchjobsbanner {
   height: 80vh;
-   background-image: linear-gradient(
+  background-image: linear-gradient(
       rgba(89, 47, 47, 0.4),
       rgba(89, 47, 47, 0.4)
     ),
@@ -420,7 +420,6 @@ input::placeholder {
   transition: width 0.1s ease, height 0.1s ease 0.1s;
 }
 
-
 .btn-border-hovermain::after,
 .btn-border-hovermain::before {
   position: absolute;
@@ -433,22 +432,22 @@ input::placeholder {
 .btn-border-hovermain::after {
   bottom: -1px;
   right: -1px;
-  border-left: 1px solid var(--pricolor);
-  border-bottom: 1px solid var(--pricolor);
+  border-left: 1px solid var(--pricolor) !important;
+  border-bottom: 1px solid var(--pricolor) !important;
   transition: width 0.1s ease 0.1s, height 0.1s ease, visibility 0s 0.2s;
 }
 
 .btn-border-hovermain::before {
   top: -1px;
   left: -1px;
-  border-top: 1px solid var(--pricolor);
-  border-right: 1px solid var(--pricolor);
+  border-top: 1px solid var(--pricolor) !important;
+  border-right: 1px solid var(--pricolor) !important;
   transition: width 0.1s ease 0.3s, height 0.1s ease 0.2s, visibility 0s 0.4s;
 }
 
 .btn-border-hovermain:hover {
   animation: pulse 1s ease-out 0.4s;
-  color: var(--pricolor);
+  color: var(--pricolor) !important;
 }
 
 .btn-border-hovermain:hover::after,
@@ -498,6 +497,10 @@ input::placeholder {
 .linkedd1 img {
   max-width: 456px;
   width: 100%;
+  transition: all 0.5s;
+}
+.linkedd1 img:hover {
+  transform: scale(1.03);
 }
 .linkedd2 {
 }
@@ -570,21 +573,21 @@ input::placeholder {
   background: #f6f6f6;
   padding: 0rem 0 7rem;
 }
-.teamabmain{
+.teamabmain {
   background-color: #fff;
-    padding: 0rem 0 3rem;
+  padding: 0rem 0 3rem;
 }
 .latest-jobs {
   padding: 8rem 0px 1rem;
 }
-.teamdiv1{
+.teamdiv1 {
   padding: 3rem 0px 1rem;
 }
 .jobs2 {
   padding-top: 0px !important ;
 }
-.teamdivs2{
-   padding-top: 0px !important ;
+.teamdivs2 {
+  padding-top: 0px !important ;
 }
 .latestjobscont {
   padding: 0rem 0px 26rem;
@@ -592,8 +595,8 @@ input::placeholder {
   overflow-x: auto;
   overflow-y: hidden;
 }
-.teamsdivcont{
-    padding: 0rem 0px 22rem;
+.teamsdivcont {
+  padding: 0rem 0px 22rem;
   position: relative;
   overflow-x: auto;
   overflow-y: hidden;
@@ -614,9 +617,14 @@ input::placeholder {
   text-decoration-line: underline;
 
   color: #e40046;
+  transition: all 10s;
 }
 .viewall:hover {
-  color: #e40046;
+  color: var(--maincolor);
+}
+.viewall:hover .fa {
+  color: var(--maincolor);
+  transform: scale(1.2);
 }
 .viewall .fa {
   color: #e40046 !important;
@@ -927,6 +935,10 @@ input::placeholder {
 }
 .latestnewdiv img {
   width: 100%;
+  transition: all 1s;
+}
+.latestnewdiv img:hover {
+  opacity: 0.7;
 }
 .latestnewdiv span {
   font-style: normal;
@@ -965,122 +977,129 @@ input::placeholder {
   color: #000000;
   position: absolute;
   bottom: -30px;
+  transition: all 0.5s;
+}
+.latestnewdiv a:hover .fa {
+  transform: scale(1.2);
 }
 .latestnewdiv a .fa {
   margin-left: 10px;
 }
-.row2abu{
-      padding: 5rem 0 1rem;
+.row2abu {
+  padding: 5rem 0 1rem;
   align-items: center;
 }
-.row2abu img{
+.row2abu img {
   width: 100%;
   max-width: 100%;
 }
-.row2abu hr{
+.row2abu hr {
   margin-bottom: 50px;
 }
-.abconnected{
+.abconnected {
   position: relative;
   padding-bottom: 5rem;
 }
-.weconn{
+.weconn {
   position: relative;
   padding-bottom: 5rem;
 }
-.abconnected img{
+.abconnected img {
   position: absolute;
   left: 0px;
-      max-width: initial;
-width: 37%;
+  max-width: initial;
+  width: 37%;
 }
-.teamdiv1 h2{
+.teamdiv1 h2 {
   max-width: 526px;
   margin-bottom: 2rem;
 }
-.teamdiv1 hr{
+.teamdiv1 hr {
   margin-bottom: 2rem;
 }
-.teamdiv1 p{
+.teamdiv1 p {
   max-width: 561px;
 }
-.teamdiv1 .row{
+.teamdiv1 .row {
   margin-bottom: 2rem;
 }
-.teamdivs2 .row{
+.teamdivs2 .row {
   flex-wrap: nowrap !important;
-      /* overflow-x: scroll; */
+  /* overflow-x: scroll; */
 }
-.teamsartdiv{
+.teamsartdiv {
   display: flex;
   padding-bottom: 30px;
   position: absolute;
   padding-top: 2rem;
 }
-.teamsartdiv .specrowdiv{
-      min-height: 290px;
+.teamsartdiv .specrowdiv {
+  min-height: 290px;
 }
-.abucrp2 h5{
+.abucrp2 h5 {
   max-width: 526px;
 }
 .aboutbottom2divs {
   padding: 8rem 0;
   position: relative;
 }
-.aboutbottom2divs .newsabpic{
+.aboutbottom2divs .newsabpic {
   top: 3rem;
 }
 .aboutbottom2divs .row {
   margin-top: 2rem;
 }
-.mainrowabbotm img{
+.mainrowabbotm img {
   width: 100%;
+  transition: all 0.5s;
 }
-.mainrowabbotm .col-md-6{
+.mainrowabbotm img:hover {
+  opacity: 0.8;
+}
+.mainrowabbotm .col-md-6 {
   position: relative;
   margin-bottom: 3rem;
 }
-.btabdivstxt{
-padding-left: 2rem;
+.btabdivstxt {
+  padding-left: 2rem;
 }
-.btabdivstxt h2{
-font-family: 'Jost', sans-serif;
-font-style: normal;
-font-weight: bold;
-font-size: 30px;
-line-height: 100%;
-/* or 30px */
+.btabdivstxt h2 {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 100%;
+  /* or 30px */
 
-
-color: #000000;
+  color: #000000;
 }
-.btabdivstxt a{
-position: absolute;
-bottom: 0px;
+.btabdivstxt a {
+  position: absolute;
+  bottom: 0px;
 }
 
-.coropsocialtxt{
-   padding: 8rem 0 6rem;
+.coropsocialtxt {
+  padding: 8rem 0 6rem;
   position: relative;
 }
-.aboutgallery{
+.aboutgallery {
   padding: 4rem 0;
 }
-.aboutgallery small{
-font-family: 'Jost', sans-serif;
-font-style: normal;
-font-weight: bold;
-font-size: 20px;
-line-height: 100%;
-/* identical to box height, or 20px */
+.aboutgallery small {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 100%;
+  /* identical to box height, or 20px */
 
-text-transform: uppercase;
+  text-transform: uppercase;
 
-color: #E40046;
-display: block;
-margin-bottom: 10px;
+  color: #e40046;
+  display: block;
+  margin-bottom: 10px;
 }
-.aboutgallery h2{
+.aboutgallery h2 {
   margin-bottom: 2rem;
 }
 .flexbox {
@@ -1092,19 +1111,17 @@ margin-bottom: 10px;
 }
 
 .flexbox .item {
- margin-bottom: 35px;
+  margin-bottom: 35px;
 }
 .flexbox .item img {
   height: auto;
   max-width: 100%;
-  	transition: all .5s;
+  transition: all 0.5s;
 }
-.flexbox .item img:hover{
-cursor: pointer;
-	transform: scale(1.1);
+.flexbox .item img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
-
-
 
 .gallery {
   display: grid;
@@ -1120,7 +1137,6 @@ cursor: pointer;
   transition: all 1.5s ease;
 }
 .gallery img:hover {
-
 }
 .gallery .content {
   /* padding: 15px; */
@@ -1255,552 +1271,590 @@ cursor: pointer;
   transform: scale(0.2) !important;
 } */
 
-.juvideo1{
+.juvideo1 {
   max-width: 733px;
   margin: 3rem auto;
 }
-.juvideo1 img{
+.juvideo1 img {
   width: 100%;
   margin-bottom: 15px;
 }
-.juvideo1 p{
+.juvideo1 p {
   margin-bottom: 20px;
 }
-.joinussec1{
-
+.joinussec1 {
 }
-.joinussec1 h2{
+.joinussec1 h2 {
   margin-bottom: 2rem;
 }
-.wid470{
+.wid470 {
   max-width: 470px;
 }
-.applyju{
+.applyju {
   padding: 2rem 0 6rem;
 }
-.applyju h2{
+.applyju h2 {
   margin-bottom: 25px;
 }
-.formapply{
-
+.formapply {
 }
-.formapply input{
-width: 100%;
-border: 1px solid #E5E5E5;
-box-sizing: border-box;
-margin-bottom: 20px;
-box-shadow: 0px 0px 0px rgb(98 98 98 / 10%);
-color: #434343;
- padding: 15px;
+.formapply input {
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 0px rgb(98 98 98 / 10%);
+  color: #434343;
+  padding: 15px;
   width: 100%;
   border-radius: 0px;
   font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 140%;
-/* or 22px */
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
 
-letter-spacing: 0.1em;
+  letter-spacing: 0.1em;
 
-color: #434343;
-}
-.formapply text::placeholder{
   color: #434343;
 }
-.formapply textarea{
-width: 100%;
-border: 1px solid #E5E5E5;
-box-sizing: border-box;
-margin-bottom: 20px;
-box-shadow: 0px 0px 0px rgb(98 98 98 / 10%);
-color: #434343;
- padding: 15px;
+.formapply text::placeholder {
+  color: #434343;
+}
+.formapply textarea {
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 0px rgb(98 98 98 / 10%);
+  color: #434343;
+  padding: 15px;
   width: 100%;
   border-radius: 0px;
   font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 140%;
-/* or 22px */
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
 
-letter-spacing: 0.1em;
+  letter-spacing: 0.1em;
 
-color: #434343;
-resize: none;
+  color: #434343;
+  resize: none;
 }
-.formapply textarea::placeholder{
+.formapply textarea::placeholder {
   color: #434343;
 }
-.formapply p{
+.formapply p {
   font-weight: 300;
-font-size: 12px;
-line-height: 140%;
-/* identical to box height, or 17px */
+  font-size: 12px;
+  line-height: 140%;
+  /* identical to box height, or 17px */
 
-letter-spacing: 0.1em;
-text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 
-color: #434343;
-margin-bottom: 4px;
+  color: #434343;
+  margin-bottom: 4px;
 }
-.formapply button{
+.formapply button {
   font-size: 18px !important;
   margin-top: 40px;
   border: 0px solid;
 }
-.uploadfilediv{
+.uploadfilediv {
   display: flex;
- border: 1px solid #E5E5E5;
+  border: 1px solid #e5e5e5;
   background-color: white;
- padding: 15px;
+  padding: 15px;
   width: 100%;
   border-radius: 0px;
   font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 140%;
-/* or 22px */
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
 
-letter-spacing: 0.1em;
+  letter-spacing: 0.1em;
 
-color: #434343;
-
+  color: #434343;
 }
 .uploadfilediv input {
-  display:none;
+  display: none;
 }
 
-.btnsecWidth{
+.btnsecWidth {
   width: 250px;
   text-align: center;
   display: block;
 }
-.contactusd1 img{
+.contactusd1 img {
   text-align: end;
   float: right;
 }
-.contactusd1 p{
-  font-family: 'Jost', sans-serif;
-font-style: normal;
-font-weight: bold;
-font-size: 20px;
-line-height: 100%;
-/* or 20px */
+.contactusd1 p {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 100%;
+  /* or 20px */
 
-text-transform: uppercase;
+  text-transform: uppercase;
 
-color: #000000;
-max-width: 456px;
-margin: 2rem 0;
+  color: #000000;
+  max-width: 456px;
+  margin: 2rem 0;
 }
-.addresssection{
+.addresssection {
   padding: 3rem 0 4rem;
 }
-.addresssection iframe{
+.addresssection iframe {
   width: 100%;
   height: 300px;
 }
-.addresssection .col-md-5{
- margin-bottom: 4rem;
- position: relative;
+.addresssection .col-md-5 {
+  margin-bottom: 4rem;
+  position: relative;
 }
-.addresssection .col-md-7{
- margin-bottom: 4rem;
- position: relative;
+.addresssection .col-md-7 {
+  margin-bottom: 4rem;
+  position: relative;
 }
-.txtaddress{
-padding-left: 30%;
+.txtaddress {
+  padding-left: 30%;
 }
-.divtxtadd h6{
-font-family: 'Jost', sans-serif;
-font-style: normal;
-font-weight: bold;
-font-size: 20px;
-line-height: 29px;
-/* identical to box height */
+.divtxtadd h6 {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 29px;
+  /* identical to box height */
 
-letter-spacing: 0.1em;
-text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 
-color: #000000;
+  color: #000000;
 }
-.divtxtadd p{
-font-weight: 500;
-font-size: 18px;
-line-height: 120%;
-/* or 22px */
+.divtxtadd p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  /* or 22px */
 
-letter-spacing: 0.1em;
+  letter-spacing: 0.1em;
 
-color: #000000;
-
+  color: #000000;
 }
-.divtxtadd p a{
-font-weight: 500;
-font-size: 18px;
-line-height: 21px;
-letter-spacing: 0.1em;
-text-decoration-line: underline;
+.divtxtadd p a {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.1em;
+  text-decoration-line: underline;
 
-color: #000000;
+  color: #000000;
 }
-.divtxtadd p a:hover{
+.divtxtadd p a:hover {
   color: #000000;
 }
 
-.divtxtadd{
-position: absolute;
-bottom: 0;
+.divtxtadd {
+  position: absolute;
+  bottom: 0;
 }
-.contactusd1 button{
+.contactusd1 button {
   margin-top: 15px;
 }
-.borderpink{
+.borderpink {
   border: 1px solid var(--maincolor) !important;
   color: var(--maincolor) !important;
   background-color: #fff;
   width: 250px;
-
 }
-.filterdiv1{
-
+.filterdiv1 {
 }
-.filterdiv1 hr{
-margin: 2rem 0;
+.filterdiv1 hr {
+  margin: 2rem 0;
 }
-.filterdiv1 span{
-font-family: 'Jost', sans-serif;
-font-style: normal;
-font-weight: bold;
-font-size: 20px;
-line-height: 100%;
-/* identical to box height, or 20px */
+.filterdiv1 span {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 100%;
+  /* identical to box height, or 20px */
 
-text-transform: uppercase;
+  text-transform: uppercase;
 
-color: #000000;
+  color: #000000;
 }
-.filterdiv1 form{
-margin: 2rem 0;
+.filterdiv1 form {
+  margin: 2rem 0;
 }
-.filterdiv1 select{
-border: 1px solid #E5E5E5;
-font-weight: 300;
-font-size: 16px;
-line-height: 140%;
-/* or 22px */
+.filterdiv1 select {
+  border: 1px solid #e5e5e5;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
 
-letter-spacing: 0.1em;
+  letter-spacing: 0.1em;
 
-color: #434343;
-padding: 22px 15px;
-border-radius: 0px;
+  color: #434343;
+  padding: 22px 15px;
+  border-radius: 0px;
 }
-.filterdiv1 button{
+.filterdiv1 button {
   margin-top: 2rem;
 }
-.form-select:focus{
-  border-color: #E5E5E5;
-    outline: 0;
-    box-shadow: 0 0 0 0rem rgb(13 110 253 / 25%) !important;
+.form-select:focus {
+  border-color: #e5e5e5;
+  outline: 0;
+  box-shadow: 0 0 0 0rem rgb(13 110 253 / 25%) !important;
 }
-.groupselect{
+.groupselect {
   display: flex;
 }
-.jobstitlediv{
-    padding: 0 2rem;
-    position: relative;
-    padding-top: 8rem;
+.jobstitlediv {
+  padding: 0 2rem;
+  position: relative;
+  padding-top: 8rem;
 }
-.jobstitlediv select{
-border: 0px solid !important;
-    width: 115px;
-    background-color: transparent;
-    margin-bottom: 1rem;
-    margin-left: auto;
+.jobstitlediv select {
+  border: 0px solid !important;
+  width: 115px;
+  background-color: transparent;
+  margin-bottom: 1rem;
+  margin-left: auto;
 }
-.jobtitlemaind{
-
+.jobtitlemaind {
 }
-.jobsrhdivs{
-border: 1px solid #E5E5E5;
-box-sizing: border-box;
-padding: 30px;
-margin-bottom: 25px;
+.jobsrhdivs {
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  padding: 30px;
+  margin-bottom: 25px;
 }
-.jobtidiv1{
-display: flex;
-justify-content: space-between;
-align-items: center;
+.jobtidiv1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.jobtidiv1 h3{
-font-family: 'Jost', sans-serif;
-font-style: normal;
-font-weight: bold;
-font-size: 30px;
-line-height: 100%;
-color: #000000;
-margin-bottom: 20px;
+.jobtidiv1 h3 {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 100%;
+  color: #000000;
+  margin-bottom: 20px;
 }
-.jobtidiv1 span{
-font-weight: 600;
-font-size: 18px;
-line-height: 21px;
-text-align: center;
-letter-spacing: 0.1em;
-color: #000000;
-margin-right: 10px;
+.jobtidiv1 span {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #000000;
+  margin-right: 10px;
 }
-.jobtidiv1 span .fa{
+.jobtidiv1 span .fa {
   color: var(--maincolor);
 }
-.jobtidiv2{
-margin-bottom: 25px;
+.jobtidiv2 {
+  margin-bottom: 25px;
 }
-.jobtidiv2 span{
-font-weight: 300;
-font-size: 16px;
-line-height: 140%;
-letter-spacing: 0.1em;
-text-transform: uppercase;
-color: #434343;
-margin-right: 20px;
-}
-.jobtidiv2 span img{
-width: 16px;
-margin-right: 4px;
-}
-.jobsrhdivs p{
-font-weight: 300;
-font-size: 16px;
-line-height: 140%;
-letter-spacing: 0.1em;
-color: #434343;
-margin-bottom: 20px;
-}
-.jobsrhdivs ul{
+.jobtidiv2 span {
   font-weight: 300;
-font-size: 16px;
-line-height: 140%;
-letter-spacing: 0.1em;
-color: #434343;
-list-style: none;
-padding-left: 0px;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #434343;
+  margin-right: 20px;
 }
-.jobsrhdivs ul li{
+.jobtidiv2 span img {
+  width: 16px;
+  margin-right: 4px;
+}
+.jobsrhdivs p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.1em;
+  color: #434343;
+  margin-bottom: 20px;
+}
+.jobsrhdivs ul {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.1em;
+  color: #434343;
+  list-style: none;
+  padding-left: 0px;
+}
+.jobsrhdivs ul li {
   margin-bottom: 6px;
 }
-.jobsrhdivs ul li .fa{
+.jobsrhdivs ul li .fa {
   color: var(--maincolor);
   margin-right: 12px;
   font-size: 16px;
 }
-.jobsrhdivs a{
-margin-left: auto;
+.jobsrhdivs a {
+  margin-left: auto;
 }
 
-.processsec{
-padding: 0rem 0 6rem;
+.processsec {
+  padding: 0rem 0 6rem;
 }
-.webelievemain{
+.webelievemain {
   padding: 1rem 0 12rem;
 }
-.processsec hr{
-margin-bottom: 2rem;
+.processsec hr {
+  margin-bottom: 2rem;
 }
 .processmaindiv1 {
-
 }
-.processmaindiv1 h2{
-margin-bottom: 20px;
+.processmaindiv1 h2 {
+  margin-bottom: 20px;
 }
 .processdivs2 {
-
 }
-.processdivs2 p{
-font-family: 'Jost', sans-serif;
-font-style: normal;
-font-weight: bold;
-font-size: 20px;
-line-height: 100%;
-text-transform: uppercase;
-color: #000000;
-border-bottom: 1px solid #E5E5E5;
-padding: 1.5rem 0;
-position: relative;
-padding-left: 40px;
-max-width: 453px;
-margin-bottom: 0px;
+.processdivs2 p {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #000000;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 1.5rem 0;
+  position: relative;
+  padding-left: 40px;
+  max-width: 453px;
+  margin-bottom: 0px;
 }
-.processdivs2 span{
-font-family: 'Jost', sans-serif;
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 100%;
-text-transform: uppercase;
-color: #E40046;
-    position: absolute;
-    left: 0;
+.processdivs2 span {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #e40046;
+  position: absolute;
+  left: 0;
 }
-.processform{
-background: #F6F6F6;
-padding: 3rem 30px 4rem;
+.processform {
+  background: #f6f6f6;
+  padding: 3rem 30px 4rem;
 }
-.processform h6{
-font-family: 'Jost', sans-serif;
-font-weight: 600;
-font-size: 20px;
-line-height: 100%;
-text-transform: uppercase;
-color: #000000;
-margin-bottom: 2rem;
+.processform h6 {
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 2rem;
 }
-.processform .formapply{
-
+.processform .formapply {
 }
-.processform input{
-background: #F6F6F6;
+.processform input {
+  background: #f6f6f6;
 }
-.btnssrhjob{
-display: flex;
-justify-content: space-between;
-flex-wrap: wrap;
-align-items: center;
+.btnssrhjob {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
 }
-.btnssrhjob button{
+.btnssrhjob button {
   margin-top: 5px;
 }
-.btnssrhjob button:last-child{
+.btnssrhjob button:last-child {
   background-color: transparent;
 }
-.employesec1{
-padding: 12rem 0 4rem;
+.employesec1 {
+  padding: 12rem 0 4rem;
 }
-.employesec1 p{
+.employesec1 p {
   margin-bottom: 15px !important;
 }
-.teamcovdiv h2{
+.teamcovdiv h2 {
   width: 100%;
   max-width: 100%;
 }
-.emply-social p{
+.emply-social p {
   margin-bottom: 15px !important;
 }
-.weconnps{
-
+.weconnps {
 }
-.weconnps p{
+.weconnps p {
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
 
-font-weight: 200;
-font-size: 16px;
-line-height: 140%;
-/* or 22px */
+  letter-spacing: 0.1em;
 
-letter-spacing: 0.1em;
-
-color: #434343;
-border-bottom: 1px solid #E5E5E5;
-padding: 2rem 0;
-position: relative;
-padding-left: 40px;
-margin-bottom: 0px;
-max-width: 654px;
+  color: #434343;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 2rem 0;
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 0px;
+  max-width: 654px;
 }
-.weconnps .fa{
+.weconnps .fa {
+  font-size: 12px;
 
-font-size: 12px;
-
-color: #E40046;
-    position: absolute;
-    left: 0;
+  color: #e40046;
+  position: absolute;
+  left: 0;
 }
-.weconn{
-margin: 2rem 0 5rem;
+.weconn {
+  margin: 2rem 0 5rem;
 }
-.weconn img{
-   position: absolute;
+.weconn img {
+  position: absolute;
   left: 0px;
-      max-width: initial;
+  max-width: initial;
   width: 27% !important;
 }
-.imgwidthside img{
+.imgwidthside img {
   width: 100%;
 }
-.belediv{
-border-bottom: 1px solid #E5E5E5;
-padding: 1.5rem 0;
-position: relative;
+.belediv {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 1.5rem 0;
+  position: relative;
 }
-.belediv h6{
-font-family: 'Jost', sans-serif;
-font-style: normal;
-font-weight: bold;
-font-size: 20px;
-line-height: 100%;
-text-transform: uppercase;
-color: #000000;
-padding-left: 40px;
-max-width: 453px;
-margin-bottom: 15px;
+.belediv h6 {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #000000;
+  padding-left: 40px;
+  max-width: 453px;
+  margin-bottom: 15px;
 }
-.belediv p{
-max-width: 659px;
-font-weight: 300;
-font-size: 16px;
-line-height: 140%;
-padding-left: 40px;
-letter-spacing: 0.1em;
-color: #434343;
+.belediv p {
+  max-width: 659px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 140%;
+  padding-left: 40px;
+  letter-spacing: 0.1em;
+  color: #434343;
 }
-.belediv span{
-font-family: 'Jost', sans-serif;
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 100%;
-text-transform: uppercase;
-color: #E40046;
-    position: absolute;
-    left: 0;
+.belediv span {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #e40046;
+  position: absolute;
+  left: 0;
 }
 
+.customsmscroll::-webkit-scrollbar-track {
+  background: transparent;
+}
 
+.customsmscroll::-webkit-scrollbar {
+  height: 3px;
+  width: 3px;
+  transition: all 0.5s linear;
+}
 
-@media(max-width: 800px) {
-    .flexbox {
-      column-count: 3;
+.customsmscroll::-webkit-scrollbar-thumb {
+  background-color: #787878;
+  border-radius: 3px;
+}
+.medium-scroll:hover::-webkit-scrollbar-thumb {
+  background-color: #787872;
+}
+.containercus {
+  width: 100%;
+  padding-right: 12px;
+  padding-left: 12px;
+  margin-left: auto;
+}
+
+@media (min-width: 1400px) {
+  .containercus {
+    max-width: 83% !important;
+  }
+}
+@media (max-width: 1400px) {
+  .containercus {
+    max-width: 1360px !important;
+  }
+}
+@media (max-width: 1200px) {
+  .containercus {
+    max-width: 1000px !important;
+  }
+}
+@media (max-width: 992px) {
+  .containercus {
+    max-width: 825px !important;
+  }
+}
+@media (max-width: 768px) {
+  .containercus {
+    max-width: 630px !important;
+  }
+}
+@media (max-width: 576px) {
+  .containercus {
+    max-width: 100% !important;
   }
 }
 
-@media(max-width: 600px) {
-    .flexbox {
-      column-count: 2;
+@media (max-width: 800px) {
+  .flexbox {
+    column-count: 3;
   }
 }
 
-@media(max-width: 400px) {
-    .flexbox {
-      column-count: 1;
+@media (max-width: 600px) {
+  .flexbox {
+    column-count: 2;
   }
 }
 
-
+@media (max-width: 400px) {
+  .flexbox {
+    column-count: 1;
+  }
+}
 
 @media (max-width: 1400px) {
   .specrowdiv h4 {
     font-size: 16px;
   }
-  .abconnected img{
+  .abconnected img {
     width: 45% !important;
   }
-  .btnssrhjob button{
-  max-width: 220px;
-  font-size: 15px !important;
-}
-.jsmaindiv p{
-  font-size: 17px;
-}
+  .btnssrhjob button {
+    max-width: 220px;
+    font-size: 15px !important;
+  }
+  .jsmaindiv p {
+    font-size: 17px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -1812,10 +1866,10 @@ color: #E40046;
   .linkedd1 img {
     max-width: 100%;
     width: 100%;
-}
-.applyju img{
-  width: 100%;
-}
+  }
+  .applyju img {
+    width: 100%;
+  }
   .specrowdiv h4 {
     font-size: 14px;
   }
@@ -1829,21 +1883,20 @@ color: #E40046;
     width: 50%;
     flex: 50%;
   }
-  .btabdivstxt h2{
+  .btabdivstxt h2 {
     font-size: 22px;
   }
-  .filterdiv1 h2{
+  .filterdiv1 h2 {
     font-size: 35px;
   }
-  .btnssrhjob{
-      justify-content: center;
-
-}
-.btnssrhjob button{
-  margin-bottom: 10px;
-  width: 100%;
-  max-width: 100%;
-}
+  .btnssrhjob {
+    justify-content: center;
+  }
+  .btnssrhjob button {
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 950px) {
@@ -1911,7 +1964,7 @@ color: #E40046;
   .aboutxt1 {
     padding: 4rem 0;
   }
-  .coropsocialtxt{
+  .coropsocialtxt {
     padding: 4rem 0 1rem;
   }
   .abtxt1d1 a {
@@ -1953,8 +2006,8 @@ color: #E40046;
   .corporate-social {
     margin-top: 22rem;
   }
-  .emply-social{
-     margin-top: 22rem;
+  .emply-social {
+    margin-top: 22rem;
   }
   .weare {
     padding: 4rem 0;
@@ -2018,20 +2071,20 @@ color: #E40046;
   .latestjobscont {
     padding: 0px 12px 23rem;
   }
-  .teamsdivcont{
-     padding: 20px 12px 23rem;
+  .teamsdivcont {
+    padding: 20px 12px 23rem;
   }
   .latest-jobs {
     padding: 3rem 0px 0rem;
   }
-  .teamdiv1{
-     padding: 3rem 0px 0rem;
+  .teamdiv1 {
+    padding: 3rem 0px 0rem;
   }
   .latestjobmain {
     padding: 0rem 0 4rem;
   }
-  .teamabmain{
-      padding: 0rem 0 0rem;
+  .teamabmain {
+    padding: 0rem 0 0rem;
   }
   .specrowdiv {
     min-height: auto;
@@ -2043,174 +2096,176 @@ color: #E40046;
   .specrowdiv ul {
     position: unset !important;
   }
-  .aboutbanner{
+  .aboutbanner {
     height: 100%;
     padding: 18rem 0 6rem;
   }
-  .conatctbanner{
-     height: 100%;
+  .conatctbanner {
+    height: 100%;
     padding: 18rem 0 6rem;
   }
   .empbanner {
-     height: 100%;
+    height: 100%;
     padding: 18rem 0 6rem;
   }
   .jobseekerbanner {
-     height: 100%;
+    height: 100%;
     padding: 18rem 0 6rem;
   }
   .joinusbanner {
-     height: 100%;
+    height: 100%;
     padding: 18rem 0 6rem;
   }
-  .searchjobsbanner{
-     height: 100%;
+  .searchjobsbanner {
+    height: 100%;
     padding: 18rem 0 6rem;
   }
- 
 
-  .abconnected img{
+  .abconnected img {
     position: relative;
     width: 100% !important;
   }
-  .weconn img{
+  .weconn img {
     position: relative;
     width: 100% !important;
   }
   .row2abu {
     padding: 2rem 0 0rem;
-}
-  .row2abu .col-md-6:first-child{
+  }
+  .row2abu .col-md-6:first-child {
     order: 2;
   }
-  .teamsartdiv .row .col-md-3{
+  .teamsartdiv .row .col-md-3 {
     width: 300px !important;
     max-width: 300px !important;
   }
   .abconnected {
     padding-bottom: 0px;
   }
-  .weconn{
+  .weconn {
     padding-bottom: 0px;
   }
-  .abu1sec{
+  .abu1sec {
     padding: 6rem 0 !important;
   }
-  .contactusd1{
-     padding: 4rem 0 !important;
+  .contactusd1 {
+    padding: 4rem 0 !important;
   }
-  .btabdivstxt h2{
+  .btabdivstxt h2 {
     font-size: 20px;
   }
   .mainrowabbotm .col-md-6 {
     margin-bottom: 1rem;
-}
-.btabdivstxt {
-  padding-left: 0px;
+  }
+  .btabdivstxt {
+    padding-left: 0px;
     padding-bottom: 2rem;
-}
-.btabdivstxt a {
+  }
+  .btabdivstxt a {
     position: relative;
     bottom: 0px;
     margin-top: 30px;
     display: block;
-}
-.aboutbottom2divs {
+  }
+  .aboutbottom2divs {
     padding: 5rem 0;
-}
-.aboutgallery {
+  }
+  .aboutgallery {
     padding: 4rem 0 0rem;
-}
-.aboutgallery small{
-  font-size: 16px;
-}
-.gallery{
-  margin-top: 3rem;
-}
-.applyju img {
+  }
+  .aboutgallery small {
+    font-size: 16px;
+  }
+  .gallery {
+    margin-top: 3rem;
+  }
+  .applyju img {
     margin-bottom: 35px;
-}
-.formapply button{
-  width: 100%;
-  display: block;
-}
-.joinussec1{
-  padding: 4rem 0 1rem;
-}
-.joinussec1 a{
-  display: block;
-  width: 100%;
-}
-.juvideo1 p {
+  }
+  .formapply button {
+    width: 100%;
+    display: block;
+  }
+  .joinussec1 {
+    padding: 4rem 0 1rem;
+  }
+  .joinussec1 a {
+    display: block;
+    width: 100%;
+  }
+  .juvideo1 p {
     margin-bottom: 20px;
-}
-.btnsec{
-  font-size: 16px;
-}
-.contactusd1 img{
-  margin-top: 2rem;
-}
-.txtaddress{
-  padding-left: 0px;
-}
-.divtxtadd {
+  }
+  .btnsec {
+    font-size: 16px;
+  }
+  .contactusd1 img {
+    margin-top: 2rem;
+  }
+  .txtaddress {
+    padding-left: 0px;
+  }
+  .divtxtadd {
     position: relative;
     margin-top: 2rem;
-}
-.addresssection .col-md-5{
-  margin-bottom: 1rem;
-}
-.addresssection .col-md-7{
-  margin-bottom: 3rem;
-}
-.jobstitlediv {
+  }
+  .addresssection .col-md-5 {
+    margin-bottom: 1rem;
+  }
+  .addresssection .col-md-7 {
+    margin-bottom: 3rem;
+  }
+  .jobstitlediv {
     padding: 0 0rem;
     position: relative;
     padding-top: 2rem;
-}
-.filterdiv1 button{
-  width: 100%;
-}
-.jobsrhdivs a{
-  width: 100%;
-font-size: 14px;
-padding: 12px 40px;
-}
-.jobtidiv1 h3{
-  font-size: 20px;
-}
-.jobtidiv1 span{
-  font-size: 15px;
-}
-.jobtidiv2 span{
-  font-size: 14px;
-}
-.jobtidiv2 span img {
-    width: 12px;
-}
-.jobsrhdivs p {
+  }
+  .filterdiv1 button {
+    width: 100%;
+  }
+  .jobsrhdivs a {
+    width: 100%;
+    font-size: 14px;
+    padding: 12px 40px;
+  }
+  .jobtidiv1 h3 {
+    font-size: 20px;
+  }
+  .jobtidiv1 span {
     font-size: 15px;
-    margin-bottom: 10px
-}
-.jobtidiv2 {
+  }
+  .jobtidiv2 span {
+    font-size: 14px;
+  }
+  .jobtidiv2 span img {
+    width: 12px;
+  }
+  .jobsrhdivs p {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .jobtidiv2 {
     margin-bottom: 14px;
-}
-.jobsrhdivs ul{
-  font-size: 14px;
-}
-.processsec{
-  padding: 2rem 0 4rem;
-}
-.processdivs2 p{
-  font-size: 16px;
-}
-.processform{
-  margin-top: 2rem;
-}
-.jsmaindiv p{
-  font-size: 16px;
-}
-.webelievemain {
+  }
+  .jobsrhdivs ul {
+    font-size: 14px;
+  }
+  .processsec {
+    padding: 2rem 0 4rem;
+  }
+  .processdivs2 p {
+    font-size: 16px;
+  }
+  .processform {
+    margin-top: 2rem;
+  }
+  .jsmaindiv p {
+    font-size: 16px;
+  }
+  .webelievemain {
     padding: 1rem 0 6rem;
-}
+  }
+  .employesec1 h2 {
+    margin-bottom: 0px;
+  }
 }
