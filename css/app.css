@@ -73,7 +73,44 @@ button:focus {
   outline: 0px dotted !important;
   outline: 0px auto !important;
 }
-
+@-webkit-keyframes zoom-in-out {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  to {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes zoom-in-out {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  to {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.zoominbg{
+-webkit-animation: zoomin 10s ease-in infinite;
+  animation: zoomin 10s ease-in infinite;
+  transition: all .5s ease-in-out;
+}
+.zoomoutbg{
+ -webkit-animation: zoomout 10s ease-in infinite;
+  animation: zoomout 10s ease-in infinite;
+  transition: all .5s ease-in-out;
+}
 .bgbanner {
   height: 100vh;
   background-image: linear-gradient(
@@ -84,9 +121,12 @@ button:focus {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  
 }
 .aboutbanner {
-  height: 80vh;
+    height: 100%;
+  padding: 10rem 20px 4rem;
   background-image: linear-gradient(
       rgba(89, 47, 47, 0.4),
       rgba(89, 47, 47, 0.4)
@@ -95,9 +135,11 @@ button:focus {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .conatctbanner {
-  height: 80vh;
+    height: 100%;
+  padding: 10rem 20px 4rem;
   background-image: linear-gradient(
       rgba(89, 47, 47, 0.4),
       rgba(89, 47, 47, 0.4)
@@ -106,9 +148,11 @@ button:focus {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .empbanner {
-  height: 80vh;
+    height: 100%;
+  padding: 10rem 20px 4rem;
   background-image: linear-gradient(
       rgba(89, 47, 47, 0.4),
       rgba(89, 47, 47, 0.4)
@@ -117,9 +161,11 @@ button:focus {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .jobseekerbanner {
-  height: 80vh;
+   height: 100%;
+  padding: 10rem 20px 4rem;
   background-image: linear-gradient(
       rgba(89, 47, 47, 0.4),
       rgba(89, 47, 47, 0.4)
@@ -128,9 +174,11 @@ button:focus {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .joinusbanner {
-  height: 80vh;
+    height: 100%;
+  padding: 10rem 20px 4rem;
   background-image: linear-gradient(
       rgba(89, 47, 47, 0.4),
       rgba(89, 47, 47, 0.4)
@@ -139,9 +187,11 @@ button:focus {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .searchjobsbanner {
-  height: 80vh;
+  height: 100%;
+  padding: 10rem 20px 4rem;
   background-image: linear-gradient(
       rgba(89, 47, 47, 0.4),
       rgba(89, 47, 47, 0.4)
@@ -150,6 +200,7 @@ button:focus {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .positingd1 {
   top: 0;
@@ -357,8 +408,13 @@ input::placeholder {
   border: 1px solid #fff;
   position: relative;
   box-sizing: border-box;
+  transition: all 0.5s;
 }
-
+.btnoutline2:hover{
+ background-color: var(--maincolor) !important;
+ color: #fff !important;
+ border: 1px solid var(--maincolor) !important;
+}
 .btnfull {
   background-color: var(--maincolor);
   border: 1px solid var(--maincolor);
@@ -532,8 +588,7 @@ input::placeholder {
 }
 .ptag1 {
   font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 140%;
   letter-spacing: 0.1em;
@@ -596,7 +651,7 @@ input::placeholder {
   overflow-y: hidden;
 }
 .teamsdivcont {
-  padding: 0rem 0px 22rem;
+  padding: 0rem 0px 26rem;
   position: relative;
   overflow-x: auto;
   overflow-y: hidden;
@@ -617,14 +672,13 @@ input::placeholder {
   text-decoration-line: underline;
 
   color: #e40046;
-  transition: all 10s;
+  transition: all 1s;
 }
 .viewall:hover {
-  color: var(--maincolor);
+  color: var(--black) !important;
 }
 .viewall:hover .fa {
-  color: var(--maincolor);
-  transform: scale(1.2);
+  color: var(--black) !important;
 }
 .viewall .fa {
   color: #e40046 !important;
@@ -662,8 +716,7 @@ input::placeholder {
   margin-bottom: 20px;
 }
 .singlejobd h6 {
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
   font-size: 16px;
   line-height: 140%;
   /* or 22px */
@@ -727,6 +780,24 @@ input::placeholder {
   color: #e40046;
   margin-bottom: 70px;
 }
+.abucrp2 h5 {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 100%;
+  /* or 20px */
+
+  text-transform: uppercase;
+
+  color: #e40046;
+  margin-bottom: 70px;
+}
+.coumnisideimg {
+  width: 100%;
+  /* position: absolute;
+  right: 0px; */
+}
 .abtxt1d2 img {
   width: 49%;
   position: absolute;
@@ -743,6 +814,7 @@ input::placeholder {
   background-repeat: no-repeat;
   position: relative;
   padding: 5rem 0;
+  background-attachment: fixed;
 }
 .emply-social {
   background-image: linear-gradient(
@@ -756,6 +828,7 @@ input::placeholder {
   position: relative;
   padding: 5rem 0;
   margin: 5rem 0;
+  background-attachment: fixed;
 }
 .movtopimg img {
   position: absolute;
@@ -833,7 +906,7 @@ input::placeholder {
   border: 1px solid #e5e5e5;
   box-sizing: border-box;
   padding: 30px 20px;
-  min-height: 330px;
+  min-height: 350px;
 }
 .specrowdiv:hover {
   background: rgb(162 27 68 / 18%);
@@ -865,19 +938,20 @@ input::placeholder {
   margin-bottom: 15px;
   position: absolute;
   top: 6rem;
+  max-width: 243px;
 }
 .specrowdiv ul {
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
-  line-height: 140%;
-  /* or 22px */
-
+  line-height: 22px;
   letter-spacing: 0.1em;
   color: #434343;
   padding-left: 15px;
   position: absolute;
   top: 9rem;
+}
+.specrowdiv ul li {
+  margin-bottom: 4px;
 }
 .uploadcv {
   background-image: linear-gradient(
@@ -979,8 +1053,11 @@ input::placeholder {
   bottom: -30px;
   transition: all 0.5s;
 }
+.latestnewdiv a:hover {
+  color: var(--maincolor);
+}
 .latestnewdiv a:hover .fa {
-  transform: scale(1.2);
+  color: var(--maincolor);
 }
 .latestnewdiv a .fa {
   margin-left: 10px;
@@ -1034,7 +1111,7 @@ input::placeholder {
   padding-top: 2rem;
 }
 .teamsartdiv .specrowdiv {
-  min-height: 290px;
+  min-height: 350px;
 }
 .abucrp2 h5 {
   max-width: 526px;
@@ -1070,7 +1147,7 @@ input::placeholder {
   font-size: 30px;
   line-height: 100%;
   /* or 30px */
-
+  max-width: 480px;
   color: #000000;
 }
 .btabdivstxt a {
@@ -1125,9 +1202,9 @@ input::placeholder {
 
 .gallery {
   display: grid;
-  grid-column-gap: 28px;
-  grid-row-gap: 12px;
-  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  grid-column-gap: 8px;
+  grid-row-gap: 2px;
+  grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
   grid-auto-rows: 8px;
   margin-top: 4rem;
 }
@@ -1473,6 +1550,9 @@ input::placeholder {
   background-color: #fff;
   width: 250px;
 }
+.borderpink:hover{
+  color: white !important;
+}
 .filterdiv1 {
 }
 .filterdiv1 hr {
@@ -1495,7 +1575,7 @@ input::placeholder {
 }
 .filterdiv1 select {
   border: 1px solid #e5e5e5;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 16px;
   line-height: 140%;
   /* or 22px */
@@ -1541,6 +1621,7 @@ input::placeholder {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 20px;
 }
 .jobtidiv1 h3 {
   font-family: "Jost", sans-serif;
@@ -1549,7 +1630,6 @@ input::placeholder {
   font-size: 30px;
   line-height: 100%;
   color: #000000;
-  margin-bottom: 20px;
 }
 .jobtidiv1 span {
   font-weight: 600;
@@ -1559,15 +1639,24 @@ input::placeholder {
   letter-spacing: 0.1em;
   color: #000000;
   margin-right: 10px;
+  transition: all 0.5s;
 }
 .jobtidiv1 span .fa {
   color: var(--maincolor);
+}
+.jobtidiv1 span:hover{
+  cursor: pointer;
+}
+.jobtidiv1 span:hover .fa-star-o:before{
+content: "\f005";
+cursor: pointer;
+
 }
 .jobtidiv2 {
   margin-bottom: 25px;
 }
 .jobtidiv2 span {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 16px;
   line-height: 140%;
   letter-spacing: 0.1em;
@@ -1580,7 +1669,7 @@ input::placeholder {
   margin-right: 4px;
 }
 .jobsrhdivs p {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 16px;
   line-height: 140%;
   letter-spacing: 0.1em;
@@ -1588,7 +1677,7 @@ input::placeholder {
   margin-bottom: 20px;
 }
 .jobsrhdivs ul {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 16px;
   line-height: 140%;
   letter-spacing: 0.1em;
@@ -1696,7 +1785,7 @@ input::placeholder {
 .weconnps {
 }
 .weconnps p {
-  font-weight: 200;
+  font-weight: 400;
   font-size: 16px;
   line-height: 140%;
   /* or 22px */
@@ -1749,12 +1838,15 @@ input::placeholder {
 }
 .belediv p {
   max-width: 659px;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 16px;
   line-height: 140%;
   padding-left: 40px;
   letter-spacing: 0.1em;
   color: #434343;
+}
+.wid456 {
+  max-width: 456px;
 }
 .belediv span {
   font-family: "Jost", sans-serif;
@@ -1791,6 +1883,53 @@ input::placeholder {
   padding-left: 12px;
   margin-left: auto;
 }
+.corshome h2 {
+  max-width: 587px;
+}
+.corshome p {
+  max-width: 531px;
+}
+.footbalgall{
+  padding: 2rem 0;
+}
+.footbalgall img{
+  width: 100%;
+}
+.fbrow{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+
+}
+.fbcol{
+padding: 15px 15px;
+}
+.fbcol:first-child{
+width: 21.5%;
+padding-left: 0px;
+}
+.fbcol:nth-child(2){
+width: 57%;
+}
+.fbcol:nth-child(3){
+  width: 21.5%;
+  padding-right: 0px;
+}
+.fbcol:nth-child(4){
+  width: 57%;
+  padding-left: 0px;
+}
+.fbcol:nth-child(5){
+  width: 43%;
+  padding-right: 0px;
+}
+
+
+
+
+
+
 
 @media (min-width: 1400px) {
   .containercus {
@@ -1800,6 +1939,12 @@ input::placeholder {
 @media (max-width: 1400px) {
   .containercus {
     max-width: 1360px !important;
+  }
+  .ptagres1 {
+    font-size: 17px;
+  }
+  .h2tag {
+    font-size: 49px;
   }
 }
 @media (max-width: 1200px) {
@@ -1843,7 +1988,7 @@ input::placeholder {
 
 @media (max-width: 1400px) {
   .specrowdiv h4 {
-    font-size: 16px;
+    font-size: 18px;
   }
   .abconnected img {
     width: 45% !important;
@@ -1871,17 +2016,17 @@ input::placeholder {
     width: 100%;
   }
   .specrowdiv h4 {
-    font-size: 14px;
+    font-size: 18px;
   }
   .specrowdiv ul {
     font-size: 15px;
   }
   .specrowdiv {
-    min-height: 330px;
+    min-height: 380px;
   }
   .ourspec .col-md-3 {
-    width: 50%;
-    flex: 50%;
+    width: 33%;
+    flex: 33%;
   }
   .btabdivstxt h2 {
     font-size: 22px;
@@ -1982,6 +2127,10 @@ input::placeholder {
     font-size: 16px;
     margin-bottom: 30px;
   }
+  .abucrp2 h5 {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
   .abtxt1d2 img {
     width: 100%;
     position: relative;
@@ -2072,7 +2221,7 @@ input::placeholder {
     padding: 0px 12px 23rem;
   }
   .teamsdivcont {
-    padding: 20px 12px 23rem;
+    padding: 20px 12px 27rem;
   }
   .latest-jobs {
     padding: 3rem 0px 0rem;
@@ -2096,30 +2245,7 @@ input::placeholder {
   .specrowdiv ul {
     position: unset !important;
   }
-  .aboutbanner {
-    height: 100%;
-    padding: 18rem 0 6rem;
-  }
-  .conatctbanner {
-    height: 100%;
-    padding: 18rem 0 6rem;
-  }
-  .empbanner {
-    height: 100%;
-    padding: 18rem 0 6rem;
-  }
-  .jobseekerbanner {
-    height: 100%;
-    padding: 18rem 0 6rem;
-  }
-  .joinusbanner {
-    height: 100%;
-    padding: 18rem 0 6rem;
-  }
-  .searchjobsbanner {
-    height: 100%;
-    padding: 18rem 0 6rem;
-  }
+ 
 
   .abconnected img {
     position: relative;
@@ -2268,4 +2394,7 @@ input::placeholder {
   .employesec1 h2 {
     margin-bottom: 0px;
   }
+  .fbcol{
+padding: 5px 5px;
+}
 }

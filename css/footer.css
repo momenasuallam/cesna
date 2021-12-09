@@ -13,6 +13,8 @@ font-family: 'Roboto', sans-serif; */
 display: flex;
 justify-content: space-between;
 align-items: center;
+    border-bottom: 1px solid #E5E5E5;
+    padding-bottom: 12px;
 }
 .footer-top a{
   text-decoration: none;
@@ -26,15 +28,38 @@ align-items: center;
 }
 .socialmediafooter a{
   text-decoration: none;
-  padding: 0 5px;
+  margin: 0 5px;
 }
 .socialmediafooter a:last-child{
-  padding: 0px !important;
+  margin: 0px !important;
 }
 .socialmediafooter a img{
   width: 20px;
    transition: all 0.5s;
 }
+.socialmediafooter a:first-child img{
+Width: 18px !important;
+}
+.socialmediafooter a:nth-child(2) img{
+Width: 24px !important;
+}
+.socialmediafooter a:nth-child(3) img{
+Width: 20.34px !important;
+}
+.socialmediafooter a:nth-child(4) img{
+Width: 21.01px !important;
+}
+.socialmediafooter a:nth-child(5) img{
+Width: 25.6px !important;
+}
+.socialmediafooter a:nth-child(6) img{
+Width: 25.78px !important;
+margin-right: 4px;
+}
+.socialmediafooter a:nth-child(7) img{
+Width: 24px !important;
+}
+
 .socialmediafooter a:hover img{
     transform: scale(1.3);
 }
