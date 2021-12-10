@@ -101,15 +101,15 @@ button:focus {
     transform: scale(1);
   }
 }
-.zoominbg{
--webkit-animation: zoomin 10s ease-in infinite;
+.zoominbg {
+  -webkit-animation: zoomin 10s ease-in infinite;
   animation: zoomin 10s ease-in infinite;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
-.zoomoutbg{
- -webkit-animation: zoomout 10s ease-in infinite;
+.zoomoutbg {
+  -webkit-animation: zoomout 10s ease-in infinite;
   animation: zoomout 10s ease-in infinite;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .bgbanner {
   height: 100vh;
@@ -122,10 +122,9 @@ button:focus {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  
 }
 .aboutbanner {
-    height: 100%;
+  height: 100%;
   padding: 10rem 20px 4rem;
   background-image: linear-gradient(
       rgba(89, 47, 47, 0.4),
@@ -138,7 +137,7 @@ button:focus {
   background-attachment: fixed;
 }
 .conatctbanner {
-    height: 100%;
+  height: 100%;
   padding: 10rem 20px 4rem;
   background-image: linear-gradient(
       rgba(89, 47, 47, 0.4),
@@ -151,7 +150,7 @@ button:focus {
   background-attachment: fixed;
 }
 .empbanner {
-    height: 100%;
+  height: 100%;
   padding: 10rem 20px 4rem;
   background-image: linear-gradient(
       rgba(89, 47, 47, 0.4),
@@ -164,7 +163,7 @@ button:focus {
   background-attachment: fixed;
 }
 .jobseekerbanner {
-   height: 100%;
+  height: 100%;
   padding: 10rem 20px 4rem;
   background-image: linear-gradient(
       rgba(89, 47, 47, 0.4),
@@ -177,7 +176,7 @@ button:focus {
   background-attachment: fixed;
 }
 .joinusbanner {
-    height: 100%;
+  height: 100%;
   padding: 10rem 20px 4rem;
   background-image: linear-gradient(
       rgba(89, 47, 47, 0.4),
@@ -410,10 +409,10 @@ input::placeholder {
   box-sizing: border-box;
   transition: all 0.5s;
 }
-.btnoutline2:hover{
- background-color: var(--maincolor) !important;
- color: #fff !important;
- border: 1px solid var(--maincolor) !important;
+.btnoutline2:hover {
+  background-color: var(--maincolor) !important;
+  color: #fff !important;
+  border: 1px solid var(--maincolor) !important;
 }
 .btnfull {
   background-color: var(--maincolor);
@@ -792,6 +791,12 @@ input::placeholder {
 
   color: #e40046;
   margin-bottom: 70px;
+}
+.abucrp2 img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  object-position: center;
 }
 .coumnisideimg {
   width: 100%;
@@ -1204,7 +1209,7 @@ input::placeholder {
   display: grid;
   grid-column-gap: 8px;
   grid-row-gap: 2px;
-  grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
   grid-auto-rows: 8px;
   margin-top: 4rem;
 }
@@ -1550,7 +1555,7 @@ input::placeholder {
   background-color: #fff;
   width: 250px;
 }
-.borderpink:hover{
+.borderpink:hover {
   color: white !important;
 }
 .filterdiv1 {
@@ -1644,13 +1649,12 @@ input::placeholder {
 .jobtidiv1 span .fa {
   color: var(--maincolor);
 }
-.jobtidiv1 span:hover{
+.jobtidiv1 span:hover {
   cursor: pointer;
 }
-.jobtidiv1 span:hover .fa-star-o:before{
-content: "\f005";
-cursor: pointer;
-
+.jobtidiv1 span:hover .fa-star-o:before {
+  content: "\f005";
+  cursor: pointer;
 }
 .jobtidiv2 {
   margin-bottom: 25px;
@@ -1889,47 +1893,83 @@ cursor: pointer;
 .corshome p {
   max-width: 531px;
 }
-.footbalgall{
+.footbalgall {
   padding: 2rem 0;
 }
-.footbalgall img{
+.footbalgall img {
   width: 100%;
 }
-.fbrow{
+.fbrow {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   width: 100%;
+}
 
+.fbcol {
+  padding: 15px 15px;
 }
-.fbcol{
-padding: 15px 15px;
+.fbcol:first-child {
+  width: 21.5%;
+  padding-left: 0px;
 }
-.fbcol:first-child{
-width: 21.5%;
-padding-left: 0px;
+.fbcol:nth-child(2) {
+  width: 57%;
 }
-.fbcol:nth-child(2){
-width: 57%;
-}
-.fbcol:nth-child(3){
+.fbcol:nth-child(3) {
   width: 21.5%;
   padding-right: 0px;
 }
-.fbcol:nth-child(4){
+.fbcol:nth-child(4) {
   width: 57%;
   padding-left: 0px;
 }
-.fbcol:nth-child(5){
+.fbcol:nth-child(5) {
   width: 43%;
   padding-right: 0px;
 }
 
-
-
-
-
-
+.csflex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  padding: 0rem 0 0;
+}
+.cscol {
+  padding: 10px 10px;
+}
+.cscol img {
+  width: 100%;
+}
+.cscol:first-child {
+  width: 18%;
+  padding-left: 0px;
+}
+.cscol:nth-child(2) {
+  width: 32%;
+}
+.cscol:nth-child(3) {
+  width: 32%;
+}
+.cscol:nth-child(4) {
+  width: 18%;
+  padding-right: 0px;
+}
+.cscol:nth-child(5) {
+  width: 18%;
+  padding-left: 0px;
+}
+.cscol:nth-child(6) {
+  width: 32%;
+}
+.cscol:nth-child(7) {
+  width: 32%;
+}
+.cscol:nth-child(8) {
+  width: 18%;
+  padding-right: 0px;
+}
 
 @media (min-width: 1400px) {
   .containercus {
@@ -2245,7 +2285,6 @@ width: 57%;
   .specrowdiv ul {
     position: unset !important;
   }
- 
 
   .abconnected img {
     position: relative;
@@ -2394,7 +2433,13 @@ width: 57%;
   .employesec1 h2 {
     margin-bottom: 0px;
   }
-  .fbcol{
-padding: 5px 5px;
-}
+  .fbcol {
+    padding: 5px 5px;
+  }
+  .cscol {
+    padding: 4px 4px;
+  }
+  .csflex {
+    padding: 4px 0 0;
+  }
 }

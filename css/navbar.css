@@ -2,12 +2,12 @@
 /* font-family: 'Jost', sans-serif;
 font-family: 'Raleway', sans-serif;
 font-family: 'Roboto', sans-serif; */
-.logo{
+.logo {
   position: relative;
   top: 22px;
 }
-.header.sticky .logo{
-top: 0px !important;
+.header.sticky .logo {
+  top: 0px !important;
 }
 .logo img {
   width: 162px;
@@ -87,7 +87,7 @@ top: 0px !important;
   position: relative;
 }
 .active-menu a {
-  font-weight: 900 !important;
+  font-weight: bold !important;
 }
 .active-menu a:after {
   content: "";
@@ -176,7 +176,7 @@ top: 0px !important;
 }
 
 @media (max-width: 1320px) {
-  .logo{
+  .logo {
     top: 18px;
   }
   .logo img {
@@ -228,7 +228,7 @@ top: 0px !important;
     right: 68px;
   }
   .nav-menu {
-    background: #e40046;
+    background: #000;
   }
   .sub-nav {
     position: relative;
@@ -244,11 +244,14 @@ top: 0px !important;
 }
 
 @media (max-width: 600px) {
+  .logo {
+    top: 3px;
+  }
   .logo img {
-    width: 68px;
+    width: 95px;
   }
   .navbar {
-    padding: 20px 8px;
+    padding: 0px 8px;
   }
   .hamburger {
     right: 20px;
