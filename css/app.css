@@ -121,7 +121,7 @@ button:focus {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 }
 .aboutbanner {
   height: 100%;
@@ -134,7 +134,7 @@ button:focus {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 }
 .conatctbanner {
   height: 100%;
@@ -147,7 +147,7 @@ button:focus {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 }
 .empbanner {
   height: 100%;
@@ -160,7 +160,7 @@ button:focus {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 }
 .jobseekerbanner {
   height: 100%;
@@ -173,7 +173,7 @@ button:focus {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 }
 .joinusbanner {
   height: 100%;
@@ -186,7 +186,7 @@ button:focus {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 }
 .searchjobsbanner {
   height: 100%;
@@ -199,7 +199,7 @@ button:focus {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 }
 .positingd1 {
   top: 0;
@@ -792,9 +792,9 @@ input::placeholder {
   color: #e40046;
   margin-bottom: 70px;
 }
-.abucrp2 img {
+.imgempluy1 {
   width: 100%;
-  height: 270px;
+  height: 500px;
   object-fit: cover;
   object-position: center;
 }
@@ -1231,6 +1231,21 @@ input::placeholder {
 }
 .gallery .gallery-item:hover {
   transform: scale(1.025);
+}
+.carsoimgdiv{
+    height: 395px;
+    position: absolute;
+    right: 0;
+    width: 50%;
+    margin-top: -35px;
+}
+.carousel-item img{
+  height: 395px;
+  object-fit: cover;
+  object-position: center;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    background-color: #000 !important;
 }
 @media (max-width: 600px) {
   .gallery {
@@ -1970,6 +1985,17 @@ input::placeholder {
   width: 18%;
   padding-right: 0px;
 }
+.joinvideo iframe{
+  width: 720px;
+  height: 460px;
+  margin-bottom: 10px;
+}
+@media(max-width:768px){
+  .joinvideo iframe{
+  width: 100%;
+  height: 325px;
+}
+}
 
 @media (min-width: 1400px) {
   .containercus {
@@ -2093,6 +2119,11 @@ input::placeholder {
   }
 }
 @media (max-width: 768px) {
+  .carsoimgdiv{
+    position: relative;
+    width: 100%;
+    margin-top: 0px;
+}
   .headerdivtxt {
     padding: 2rem auto;
   }
@@ -2128,7 +2159,7 @@ input::placeholder {
     width: 115px !important;
   }
   .lineborder {
-    left: 56%;
+    left: 38vw;
     top: 9px;
   }
   .linkedd1 img {
@@ -2442,4 +2473,10 @@ input::placeholder {
   .csflex {
     padding: 4px 0 0;
   }
+}
+@media(max-width:500px){
+  .joinvideo iframe{
+  width: 100%;
+  height: 220px;
+}
 }
