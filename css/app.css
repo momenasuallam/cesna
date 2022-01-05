@@ -1990,6 +1990,9 @@ input::placeholder {
   height: 460px;
   margin-bottom: 10px;
 }
+.bgblack{
+  background-color: #000000;
+}
 @media(max-width:768px){
   .joinvideo iframe{
   width: 100%;
