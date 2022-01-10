@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cesna</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./img/logo.svg" />
+    <link rel="stylesheet" href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/app.css" />
+    <link rel="stylesheet" href="./css/animate.css" />
+
+
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <nav class="navbar header ">
+                <div class="container">
+                    <div class="logo"><a href="index.html"><img src="img/logo.svg" alt="LOGO"></a></div>
+                    <!-- <div class="push-left"> -->
+                    <button id="menu-toggler" data-class="menu-active" class="hamburger">
+                        <span class="hamburger-line hamburger-line-top"></span>
+                        <span class="hamburger-line hamburger-line-middle"></span>
+                        <span class="hamburger-line hamburger-line-bottom"></span>
+                    </button>
+
+                    <!--  Menu compatible with wp_nav_menu  -->
+                    <ul id="primary-menu" class="menu nav-menu">
+                        <li class="menu-item current-menu-item"><a class="nav__link" href="search-jobs.html">Search
+                                Jobs</a>
+
+                        </li>
+                        <li class="menu-item current-menu-item"><a class="nav__link" href="job-seekers.html">Job
+                                Seekers</a></li>
+                        <li class="menu-item current-menu-item"><a class="nav__link" href="employers.html">Employers</a>
+                        </li>
+                        <li class="menu-item current-menu-item"><a class="nav__link" href="about-us.html">About Us</a>
+                        </li>
+                        <li class="menu-item current-menu-item"><a class="nav__link" href="./join-us.html">Careers</a>
+                        </li>
+                        <li class="menu-item current-menu-item active-menu"><a class="nav__link"
+                                href="contact-us.html">Contact
+                                Us</a></li>
+
+                        </li>
+                    </ul>
+
+                    <div class="sidebtn">
+                        <a class="btnpri btnoutline btn-border-hover" href="login.html"><img
+                                src="./img/user-icon.svg" /> Login</a>
+                        <a class="btnpri btnfull" href="register.html"><img src="./img/user-icon.svg" /> Register</a>
+                    </div>
+
+
+                    <!-- </div> -->
+                </div>
+            </nav>
+        </div>
+        <div class="conatctbanner position-relative w-100">
+            <div class=" text-white d-flex flex-column positingd1">
+                <div class="container">
+                    <div class="headerdivtxt wow fadeIn" data-wow-duration="2s">
+                        <h1 class="fontjost">Register</h1>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="registersec contactusd1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="linkedd2 wow fadeInLeft" data-wow-duration="1s">
+                        <h2 class="h2tag">Sign up </h2>
+                        <hr class="hrwid" />
+                        <h6>Create a profile to apply for jobs and get relevant job recommendations</h6>
+                        <div class="loginpageform">
+                            <form>
+                                <div class="mb-3">
+                                    <label class="form-label">First name</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Last name</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Your email address</label>
+                                    <input type="email" class="form-control" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Confirm email address</label>
+                                    <input type="email" class="form-control" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Country of resisdence</label>
+                                    <select class="form-select mb-3" id="country" name="country" required>
+                                        <option value="AF">Afghanistan</option>
+                                        <option value="AX">Aland Islands</option>
+                                        <option value="AL">Albania</option>
+                                        <option value="DZ">Algeria</option>
+                                        <option value="AS">American Samoa</option>
+                                        <option value="AD">Andorra</option>
+                                        <option value="AO">Angola</option>
+                                        <option value="AI">Anguilla</option>
+                                        <option value="AQ">Antarctica</option>
+                                        <option value="AG">Antigua and Barbuda</option>
+                                        <option value="AR">Argentina</option>
+                                        <option value="AM">Armenia</option>
+                                        <option value="AW">Aruba</option>
+                                        <option value="AU">Australia</option>
+                                        <option value="AT">Austria</option>
+                                        <option value="AZ">Azerbaijan</option>
+                                        <option value="BS">Bahamas</option>
+                                        <option value="BH">Bahrain</option>
+                                        <option value="BD">Bangladesh</option>
+                                        <option value="BB">Barbados</option>
+                                        <option value="BY">Belarus</option>
+                                        <option value="BE">Belgium</option>
+                                        <option value="BZ">Belize</option>
+                                        <option value="BJ">Benin</option>
+                                        <option value="BM">Bermuda</option>
+                                        <option value="BT">Bhutan</option>
+                                        <option value="BO">Bolivia</option>
+                                        <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+                                        <option value="BA">Bosnia and Herzegovina</option>
+                                        <option value="BW">Botswana</option>
+                                        <option value="BV">Bouvet Island</option>
+                                        <option value="BR">Brazil</option>
+                                        <option value="IO">British Indian Ocean Territory</option>
+                                        <option value="BN">Brunei Darussalam</option>
+                                        <option value="BG">Bulgaria</option>
+                                        <option value="BF">Burkina Faso</option>
+                                        <option value="BI">Burundi</option>
+                                        <option value="KH">Cambodia</option>
+                                        <option value="CM">Cameroon</option>
+                                        <option value="CA">Canada</option>
+                                        <option value="CV">Cape Verde</option>
+                                        <option value="KY">Cayman Islands</option>
+                                        <option value="CF">Central African Republic</option>
+                                        <option value="TD">Chad</option>
+                                        <option value="CL">Chile</option>
+                                        <option value="CN">China</option>
+                                        <option value="CX">Christmas Island</option>
+                                        <option value="CC">Cocos (Keeling) Islands</option>
+                                        <option value="CO">Colombia</option>
+                                        <option value="KM">Comoros</option>
+                                        <option value="CG">Congo</option>
+                                        <option value="CD">Congo, Democratic Republic of the Congo</option>
+                                        <option value="CK">Cook Islands</option>
+                                        <option value="CR">Costa Rica</option>
+                                        <option value="CI">Cote D'Ivoire</option>
+                                        <option value="HR">Croatia</option>
+                                        <option value="CU">Cuba</option>
+                                        <option value="CW">Curacao</option>
+                                        <option value="CY">Cyprus</option>
+                                        <option value="CZ">Czech Republic</option>
+                                        <option value="DK">Denmark</option>
+                                        <option value="DJ">Djibouti</option>
+                                        <option value="DM">Dominica</option>
+                                        <option value="DO">Dominican Republic</option>
+                                        <option value="EC">Ecuador</option>
+                                        <option value="EG">Egypt</option>
+                                        <option value="SV">El Salvador</option>
+                                        <option value="GQ">Equatorial Guinea</option>
+                                        <option value="ER">Eritrea</option>
+                                        <option value="EE">Estonia</option>
+                                        <option value="ET">Ethiopia</option>
+                                        <option value="FK">Falkland Islands (Malvinas)</option>
+                                        <option value="FO">Faroe Islands</option>
+                                        <option value="FJ">Fiji</option>
+                                        <option value="FI">Finland</option>
+                                        <option value="FR">France</option>
+                                        <option value="GF">French Guiana</option>
+                                        <option value="PF">French Polynesia</option>
+                                        <option value="TF">French Southern Territories</option>
+                                        <option value="GA">Gabon</option>
+                                        <option value="GM">Gambia</option>
+                                        <option value="GE">Georgia</option>
+                                        <option value="DE">Germany</option>
+                                        <option value="GH">Ghana</option>
+                                        <option value="GI">Gibraltar</option>
+                                        <option value="GR">Greece</option>
+                                        <option value="GL">Greenland</option>
+                                        <option value="GD">Grenada</option>
+                                        <option value="GP">Guadeloupe</option>
+                                        <option value="GU">Guam</option>
+                                        <option value="GT">Guatemala</option>
+                                        <option value="GG">Guernsey</option>
+                                        <option value="GN">Guinea</option>
+                                        <option value="GW">Guinea-Bissau</option>
+                                        <option value="GY">Guyana</option>
+                                        <option value="HT">Haiti</option>
+                                        <option value="HM">Heard Island and Mcdonald Islands</option>
+                                        <option value="VA">Holy See (Vatican City State)</option>
+                                        <option value="HN">Honduras</option>
+                                        <option value="HK">Hong Kong</option>
+                                        <option value="HU">Hungary</option>
+                                        <option value="IS">Iceland</option>
+                                        <option value="IN">India</option>
+                                        <option value="ID">Indonesia</option>
+                                        <option value="IR">Iran, Islamic Republic of</option>
+                                        <option value="IQ">Iraq</option>
+                                        <option value="IE">Ireland</option>
+                                        <option value="IM">Isle of Man</option>
+                                        <option value="IL">Israel</option>
+                                        <option value="IT">Italy</option>
+                                        <option value="JM">Jamaica</option>
+                                        <option value="JP">Japan</option>
+                                        <option value="JE">Jersey</option>
+                                        <option value="JO">Jordan</option>
+                                        <option value="KZ">Kazakhstan</option>
+                                        <option value="KE">Kenya</option>
+                                        <option value="KI">Kiribati</option>
+                                        <option value="KP">Korea, Democratic People's Republic of</option>
+                                        <option value="KR">Korea, Republic of</option>
+                                        <option value="XK">Kosovo</option>
+                                        <option value="KW">Kuwait</option>
+                                        <option value="KG">Kyrgyzstan</option>
+                                        <option value="LA">Lao People's Democratic Republic</option>
+                                        <option value="LV">Latvia</option>
+                                        <option value="LB">Lebanon</option>
+                                        <option value="LS">Lesotho</option>
+                                        <option value="LR">Liberia</option>
+                                        <option value="LY">Libyan Arab Jamahiriya</option>
+                                        <option value="LI">Liechtenstein</option>
+                                        <option value="LT">Lithuania</option>
+                                        <option value="LU">Luxembourg</option>
+                                        <option value="MO">Macao</option>
+                                        <option value="MK">Macedonia, the Former Yugoslav Republic of</option>
+                                        <option value="MG">Madagascar</option>
+                                        <option value="MW">Malawi</option>
+                                        <option value="MY">Malaysia</option>
+                                        <option value="MV">Maldives</option>
+                                        <option value="ML">Mali</option>
+                                        <option value="MT">Malta</option>
+                                        <option value="MH">Marshall Islands</option>
+                                        <option value="MQ">Martinique</option>
+                                        <option value="MR">Mauritania</option>
+                                        <option value="MU">Mauritius</option>
+                                        <option value="YT">Mayotte</option>
+                                        <option value="MX">Mexico</option>
+                                        <option value="FM">Micronesia, Federated States of</option>
+                                        <option value="MD">Moldova, Republic of</option>
+                                        <option value="MC">Monaco</option>
+                                        <option value="MN">Mongolia</option>
+                                        <option value="ME">Montenegro</option>
+                                        <option value="MS">Montserrat</option>
+                                        <option value="MA">Morocco</option>
+                                        <option value="MZ">Mozambique</option>
+                                        <option value="MM">Myanmar</option>
+                                        <option value="NA">Namibia</option>
+                                        <option value="NR">Nauru</option>
+                                        <option value="NP">Nepal</option>
+                                        <option value="NL">Netherlands</option>
+                                        <option value="AN">Netherlands Antilles</option>
+                                        <option value="NC">New Caledonia</option>
+                                        <option value="NZ">New Zealand</option>
+                                        <option value="NI">Nicaragua</option>
+                                        <option value="NE">Niger</option>
+                                        <option value="NG">Nigeria</option>
+                                        <option value="NU">Niue</option>
+                                        <option value="NF">Norfolk Island</option>
+                                        <option value="MP">Northern Mariana Islands</option>
+                                        <option value="NO">Norway</option>
+                                        <option value="OM">Oman</option>
+                                        <option value="PK">Pakistan</option>
+                                        <option value="PW">Palau</option>
+                                        <option value="PS">Palestinian Territory, Occupied</option>
+                                        <option value="PA">Panama</option>
+                                        <option value="PG">Papua New Guinea</option>
+                                        <option value="PY">Paraguay</option>
+                                        <option value="PE">Peru</option>
+                                        <option value="PH">Philippines</option>
+                                        <option value="PN">Pitcairn</option>
+                                        <option value="PL">Poland</option>
+                                        <option value="PT">Portugal</option>
+                                        <option value="PR">Puerto Rico</option>
+                                        <option value="QA">Qatar</option>
+                                        <option value="RE">Reunion</option>
+                                        <option value="RO">Romania</option>
+                                        <option value="RU">Russian Federation</option>
+                                        <option value="RW">Rwanda</option>
+                                        <option value="BL">Saint Barthelemy</option>
+                                        <option value="SH">Saint Helena</option>
+                                        <option value="KN">Saint Kitts and Nevis</option>
+                                        <option value="LC">Saint Lucia</option>
+                                        <option value="MF">Saint Martin</option>
+                                        <option value="PM">Saint Pierre and Miquelon</option>
+                                        <option value="VC">Saint Vincent and the Grenadines</option>
+                                        <option value="WS">Samoa</option>
+                                        <option value="SM">San Marino</option>
+                                        <option value="ST">Sao Tome and Principe</option>
+                                        <option value="SA">Saudi Arabia</option>
+                                        <option value="SN">Senegal</option>
+                                        <option value="RS">Serbia</option>
+                                        <option value="CS">Serbia and Montenegro</option>
+                                        <option value="SC">Seychelles</option>
+                                        <option value="SL">Sierra Leone</option>
+                                        <option value="SG">Singapore</option>
+                                        <option value="SX">Sint Maarten</option>
+                                        <option value="SK">Slovakia</option>
+                                        <option value="SI">Slovenia</option>
+                                        <option value="SB">Solomon Islands</option>
+                                        <option value="SO">Somalia</option>
+                                        <option value="ZA">South Africa</option>
+                                        <option value="GS">South Georgia and the South Sandwich Islands</option>
+                                        <option value="SS">South Sudan</option>
+                                        <option value="ES">Spain</option>
+                                        <option value="LK">Sri Lanka</option>
+                                        <option value="SD">Sudan</option>
+                                        <option value="SR">Suriname</option>
+                                        <option value="SJ">Svalbard and Jan Mayen</option>
+                                        <option value="SZ">Swaziland</option>
+                                        <option value="SE">Sweden</option>
+                                        <option value="CH">Switzerland</option>
+                                        <option value="SY">Syrian Arab Republic</option>
+                                        <option value="TW">Taiwan, Province of China</option>
+                                        <option value="TJ">Tajikistan</option>
+                                        <option value="TZ">Tanzania, United Republic of</option>
+                                        <option value="TH">Thailand</option>
+                                        <option value="TL">Timor-Leste</option>
+                                        <option value="TG">Togo</option>
+                                        <option value="TK">Tokelau</option>
+                                        <option value="TO">Tonga</option>
+                                        <option value="TT">Trinidad and Tobago</option>
+                                        <option value="TN">Tunisia</option>
+                                        <option value="TR">Turkey</option>
+                                        <option value="TM">Turkmenistan</option>
+                                        <option value="TC">Turks and Caicos Islands</option>
+                                        <option value="TV">Tuvalu</option>
+                                        <option value="UG">Uganda</option>
+                                        <option value="UA">Ukraine</option>
+                                        <option value="AE">United Arab Emirates</option>
+                                        <option value="GB">United Kingdom</option>
+                                        <option value="US">United States</option>
+                                        <option value="UM">United States Minor Outlying Islands</option>
+                                        <option value="UY">Uruguay</option>
+                                        <option value="UZ">Uzbekistan</option>
+                                        <option value="VU">Vanuatu</option>
+                                        <option value="VE">Venezuela</option>
+                                        <option value="VN">Viet Nam</option>
+                                        <option value="VG">Virgin Islands, British</option>
+                                        <option value="VI">Virgin Islands, U.s.</option>
+                                        <option value="WF">Wallis and Futuna</option>
+                                        <option value="EH">Western Sahara</option>
+                                        <option value="YE">Yemen</option>
+                                        <option value="ZM">Zambia</option>
+                                        <option value="ZW">Zimbabwe</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Password</label>
+                                    <input type="password" class="form-control" required>
+                                </div>
+                              
+                                <div class="trmsdiv" id="terms-and-conditions">
+                                    <h2>TERMS AND CONDITIONS</h2>
+                                    <div class="trmssubdiv">
+                                        <div>
+                                           <h6>
+                                                The Cesna ‘s Sean/Ellen (‘SE’)mark is a trademark owned by Cesna Group. The
+                                            use or misuse of this trademark or any other contents on this site, except
+                                            as provided in these terms and conditions or in the site content, is
+                                            strictly prohibited.
+                                           </h6>
+                                          <h6>
+                                                The information, postings, materials and other content on this site are
+                                            provided on an "as is" and "as available" basis without any warranties or
+                                            representations, either express or implied, including, but not limited to,
+                                            the implied warranties of merchantability, fitness for a particular purpose,
+                                            or non-infringement.
+                                          </h6>
+                                          <h6>
+                                                All content included on this site, such as text, graphics, logos, button
+                                            icons, images, audio clips, digital downloads, data compilations, and
+                                            software, is the property of Cesna SE. or its content suppliers and
+                                            protected by Republic of Korea and international copyright laws. The
+                                            compilation of all content on this site is the exclusive property of Cesna
+                                            SE. and protected by Korea and international copyright laws. All software
+                                            used on this site is the property of Cesna SE. or its software suppliers and
+                                            protected by Korea and international copyright laws. Any use or re-use of
+                                            any such content, compilation or software, with out the express written
+                                            consent of Cesna SE. is expressly prohibited. To inquire about such use or
+                                            re-use, please send a written request, via email to info@cesnagroup.com.
+                                            Reasonable care has been taken to ensure that the site content is accurate
+                                            and up-to-date; however, SE makes no warranties or representations about the
+                                            accuracy or completeness of the site content. SE shall not be liable for any
+                                            direct, incidental, consequential, indirect or punitive damages arising out
+                                            of access to or use of any content on this site, regardless of the accuracy
+                                            or completeness of any such content.
+                                          </h6>
+                                           <h5><b> Equal Employment Opportunity Statement of Policy</b></h5>
+                                          <h6>
+                                                Cesna’s Sean/Ellen is committed to a policy of equal opportunity for all
+                                            employees and applicants including members of minority groups and women, and
+                                            will endeavor to make reasonable accommodation to the limitations of
+                                            physically and mentally disabled employees and applicants. The company
+                                            expects all employees to support this policy and to comply with all
+                                            applicable laws prohibiting discrimination in employment.
+                                          </h6>
+                                          <h6> 
+                                            -------
+                                          </h6>
+                                          <h6>
+                                                By signing up you agree to receive the latest jobs available, salary
+                                            reports, career advice, insights and industry updates, events and relevant
+                                            surveys from us.
+                                          </h6>
+                                            <h6>
+                                                By signing up to Cesna Group you are agreeing to our Standard Terms and
+                                            Conditions and consenting to Cesna Group processing your personal details in
+                                            relation to potential job vacancies. Your details will be processed in
+                                            accordance with the Privacy Policy. Cesna Group terms and conditions apply.
+                                            </h6>
+
+                                        </div>
+                                    </div>
+                                      <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="terms" checked>
+                                    <label class="form-check-label labelcheck" for="terms">
+                                       I have read and accept the terms of use and legal notice.
+                                    </label>
+                                </div>
+                                </div>
+
+                                <div class="trmsdiv" id="privacy-policy">
+                                    <h2>PRIVACY POLICY</h2>
+                                    <div class="trmssubdiv">
+                                        <div>
+                                            <h6>
+                                                This Privacy Policy explains how Cesna’s Sean/Ellen International (“SE")
+                                                collects, uses, and discloses individually identifiable information
+                                                ("Personal Information") that we obtain through our Website. Please read
+                                                this information carefully. By using this Website, and/or submitting any
+                                                Personal Information, you expressly consent to the terms in this Privacy
+                                                Policy, as well as the Legal Notice.
+                                            </h6>
+                                            <h5><b>Collection of Personal Information</b></h5>
+                                            <h6>
+                                                We collect various categories of Personal Information on this Website.
+                                                If
+                                                you submit an inquiry or question via an online form or email, we may
+                                                collect your name, email address, or other Personal Information
+                                                contained in
+                                                that correspondence. If you are a potential candidate, we may collect
+                                                your
+                                                name and contact details, information about your employment objectives,
+                                                past
+                                                and current employment and professional experience, educational
+                                                background,
+                                                language skills, and other data that you provide online through a form
+                                                or a
+                                                resume or CV. If you are a Client or potential Client, we may collect
+                                                your
+                                                name, contact details, title or position, products or services
+                                                requested, or
+                                                other information that you provide via online forms or email
+                                                correspondence.
+                                                With respect to all Website visitors, we do not wish to collect any
+                                                "sensitive" Personal Information, such as racial or ethnic origin,
+                                                political, religious, or philosophical beliefs, sexual life, social
+                                                security
+                                                or other government identification numbers, trade union membership,
+                                                health
+                                                or medical conditions, or criminal history unless legally required for
+                                                recruiting purposes.
+                                            </h6>
+                                            <h5> <b>Use of Personal Information</b></h5>
+                                            <h6>
+                                                We may use Personal Information to respond to your inquiries and answer
+                                                your
+                                                questions, to provide you with requested information, and to undertake
+                                                activities in connection with the conduct and management of our
+                                                executive
+                                                search or other services, such as evaluating candidate qualifications,
+                                                contacting potential candidates for further Personal Information,
+                                                contacting
+                                                named references, and communicating with Clients about potential
+                                                candidates.
+                                                We also may use Personal Information for the purposes of testing and
+                                                maintaining our company databases, networks, and computer systems, and
+                                                for
+                                                training and other internal purposes.
+                                                Disclosure of Personal Information
+                                            </h6>
+                                            <h6> We may share Personal Information with our offices and affiliates
+                                                worldwide
+                                                where necessary or appropriate in connection with the performance of our
+                                                executive search or other services. In particular, Personal Information
+                                                about executive search candidates and/or Clients is often included in
+                                                our
+                                                company's global databases for these purposes, and therefore may be
+                                                accessible to our foreign offices and affiliates. A list of such offices
+                                                and
+                                                affiliates is available on our website. We may also share Personal
+                                                Information with our Clients located in jurisdictions around the world
+                                                as
+                                                necessary or appropriate to provide them with requested products or
+                                                services.</h6>
+                                            <h6> We reserve the right to disclose Personal Information to third party
+                                                subcontractors, including information technology providers and business
+                                                process outsourcing providers, in order to help support our business
+                                                operations. We also reserve the right to disclose Personal Information
+                                                in
+                                                connection with the sale, assignment, or other transfer of all or part
+                                                of
+                                                the business, or where we believe such disclosure may be required by law
+                                                or
+                                                may be appropriate in connection with any legal claims. We may also use,
+                                                disclose, or otherwise process any information for statistical or any
+                                                other
+                                                purposes that we choose in our sole discretion, as long as such
+                                                information
+                                                is not in personally identifiable form.</h6>
+
+                                            <h5> <b>Website Usage Data</b></h5>
+                                            <h6>
+                                                Like many websites, we passively collect data about website usage
+                                                through
+                                                various means. We use Internet protocol (IP) addresses to identify
+                                                server
+                                                problems, administer the Website, and compile aggregated statistics for
+                                                marketing and research purposes. We use navigational data, including log
+                                                files and click-stream data, to identify information about your web
+                                                browser
+                                                and operating system, and the time period in which you visit the Website
+                                                or
+                                                a portion of the Website. This information is used to administer the
+                                                Website, improve site content, and compile aggregated statistics for
+                                                research purposes. We also use small text files called "cookies" that
+                                                are
+                                                sent to the hard drive of your computer to store bits of information
+                                                related
+                                                to your use of the Website. You may configure your Internet browser to
+                                                reject cookies. However, if you do so, you might not be able to access
+                                                important functions or enjoy certain conveniences at this Website. We
+                                                typically do not combine passively collected data with actively
+                                                collected
+                                                Personal Information, and therefore passively collected data should not
+                                                become linked to your identity.
+                                                Security of Personal Information
+                                            </h6>
+                                            <h6>
+                                                Sean/Ellen maintains reasonable technical and organizational measures to
+                                                protect Personal Information from loss, misuse and unauthorized access,
+                                                disclosure, alteration and destruction. To the extent that we disclose
+                                                Personal Information to third party subcontractors, we require that such
+                                                third parties also maintain reasonable security and confidentiality
+                                                measures
+                                                and use the Personal Information in accordance with our instructions. In
+                                                addition, where we disclose Personal Information to Clients and other
+                                                third
+                                                parties mentioned in the foregoing paragraphs, we will request that they
+                                                properly protect the security and confidentiality of such information,
+                                                and
+                                                otherwise process such data in accordance with applicable law.
+                                            </h6>
+                                            <h5> <b>Password-Protected Areas</b></h5>
+                                            <h6>
+                                                Certain areas of the website are password-protected and reserved for
+                                                candidates and/or Clients. It is your responsibility to safeguard any
+                                                password and user ID that you have to access these portions of the
+                                                Website,
+                                                and to notify our Webmaster if you ever suspect that this password
+                                                and/or
+                                                user ID has been compromised. You are solely responsible for any
+                                                unauthorized use of this Website conducted via your password and user
+                                                ID.
+                                                Access to Personal Information
+                                            </h6>
+                                            <h6>
+                                                Sean/Ellen wishes to maintain Personal Information that is accurate,
+                                                current, and complete.
+                                            </h6>
+
+                                            <h6>
+                                                If Personal Information that you previously provided has changed, please
+                                                visit the Employer and Job Seeker page and submit your new information
+                                                using
+                                                the appropriate "Request Information" or "Submit your Resume/CV" link.
+                                                You
+                                                may also request access and the opportunity to review the Personal
+                                                Information that we maintain about you by sending us a written request
+                                                at
+                                                the postal or email address specified below. We will provide you with
+                                                such
+                                                information, and amend or delete such information upon your request, to
+                                                the
+                                                extent we believe appropriate or otherwise required under applicable
+                                                data
+                                                protection and privacy laws. We also reserve the right to take
+                                                reasonable
+                                                steps to authenticate your identity before providing such access.
+                                                Links to Other Internet Sites
+                                            </h6>
+                                            <h6>
+
+                                                The website may provide links to other third-party internet sites.
+                                                Despite
+                                                these linkages, or any references to Sean/Ellen at those Internet sites,
+                                                this Privacy Policy applies to this Website only. Please note when the
+                                                URL
+                                                indicates you are no longer on this Website, and read the privacy policy
+                                                of
+                                                each Internet site that you visit. Sean/Ellen is not responsible for the
+                                                privacy practices of such Internet sites.
+                                            </h6>
+
+                                            <h5> <b>Foreign Visitors</b></h5>
+
+                                            <h6>
+                                                This website is hosted on our computer servers in Korea. If you reside
+                                                in a
+                                                jurisdiction outside the Korea, by using the Website or submitting any
+                                                Personal Information, you expressly consent to the transfer of Personal
+                                                Information to Korea and other jurisdictions as described in this
+                                                Privacy
+                                                Policy, some or many of which may have data protection laws that differ
+                                                from
+                                                the laws in your home country.
+                                            </h6>
+                                            <h6>
+                                                Changes to Our Privacy Practices
+                                            </h6>
+                                            <h6>
+                                                Sean/Ellen reserves the right to change or amend our privacy practices
+                                                as
+                                                described herein and issue amended versions of this Privacy Policy from
+                                                time
+                                                to time in its sole discretion, as permitted by applicable law. If we
+                                                make a
+                                                material change to this Privacy Policy, we will post the revised policy
+                                                on
+                                                this web page, and we will notify you of such change by posting a
+                                                revised
+                                                link at the bottom of the Website home page that reads "Revised Privacy
+                                                Policy."
+                                            </h6>
+                                            <h6>
+                                                Nothing in this Privacy Policy is intended to create an agreement or
+                                                contract between SE and any person or entity using this Website or
+                                                providing
+                                                any Personal Information.
+                                            </h6>
+                                            <h5> <b>Contact Information</b></h5>
+                                            <h6>
+
+                                                If you have any questions about this Privacy Policy, please contact <a
+                                                    href="mailto:info@cesnagroup.com">info@cesnagroup.com</a>.
+                                            </h6>
+
+                                        </div>
+                                    </div>
+                                        <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="terms2" checked>
+                                    <label class="form-check-label labelcheck" for="terms2">
+                                       I have read and accept the terms and condition of privacy and policy.
+                                    </label>
+                                </div>
+                                </div>
+
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="signinbox2" required>
+                                    <label class="form-check-label labelcheck" for="signinbox2">
+                                        I agree to receive job alerts from Cesna Group
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="signinbox" >
+                                    <label class="form-check-label labelcheck" for="signinbox">
+                                        I agree to receive promotional materials from Cesna Group and its members, publications and digital platforms
+                                    </label>
+                                </div>
+
+                                <div>
+                                    <button type="submit" class="btnoutline2 borderpink signbtn">Sign Up</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-top">
+                <div>
+                    <a href="index.html"><img src="./img/logo-footer.svg" /></a>
+                </div>
+                <div class="socialmediafooter">
+                    <a href="https://www.linkedin.com/company/cesna/" target="_blank"><img
+                            src="./img/linkedin-icon.svg" /></a>
+                    <a href="https://twitter.com/CESNA_Group" target="_blank"><img src="./img/twitter-icon.svg" /></a>
+                    <a href="https://www.facebook.com/Cesna-Recruitment-Global-201572080777004" target="_blank"><img
+                            src="./img/facebook-icon.svg" /></a>
+                    <a href="https://www.instagram.com/cesnagroup.usa/" target="_blank"><img
+                            src="./img/instagram-icon.svg" /></a>
+                    <a href="https://www.youtube.com/channel/UC-xaOpTN26DbPNWFnt0LTdg" target="_blank"><img
+                            src="./img/youtube-icon.svg" /></a>
+                    <a href="https://mp.weixin.qq.com/s/s-GEsGa2gwTpGFY2aWQN6g" target="_blank"><img
+                            src="./img/weixin-icon.svg" /></a>
+                    <a href="https://weibo.com/5592511674/profile?topnav=1&wvr=6" target="_blank"><img
+                            src="./img/weibo-icon.svg" /></a>
+                </div>
+            </div>
+            <div class="footer-main">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="footerdiv">
+                            <h4>site map</h4>
+                            <div class="footerlinks">
+                                <p><a href="search-jobs.html">Search Jobs</a></p>
+                                <p><a href="job-seekers.html">Job seekers</a></p>
+                                <p><a href="employers.html">Employers</a></p>
+                                <p><a href="about-us.html">About Us</a></p>
+                                <p><a href="join-us.html">Join Us</a></p>
+                                <p><a href="contact-us.html">Contacts</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footerdiv">
+                            <h4>CESNA Locations</h4>
+                            <div class="footerlinks">
+                                <p>United States</p>
+                                <p>Korea</p>
+                                <p>China</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footerdiv">
+                            <h4>Contact Us</h4>
+                            <div class="footerlinks">
+                                <p><b>Head Office</b></p>
+                                <p>560 Sylvan Ave. 2nd Floor </p>
+                                <p>Englewood Cliffs, NJ</p>
+                                <p>07632 USA </p>
+                                <p><a href="tel:+12015678886">+1 201 567 8886</a></p>
+                                <p><a href="mailto:service@cesna.com">service@cesna.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footerdiv">
+
+                            <div class="footerlinks martopfooter">
+                                <p><b>China Branch</b></p>
+                                <p>Suntime International Tower 8F. 8F-1</p>
+                                <p>450 Fushan Road, Pudong,</p>
+                                <p>Shanghai, 200120 China</p>
+                                <p><a href="tel:+862168527877">+86 21 6852 7877</a></p>
+                                <p><a href="mailto:sh@cesna.com">sh@cesna.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright-area">
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 text-center text-lg-left">
+                            <div class="copyright-text">
+                                <p>© 2021 Cesna Group – Recruitment experts worldwide</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="./js/wow-js/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script type="text/javascript" src="./js/app.js"></script>
+
+
+</body>
+
+</html>
