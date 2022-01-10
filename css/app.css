@@ -2053,8 +2053,10 @@ margin-top: 10px;
   margin-top: 40px;
 }
 .pointssignin{
-  margin-top: 35px;
+  margin-top: 5px;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 .pointssignin h6{
       font-style: normal;
@@ -2074,10 +2076,10 @@ margin-top: 10px;
 .pointssignin img{
   display: block;
   margin-bottom: 20px;
-    height: 150px;
-    width: 100%;
+    height: 160px;
+    width: 300px;
     object-fit: cover;
-    object-position: bottom;
+    object-position: top;
 }
 .createaccbtn{
   font-size: 16px;
@@ -2536,7 +2538,9 @@ border-right: 1px solid #bcbec0;
     font-size: 16px;
   }
   .contactusd1 img {
-    margin-top: 2rem;
+    margin-top: 0rem;
+    width: 100%;
+    height: auto;
   }
   .txtaddress {
     padding-left: 0px;
