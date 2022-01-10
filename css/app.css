@@ -2132,6 +2132,7 @@ border-right: 1px solid #bcbec0;
   .containercus {
     max-width: 83% !important;
   }
+ 
 }
 @media (max-width: 1400px) {
   .containercus {
@@ -2209,7 +2210,12 @@ border-right: 1px solid #bcbec0;
     font-size: 17px;
   }
 }
-
+@media(min-width:1200px){
+   .pointssignin img{
+    height: 190px;
+        max-width: 415px;
+  }
+}
 @media (max-width: 1200px) {
   .movtopimg img {
     width: 100%;
