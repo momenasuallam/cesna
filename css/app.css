@@ -2077,9 +2077,9 @@ margin-top: 10px;
   display: block;
   margin-bottom: 20px;
     height: 160px;
-    width: 300px;
+    width: 100%;
     object-fit: cover;
-    object-position: top;
+    object-position: bottom;
 }
 .createaccbtn{
   font-size: 16px;
