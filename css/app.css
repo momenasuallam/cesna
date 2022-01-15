@@ -114,8 +114,8 @@ button:focus {
 .bgbanner {
   height: 100vh;
   background-image: linear-gradient(
-      rgba(89, 47, 47, 0.2),
-      rgba(89, 47, 47, 0.2)
+      rgba(89, 47, 47, 0),
+      rgba(89, 47, 47, 0)
     ),
     url("../img/home-header.png");
   background-size: cover;
@@ -127,10 +127,10 @@ button:focus {
   height: 100%;
   padding: 10rem 20px 4rem;
   background-image: linear-gradient(
-      rgba(89, 47, 47, 0.2),
-      rgba(89, 47, 47, 0.2)
+      rgba(89, 47, 47, 0),
+      rgba(89, 47, 47, 0)
     ),
-    url("../img/about-header.png");
+    url("../img/KualaLumpur\ Malaysia.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -140,8 +140,8 @@ button:focus {
   height: 100%;
   padding: 12rem 20px 6rem;
   background-image: linear-gradient(
-      rgba(89, 47, 47, 0.2),
-      rgba(89, 47, 47, 0.2)
+      rgba(89, 47, 47, 0),
+      rgba(89, 47, 47, 0)
     ),
     url("../img/cu-header.png");
   background-size: cover;
@@ -153,10 +153,10 @@ button:focus {
   height: 100%;
   padding: 10rem 20px 4rem;
   background-image: linear-gradient(
-      rgba(89, 47, 47, 0.2),
-      rgba(89, 47, 47, 0.2)
+      rgba(89, 47, 47, 0),
+      rgba(89, 47, 47, 0)
     ),
-    url("../img/emp-header.png");
+    url("../img/South\ Korea.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -166,8 +166,8 @@ button:focus {
   height: 100%;
   padding: 10rem 20px 4rem;
   background-image: linear-gradient(
-      rgba(89, 47, 47, 0.2),
-      rgba(89, 47, 47, 0.2)
+      rgba(89, 47, 47, 0),
+      rgba(89, 47, 47, 0)
     ),
     url("../img/js-header.png");
   background-size: cover;
@@ -179,8 +179,8 @@ button:focus {
   height: 100%;
   padding: 10rem 20px 4rem;
   background-image: linear-gradient(
-      rgba(89, 47, 47, 0.2),
-      rgba(89, 47, 47, 0.2)
+      rgba(89, 47, 47, 0),
+      rgba(89, 47, 47, 0)
     ),
     url("../img/ju-header.png");
   background-size: cover;
@@ -192,8 +192,8 @@ button:focus {
   height: 100%;
   padding: 10rem 20px 4rem;
   background-image: linear-gradient(
-      rgba(89, 47, 47, 0.2),
-      rgba(89, 47, 47, 0.2)
+      rgba(89, 47, 47, 0),
+      rgba(89, 47, 47, 0)
     ),
     url("../img/sj-header.png");
   background-size: cover;
