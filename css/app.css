@@ -126,13 +126,13 @@ button:focus {
 .aboutbanner {
   height: 100%;
   padding: 10rem 20px 4rem;
-  background-image: linear-gradient(
+     background-image: linear-gradient(
       rgba(89, 47, 47, 0),
       rgba(89, 47, 47, 0)
     ),
-    url("../img/KualaLumpur\ Malaysia.jpg");
+    url("../img/South\ Korea.jpeg");
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
 }
@@ -140,15 +140,38 @@ button:focus {
   height: 100%;
   padding: 12rem 20px 6rem;
   background-image: linear-gradient(
-      rgba(89, 47, 47, 0),
-      rgba(89, 47, 47, 0)
+      rgba(89, 47, 47, 0.2),
+      rgba(89, 47, 47, 0.2)
     ),
-    url("../img/cu-header.png");
+    url("../img/contactus.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
-}
+ }
+ .regbanner {
+  height: 100%;
+  padding: 12rem 20px 6rem;
+  background-image: linear-gradient(
+      rgba(89, 47, 47, 0.2),
+      rgba(89, 47, 47, 0.2)
+    ),
+    url("../img/register.png");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+ }
+ .loginbanner {
+  height: 100%;
+  padding: 12rem 20px 6rem;
+  background-image: linear-gradient(
+      rgba(89, 47, 47, 0.2),
+      rgba(89, 47, 47, 0.2)
+    ),
+    url("../img/login.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ }
 .empbanner {
   height: 100%;
   padding: 10rem 20px 4rem;
@@ -156,9 +179,9 @@ button:focus {
       rgba(89, 47, 47, 0),
       rgba(89, 47, 47, 0)
     ),
-    url("../img/South\ Korea.jpeg");
+    url("../img/KualaLumpur\ Malaysia.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
 }
@@ -182,7 +205,7 @@ button:focus {
       rgba(89, 47, 47, 0),
       rgba(89, 47, 47, 0)
     ),
-    url("../img/ju-header.png");
+    url("../img/joinus.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
