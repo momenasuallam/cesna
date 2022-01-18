@@ -130,7 +130,7 @@ button:focus {
       rgba(89, 47, 47, 0),
       rgba(89, 47, 47, 0)
     ),
-    url("../img/South\ Korea.jpeg");
+    url("../img/SouthKorea.png");
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -223,6 +223,17 @@ button:focus {
   background-position: center;
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
+}
+@media(min-width:1400px){
+  .empbanner{
+    padding: 15rem 20px 8rem;
+  }
+}
+.error { 
+color: #ff0000;
+    font-weight: normal;
+    font-size: 15px;
+    margin-top: 2px;
 }
 .positingd1 {
   top: 0;
@@ -575,11 +586,14 @@ input::placeholder {
   width: 80%;
 }
 .linkedd1 {
+  height: 100%;
 }
 .linkedd1 img {
   max-width: 456px;
   width: 100%;
   transition: all 0.5s;
+      height: 100%;
+    object-fit: cover;
 }
 .linkedd1 img:hover {
   transform: scale(1.03);
@@ -2135,7 +2149,7 @@ border-right: 1px solid #bcbec0;
   background-color: var(--maincolor) !important;
 }
 .labelcheck{
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 500;
 }
 .form-check-input[type=checkbox] {
@@ -2567,7 +2581,7 @@ border-right: 1px solid #bcbec0;
     font-size: 16px;
   }
   .contactusd1 img {
-    margin-top: 0rem;
+    margin-top: 2rem;
     width: 100%;
     height: auto;
   }
