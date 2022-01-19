@@ -201,12 +201,10 @@
         </section>
 
         <section class="latest-jobs teamdivs2">
-            <div class="container teamsdivcont customsmscroll">
-                <div class="">
-                    <div class="teamsartdiv">
-                        <div class="row wow fadeIn" data-wow-duration="2s">
-                            <div class="col-md-3">
-                                <div class="specrowdiv">
+            <div class="container">
+                 <div class="caroseldiv ">
+                    <div class="teamsartdiv slick-carousel wow fadeIn" data-wow-duration="2s">
+                           <div class="specrowdiv">
                                     <img src="./img/sp1.svg" />
                                     <h4>Human Resources & Back Office Operation</h4>
                                     <ul>
@@ -216,8 +214,7 @@
                                         <li>HRD, HRM, HRBP</li>
                                     </ul>
                                 </div>
-                            </div>
-                            <div class="col-md-3">
+
                                 <div class="specrowdiv">
                                     <img src="./img/sp2.svg" />
                                     <h4>Accounting & Finance</h4>
@@ -228,9 +225,8 @@
                                         <li>CFO</li>
                                     </ul>
                                 </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="specrowdiv">
+
+                                 <div class="specrowdiv">
                                     <img src="./img/sp3.svg" style="width: 40px;" />
                                     <h4>Banking & Financial Services</h4>
                                     <ul>
@@ -240,8 +236,7 @@
                                         <li>Securities</li>
                                     </ul>
                                 </div>
-                            </div>
-                            <div class="col-md-3">
+
                                 <div class="specrowdiv">
                                     <img src="./img/sp4.svg" />
                                     <h4>Healthcare</h4>
@@ -252,9 +247,8 @@
                                         <li>Medical devices</li>
                                     </ul>
                                 </div>
-                            </div>
 
-                            <div class="col-md-3">
+
                                 <div class="specrowdiv">
                                     <img src="./img/sp5.svg" />
                                     <h4>Manufacturing & Engineering</h4>
@@ -267,10 +261,8 @@
                                         <li>Electrical Components</li>
                                     </ul>
                                 </div>
-                            </div>
 
-                            <div class="col-md-3">
-                                <div class="specrowdiv">
+                                 <div class="specrowdiv">
                                     <img src="./img/sp6.svg" />
                                     <h4>IT & Technology</h4>
                                     <ul>
@@ -280,9 +272,8 @@
                                         <li>ERP</li>
                                     </ul>
                                 </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="specrowdiv">
+
+                                 <div class="specrowdiv">
                                     <img src="./img/sp7.svg" />
                                     <h4>Consumer & Retails</h4>
                                     <ul>
@@ -294,9 +285,8 @@
                                         <li>Media/ Entertainment</li>
                                     </ul>
                                 </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="specrowdiv">
+
+                                  <div class="specrowdiv">
                                     <img src="./img/sp8.svg" />
                                     <h4>Real Estate & Construction</h4>
                                     <ul>
@@ -306,9 +296,8 @@
                                         <li>Energy Consulting</li>
                                     </ul>
                                 </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="specrowdiv">
+
+                                  <div class="specrowdiv">
                                     <img src="./img/sp9.svg" />
                                     <h4>Supply Chain</h4>
                                     <ul>
@@ -318,9 +307,8 @@
                                         <li>Data Analyst</li>
                                     </ul>
                                 </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="specrowdiv">
+
+                                  <div class="specrowdiv">
                                     <img src="./img/sp10.svg" />
                                     <h4>Legal & Professional Services</h4>
                                     <ul>
@@ -329,9 +317,8 @@
                                         <li>IT consulting</li>
                                     </ul>
                                 </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="specrowdiv">
+
+                                 <div class="specrowdiv">
                                     <img src="./img/sp11.svg" />
                                     <h4>Sales & Marketing</h4>
                                     <ul>
@@ -343,9 +330,8 @@
                                         <li>Exhibitions/ Events</li>
                                     </ul>
                                 </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="specrowdiv">
+
+                                 <div class="specrowdiv">
                                     <img src="./img/sp12.svg" />
                                     <h4>Executive Search</h4>
                                     <ul>
@@ -354,10 +340,9 @@
                                         <li>Director</li>
                                     </ul>
                                 </div>
-                            </div>
+
                         </div>
-                    </div>
-                </div>
+                        </div>
             </div>
 
         </section>
@@ -587,10 +572,50 @@
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
     <script src="./js/wow-js/wow.js"></script>
-    <script>
-        new WOW().init();
-    </script>
+       <!-- slick slider -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"
+    ></script>
+         <script src="./js/wow-js/wow.js"></script>
+          <script>
+              new WOW().init();
+              </script>
     <script type="text/javascript" src="./js/app.js"></script>
+  
+    <script>
+        $(".slick-carousel").slick({
+  infinite: false,
+  slidesToShow: 3, // Shows a three slides at a time
+  slidesToScroll: 1, // When you click an arrow, it scrolls 1 slide at a time
+  arrows: true, // Adds arrows to sides of slider
+  dots: false, // Adds the dots on the bottom
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        // centerMode: true,
+      },
+    },
+    {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 2,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+});
+    </script>
 
 
 </body>

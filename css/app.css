@@ -967,7 +967,7 @@ input::placeholder {
   position: relative;
 }
 .specrowdiv img {
-  width: 50px;
+  width: 50px !important;
   margin-bottom: 30px;
 }
 .specrowdiv h4 {
@@ -2835,5 +2835,40 @@ border-right: 1px solid #bcbec0;
 }
 .slick-next {
     right: -5px;
+}
+}
+.loginpageform select{
+  padding: 8px 0.75rem;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    width: 100%;
+    border-radius: 0.25rem
+}
+.phoneflex{
+  display: flex;
+  flex-wrap: wrap;
+}
+.pfl1{
+width: 40%;
+
+}
+.pfl2{
+  padding-left: 4px;
+width: 60%;
+}
+@media(max-width:600px){
+  .pfl1{
+width: 100%;
+
+}
+.pfl2{
+  padding-left: 0px;
+  padding-top: 4px;
+width: 100%;
 }
 }
