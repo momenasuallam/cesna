@@ -95,13 +95,14 @@
                                     <input type="text" name="lname" id="lname" class="form-control">
                                 </div>
                                 <div class="mb-3">
-                                    <label class="form-label" for="email">Your email address</label>
-                                    <input type="email" name="email" id="email" class="form-control">
+                                    <label class="form-label" for="femail">Your email address</label>
+                                    <input type="email" name="entry[email]" id="femail" class="form-control">
                                 </div>
-                                <div class="mb-3">
-                                    <label class="form-label" for="cemail">Confirm email address</label>
-                                    <input type="email" form="cemail" id="cemail" class="form-control">
+                                  <div class="mb-3">
+                                    <label class="form-label" for="emailconfirm">Confirm email address</label>
+                                    <input type="email" name="emailconfirm" id="emailconfirm" class="form-control">
                                 </div>
+                            
                                 <div class="mb-3">
                                     <label class="form-label" for="password">Password</label>
                                     <input type="password" name="password" id="passd" class="form-control">
@@ -1039,7 +1040,7 @@
 
     </footer>
 
-
+    <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -1048,9 +1049,9 @@
     <script>
         var $form = $("form"),
             $successMsg = $(".alert");
-        $.validator.addMethod("letters", function (value, element) {
-            return this.optional(element) || value == value.match(/^[a-zA-Z\s]*$/);
-        });
+        // $.validator.addMethod("letters", function (value, element) {
+        //     return this.optional(element) || value == value.match(/^[a-zA-Z\s]*$/);
+        // });
         $form.validate({
             rules: {
                 fname: {
@@ -1059,13 +1060,13 @@
                 lname: {
                     required: true
                 },
-                email: {
+                 'entry[email]': {
                     required: true,
                     email: true
                 },
-                cemail: {
+                 emailconfirm: {
                     required: true,
-                    email: true
+                     equalTo: '[name="entry[email]"]'
                 },
                 password: {
                     required: true,
@@ -1080,25 +1081,26 @@
                 },
                 upresume: {
                     required: true
-                }
+                },
+                
 
             },
             messages: {
                 password: {
-                    required: "Must Fill",
+                    required: "Please fill out this field",
                     minlength: "Your password must be at least 10 characters long"
                 },
-                email: "Must Fill",
-                cemail: "Must Fill",
-                fname: "Must Fill",
-                lname: "Must Fill",
-                country: "Must Fill",
-                upresume: "Must Fill",
-                phone: "Must Fill"
-
+                'entry[email]': "Please enter the correct email address",
+                emailconfirm: "Please enter the correct email address",
+                fname: "Please fill out this field",
+                lname: "Please fill out this field",
+                country: "Please fill out this field",
+                upresume: "Please fill out this field",
+                phone: "Please fill out this field",
             },
             submitHandler: function () {
                 $successMsg.show();
+                 return false;
             }
         });
     </script>
@@ -1109,7 +1111,28 @@
         new WOW().init();
     </script>
     <script type="text/javascript" src="./js/app.js"></script>
+    <script>
+        // ===== Scroll to Top ==== 
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+    } else {
+        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+    }
+});
+$('#return-to-top').click(function() {      // When arrow is clicked
+    $('body,html').animate({
+        scrollTop : 0                       // Scroll to top of body
+    }, 500);
+});
+    </script>
 
+    <!-- Start of LiveChat (www.livechatinc.com) code -->
+<script>
+    window.__lc = window.__lc || {};
+    window.__lc.license = 13538502;
+    ;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.livechatinc.com/tracking.js",t.head.appendChild(n)}};!n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))
+</script>
 
 </body>
 

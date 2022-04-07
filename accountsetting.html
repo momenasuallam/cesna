@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="./css/navbar.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/app.css" />
-        <link rel="stylesheet" href="./css/animate.css" />
+    <link rel="stylesheet" href="./css/animate.css" />
+    <link rel="stylesheet" href="./css/animate.css" />
 
 
 
@@ -33,12 +34,12 @@
 
                     <!--  Menu compatible with wp_nav_menu  -->
                     <ul id="primary-menu" class="menu nav-menu">
-                        <li class="menu-item current-menu-item"><a class="nav__link" href="search-jobs.html">Search
+                        <li class="menu-item current-menu-item active-menu"><a class="nav__link"
+                                href="search-jobs.html">Search
                                 Jobs</a>
 
                         </li>
-                        <li class="menu-item current-menu-item active-menu"><a class="nav__link"
-                                href="job-seekers.html">Job
+                        <li class="menu-item current-menu-item"><a class="nav__link" href="job-seekers.html">Job
                                 Seekers</a></li>
                         <li class="menu-item current-menu-item"><a class="nav__link" href="employers.html">Employers</a>
                         </li>
@@ -63,8 +64,8 @@
                 </div>
             </nav>
         </div>
-        <div class="jobseekerbanner position-relative w-100">
-            <div class="text-white d-flex flex-column positingd1">
+        <div class="searchjobsbanner position-relative w-100">
+            <div class=" text-white d-flex flex-column positingd1">
                 <div class="container">
                     <div class="headerdivtxt wow fadeIn" data-wow-duration="2s">
                         <h1 class="fontjost">Worldwide recruitment company</h1>
@@ -89,82 +90,66 @@
         </div>
     </header>
 
-    <section class="linkingsec abu1sec jsmaindiv">
+    <section class="linkingsec abu1sec">
         <img class="printimg" src="./img/home-print.svg" />
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <div class="linkedd1">
-                        <img src="./img/js-1.png" />
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="linkedd2 wow fadeInLeft" data-wow-duration="1s">
-                        <h2 class="h2tag">Find your best Job</h2>
+                <div class="col-md-4">
+                    <div class="filterdiv1">
+                        <h2 class="h2tag">My Account</h2>
                         <hr class="hrwid" />
-                        <p class="ptag1">
-                            Our expert consultants each focus on individual designated industries and occupations. Such
-                            specialization allows our consultants to become deeply familiar with the dynamics and
-                            intricacies of their sector and to develop comprehensive social networks within that sector.
-                            Our services have been recognized for our impressive in-house research competence, the speed
-                            and flexibility of our response, as well as our high success rates in discovering qualified
-                            talents for executives and managerial positions.
-                        </p>
-                        <p class="ptag1">
-                            We are experts in consulting you in your career, driving the hiring process forward,
-                            scheduling meetings with key decision makers and negotiating salaries on your behalf.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                        <ul class="list-details list-unstyled">
+                            <li><a href="my-account.html" class=""><i class="fa fa-user me-3"
+                                        aria-hidden="true"></i>Personal Details</a></li>
+                            <li><a href="application.html" class=""><i class="fa fa-file-text me-3"
+                                        aria-hidden="true"></i>Application History</a></li>
+                            <li><a href="savejob.html" class=""><i class="fa fa-bell me-3" aria-hidden="true"></i>Saved
+                                    Jobs</a></li>
+                            <li><a href="accountsetting.html" class="active"><i class="fa fa-gear me-3"
+                                        aria-hidden="true"></i>Account Settings</a></li>
+                        </ul>
 
-    <section class="processsec">
-        <div class="container">
-            <hr class="hrwid" />
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="processmaindiv1">
-                        <h2 class="h2tag">Our Process</h2>
-                        <div class="processdivs2">
-                            <p><span>01</span>Registration</p>
-                            <p><span>02</span>Pre-interview (Career Consulting and Introduction of Opportunities)</p>
-                            <p><span>03</span>Application - Screening - Interview</p>
-                            <p><span>04</span>Offer & Start Work</p>
-                            <p><span>05</span>Follow-up After Starting</p>
-                        </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="processform wow fadeIn" data-wow-duration="2s">
-                        <h6>Search job</h6>
-                        <div class="formapply">
-                            <form>
-                                <div>
-                                    <input type="text" placeholder="Specialisation" />
-                                </div>
-                                <div>
-                                    <input type="text" placeholder="Location" />
-                                </div>
-                                <div>
-                                    <input type="text" placeholder="Keyword" />
-                                </div>
-                                <div class="btnssrhjob">
-                                    <button type="submit" class="btnsec btnsecWidth">Search</button>
-                                   <a href="login.html" class="btnoutline2 borderpink bg-transparent">Submit
-                                        your CV</a>
-                                </div>
-                            </form>
+                <div class="col-md-8 ps-md-5">
+                    <div class="myaccount">
+                        <div class="filterdiv1 personal">
+                            <span class="d-block pb-4"><i class="fa fa-user-circle-o me-3"
+                                    aria-hidden="true"></i>Account Settings</span>
                         </div>
+                        <form action="" class="py-4 formapply ">
+                            <div class="form-group mb-3">
+                                <input type="text" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="form-group mb-3">
+                                <input type="text" class="form-control" placeholder="Password">
+                            </div>
+                            <div class="form-group mb-3">
+                                <input type="text" class="form-control" placeholder="Change Password">
+                            </div>
+                            <div class="form-group mb-4">
+                                <a href="#modalwithdraw" class="txtwithdraw" data-bs-toggle="modal"
+                                    data-bs-target="#modalwithdraw">Withdraw Account</a>
+                            </div>
+                            <a href="#" class="btnsec position-unset d-inline-block">Submit</a>
+                        </form>
+
                     </div>
+
+
                 </div>
             </div>
+
         </div>
     </section>
 
 
-   <footer class="footer-section">
+
+
+
+
+
+    <footer class="footer-section">
         <div class="container">
             <div class="footer-top">
                 <div>
@@ -221,7 +206,7 @@
                                 <p>Englewood Cliffs, NJ</p>
                                 <p>07632 USA </p>
                                 <p><a href="tel:+12015678886">+1 201 567 8886</a></p>
-                                 <p><a href="mailto:service@cesna.com">service@cesna.com</a></p>
+                                <p><a href="mailto:service@cesna.com">service@cesna.com</a></p>
                             </div>
                         </div>
                     </div>
@@ -252,38 +237,87 @@
         </div>
 
     </footer>
-
     <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalwithdraw" tabindex="-1" aria-labelledby="modalwithdrawLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0 pb-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-4 modalwithdrawalcl">
+                    <h2>Account Withdrawal Agreement</h2>
+                    <p>Member information will be deleted after leaving the membership and the deleted data will not be
+                        recovered. </p>
+                    <div>
+                        <form method="post">
+                            <div class="mb-3">
+                                <label class="form-label" for="password">Enter Password</label>
+                                <input type="password" name="password" id="passd"
+                                    placeholder="PLease enter your current passowrd" class="form-control"required>
+                            </div>
+                            <button type="submit" name="submit"
+                                class="btnsec position-unset d-inline-block noborder">Delete account</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
-    <script type="text/javascript" src="./js/app.js"></script>
-       <script src="./js/wow-js/wow.js"></script>
-          <script>
-              new WOW().init();
-              </script>
 
-<script>
-    // ===== Scroll to Top ==== 
-$(window).scroll(function() {
-if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
-    $('#return-to-top').fadeIn(200);    // Fade in the arrow
-} else {
-    $('#return-to-top').fadeOut(200);   // Else fade out the arrow
-}
-});
-$('#return-to-top').click(function() {      // When arrow is clicked
-$('body,html').animate({
-    scrollTop : 0                       // Scroll to top of body
-}, 500);
-});
-</script>
-<!-- Start of LiveChat (www.livechatinc.com) code -->
-<script>
-    window.__lc = window.__lc || {};
-    window.__lc.license = 13538502;
-    ;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.livechatinc.com/tracking.js",t.head.appendChild(n)}};!n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))
-</script>
+
+    <script src="./js/wow-js/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script type="text/javascript" src="./js/app.js"></script>
+    <script>
+        // ===== Scroll to Top ==== 
+        $(window).scroll(function () {
+            if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+                $('#return-to-top').fadeIn(200);    // Fade in the arrow
+            } else {
+                $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+            }
+        });
+        $('#return-to-top').click(function () {      // When arrow is clicked
+            $('body,html').animate({
+                scrollTop: 0                       // Scroll to top of body
+            }, 500);
+        });
+    </script>
+    <script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('#imagePreview').css('background-image', 'url(' + e.target.result + ')');
+                    $('#imagePreview').hide();
+                    $('#imagePreview').fadeIn(650);
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        $("#imageUpload").change(function () {
+            readURL(this);
+        });
+    </script>
+
+    <!-- Start of LiveChat (www.livechatinc.com) code -->
+    <script>
+        window.__lc = window.__lc || {};
+        window.__lc.license = 13538502;
+        ; (function (n, t, c) { function i(n) { return e._h ? e._h.apply(null, n) : e._q.push(n) } var e = { _q: [], _h: null, _v: "2.0", on: function () { i(["on", c.call(arguments)]) }, once: function () { i(["once", c.call(arguments)]) }, off: function () { i(["off", c.call(arguments)]) }, get: function () { if (!e._h) throw new Error("[LiveChatWidget] You can't use getters before load."); return i(["get", c.call(arguments)]) }, call: function () { i(["call", c.call(arguments)]) }, init: function () { var n = t.createElement("script"); n.async = !0, n.type = "text/javascript", n.src = "https://cdn.livechatinc.com/tracking.js", t.head.appendChild(n) } }; !n.__lc.asyncInit && e.init(), n.LiveChatWidget = n.LiveChatWidget || e }(window, document, [].slice))
+    </script>
+
 </body>
 
 </html>

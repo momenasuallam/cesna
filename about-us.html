@@ -173,7 +173,7 @@
         </div>
     </section>
 
-    <section class="teamabmain">
+    <section class="teamabmain mt-md-5 pt-md-5">
         <section class="teamdiv1">
             <div class="container">
                 <div class="">
@@ -194,7 +194,7 @@
                         </div>
                     </div>
                     <div>
-                        <a class="viewall" href="#">View all<i class="fa fa-arrow-right"></i></a>
+                        <!-- <a class="viewall" href="#">View all<i class="fa fa-arrow-right"></i></a> -->
                     </div>
                 </div>
             </div>
@@ -455,7 +455,7 @@
                     <div class="btabdivstxt">
                         <hr class="hrwid" />
                         <h2>Are you recruiting for a position and need to hire talent now?</h2>
-                        <a href="#" class="btnsec">Submit a Vacancy</a>
+                        <a href="employers.html" class="btnsec">Submit a Vacancy</a>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -465,7 +465,7 @@
                     <div class="btabdivstxt">
                         <hr class="hrwid" />
                         <h2>Explore of diverse jobs by register with us</h2>
-                        <a href="#" class="btnsec">Register as a Candidate</a>
+                        <a href="register.html" class="btnsec">Register as a Candidate</a>
                     </div>
                 </div>
 
@@ -562,7 +562,7 @@
         </div>
 
     </footer>
-
+    <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
      <script src="https://getbootstrap.com/docs/5.1/dist/js/bootstrap.bundle.min.js"></script>
 
 
@@ -578,6 +578,21 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"
     ></script>
          <script src="./js/wow-js/wow.js"></script>
+         <script>
+            // ===== Scroll to Top ==== 
+    $(window).scroll(function() {
+        if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+            $('#return-to-top').fadeIn(200);    // Fade in the arrow
+        } else {
+            $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+        }
+    });
+    $('#return-to-top').click(function() {      // When arrow is clicked
+        $('body,html').animate({
+            scrollTop : 0                       // Scroll to top of body
+        }, 500);
+    });
+        </script>
           <script>
               new WOW().init();
               </script>
@@ -618,7 +633,12 @@
   ],
 });
     </script>
-
+<!-- Start of LiveChat (www.livechatinc.com) code -->
+<script>
+    window.__lc = window.__lc || {};
+    window.__lc.license = 13538502;
+    ;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.livechatinc.com/tracking.js",t.head.appendChild(n)}};!n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))
+</script>
 
 </body>
 

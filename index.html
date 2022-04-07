@@ -70,8 +70,8 @@
                             Asia/Pacific, China, Europe and America.</p>
 
                         <div class="btnshead">
-                            <a href="#" class="fontrale">latest jobs</a>
-                            <a href="#" class="fontrale">register now</a>
+                            <a href="search-jobs.html" class="fontrale">latest jobs</a>
+                            <a href="register.html" class="fontrale">register now</a>
                         </div>
 
                         <div class="jobform" >
@@ -115,7 +115,7 @@
                         <p class="ptag1">We help our clients search for successful and motivated employees who will
                             contribute to a dynamic, productive, and efficient professional environment.</p>
 
-                        <a href="#" class="btnpri btnfull btnsec">Register now</a>
+                        <a href="register.html" class="btnpri btnfull btnsec">Register now</a>
                     </div>
                 </div>
             </div>
@@ -131,7 +131,7 @@
                         <hr class="hrwid" />
                     </div>
                     <div>
-                        <a class="viewall" href="#">View all<i class="fa fa-arrow-right"></i></a>
+                        <a class="viewall" href="search-jobs.html">View all<i class="fa fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -191,7 +191,7 @@
                             identifying and recruiting senior- and executive-level employees, including directors,
                             managers, C-level executives, and SVPs, to give our clients the invaluable advantage of
                             strong and dynamic leadership.</p>
-                        <a href="#" class="btnsec">Register now</a>
+                        <a href="register.html" class="btnsec">Register now</a>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -430,7 +430,7 @@
                     </div>
                 </div>
             </div>
-            <a class="btnpri btnfull btnsec" href="#"> Upload your CV</a>
+            <a class="btnpri btnfull btnsec" href="login.html"> Upload your CV</a>
         </div>
     </section>
 
@@ -442,7 +442,7 @@
                 Register with us to receive job alerts or contact a Cesna career consultant to help you take the next
                 step.
             </p>
-            <a href="#" class="btnoutline2">Register now</a>
+            <a href="register.html" class="btnoutline2">Register now</a>
         </div>
     </section>
 
@@ -577,7 +577,7 @@
 
     </footer>
 
-
+    <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
    <script
       type="text/javascript"
       src="https://code.jquery.com/jquery-3.5.1.js"
@@ -597,6 +597,22 @@
               new WOW().init();
               </script>
     <script type="text/javascript" src="./js/app.js"></script>
+
+    <script>
+        // ===== Scroll to Top ==== 
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+    } else {
+        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+    }
+});
+$('#return-to-top').click(function() {      // When arrow is clicked
+    $('body,html').animate({
+        scrollTop : 0                       // Scroll to top of body
+    }, 500);
+});
+    </script>
   
     <script>
         $(".slick-carousel").slick({
@@ -633,7 +649,12 @@
   ],
 });
     </script>
-
+<!-- Start of LiveChat (www.livechatinc.com) code -->
+<script>
+    window.__lc = window.__lc || {};
+    window.__lc.license = 13538502;
+    ;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.livechatinc.com/tracking.js",t.head.appendChild(n)}};!n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))
+</script>
 </body>
 
 </html>
