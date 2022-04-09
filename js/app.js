@@ -11,7 +11,18 @@ $(document).ready(function () {
   function toggleBodyClass(className) {
     document.body.classList.toggle(className);
   }
+
+  $(".mainchatbox").click(function () {
+    $(".chatdiv").show();
+    // alert("ok");
+  });
+  $(".closechatbox").click(function () {
+    $(".chatdiv").hide();
+  });
+
 });
+
+
 
 
         // wow Animation
