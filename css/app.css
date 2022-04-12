@@ -1947,13 +1947,16 @@ input::placeholder {
   justify-content: end;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   position: relative;
 }
 
 .jobtidiv1 img {
-  width: 145px;
-  margin-right: 12px;
+ width: 185px;
+    margin-right: 12px;
+    position: absolute;
+    right: 118px;
+    top: -4px;
 }
 
 .jobtidiv1 h3 {
@@ -1965,7 +1968,7 @@ input::placeholder {
   color: #000000;
   position: absolute;
   left: 0;
-  top: 5px;
+  top: 2px;
 }
 
 .jobtidiv1 span {
@@ -1977,6 +1980,9 @@ input::placeholder {
   color: #000000;
   margin-right: 10px;
   transition: all 0.5s;
+      position: absolute;
+    right: 0;
+    top: 6px;
 }
 
 .jobtidiv1 span .fa {
@@ -2042,6 +2048,18 @@ input::placeholder {
 
 .jobsrhdivs a {
   margin-left: auto;
+}
+@media(max-width:1000px){
+  .rowjobserach .col-md-4{
+   width: 100% !important;
+  }
+  .rowjobserach .col-md-8{
+     width: 100% !important;
+  }
+  .jobstitlediv {
+    padding: 0 0rem;
+    padding-top: 0rem;
+}
 }
 
 .processsec {
@@ -3310,7 +3328,9 @@ input::placeholder {
 
   .jobtidiv1 img {
     width: 120px;
-    margin-right: 12px;
+    margin-right: 0px;
+    top: 2px;
+    right: 108px;
   }
 
   .jobtidiv1 h3 {
@@ -3380,24 +3400,31 @@ input::placeholder {
   background-color: #e9ecef;
   border: 1px solid #dee2e6;
   transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
 }
 
 .pageind2 {
   font-size: 14px !important;
-  line-height: 27px;
+  /* line-height: 22px; */
   font-weight: 500;
+      
 }
 
 .pageind3 {
   font-size: 14px !important;
-  line-height: 27px;
+  /* line-height: 22px; */
   font-weight: 500;
+    
 }
 
 .pageind4 {
   font-size: 14px !important;
-  line-height: 27px;
+  /* line-height: 22px; */
   font-weight: 500;
+     
 }
 
 .page-link:focus {
@@ -3906,10 +3933,9 @@ table>:not(:last-child)>:last-child>* {
   min-height: 56px;
   min-width: 56px;
   margin-bottom: 16px;
-  margin-right: 16px;
   position: fixed;
   bottom: 56px;
-  right: 0px;
+  right: 15px;
   opacity: 1;
   max-height: 56px;
   max-width: 56px;
@@ -4093,28 +4119,45 @@ table>:not(:last-child)>:last-child>* {
 }
 
 .iconplacehere img {
-  width: 250px;
+  width: 100%;
 }
-
+/* .Withdrawalbtn{
+  float: right;
+} */
+.flexwith1{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.flexwith1 div{
+  margin-bottom: 15px;
+}
+.order2{
+  order: 2;
+}
 @media(max-width: 600px) {
   .page-link {
-    padding: 6px 13px !important;
+    padding: 6px 13px;
     font-size: 14px !important;
     height: 35px !important;
   }
 
   .pageind2 {
     font-size: 12px !important;
-    line-height: 20px;
+    /* line-height: 20px; */
+     padding-top: 4px !important;
   }
 
   .pageind3 {
     font-size: 12px !important;
-    line-height: 20px;
+    /* line-height: 20px; */
+     padding-top: 4px !important;
   }
 
   .pageind4 {
     font-size: 12px !important;
-    line-height: 20px;
+    /* line-height: 20px; */
+     padding-top: 4px !important;
   }
 }
