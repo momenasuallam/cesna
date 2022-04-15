@@ -502,14 +502,14 @@
              <div class="topchatbar">
                <div class="rightchatd">
                     <img src="./img/cesna-c.jpg" />
-                      <h2>Cesna Group</h2>     
+                       <h2>Request a call back</h2>     
                </div>
                <div>
                   <a class="closechatbox"> <i class="fa fa-times"></i></a>
                </div>
              </div>
              <div class="chatbodycl">
-                  <small>Today, 9:53pm</small>
+                   
                   <div class="chatbg1">
                       <h2>Welcome to Cesna!</h2>
                      <p>
@@ -518,29 +518,30 @@
                   </div>
                    
                   <div class="formchat">
-                        <form role="form">
+                        <form role="form" id="rollbackform">
                                 <div class="">
-                                    <input type="text" name="fname" id="fname" class="form-control" placeholder="First name">
+                                    <input type="text" name="finame" id="finame" class="form-control" placeholder="First name">
                                 </div>
                                 <div class="">
-                                    <input type="text" name="lname" id="lname" class="form-control" placeholder="Last name">
+                                    <input type="text" name="liname" id="liname" class="form-control" placeholder="Last name">
                                 </div>
                                 <div class="">
-                                    <input type="email" name="entry[email]" id="femail" placeholder="Email" class="form-control">
+                                    <input type="email" name="emaiil" id="emaiil" placeholder="Email" class="form-control">
                                 </div>
                                  <div class="">
-                                    <input type="text" name="jobtitle" id="jobtitle" class="form-control" placeholder="Job title">
+                                    <input type="text" name="jobititle" id="jobititle" class="form-control" placeholder="Job title">
                                 </div>
                                  <div class="">
-                                      <input type="text" name="Company" id="Company" class="form-control" placeholder="Company name">
+                                      <input type="text" name="Companyiname" id="Companyiname" class="form-control" placeholder="Company name">
                                 </div>
                                   <div class="">
-                                    <input type="text" name="Companyadd" id="Companyadd" placeholder="Company address" class="form-control">
+                                    <input type="text" name="Companyiadd" id="Companyiadd" placeholder="Company address" class="form-control">
                                 </div>
                                  <div class="loginpageform phonedvj mt0">
                         <div class="phoneflex">
                             <div class="pfl1">
-                                <select name="countryCode" id="">
+                                <select name="countryiCode" id="countryiCode" size='1'>
+                                     <option value=''>Select</option>
                                     <option data-countrycode="DZ" value="213">Algeria (+213)</option>
                                     <option data-countrycode="AD" value="376">Andorra (+376)</option>
                                     <option data-countrycode="AO" value="244">Angola (+244)</option>
@@ -757,21 +758,22 @@
                                     <option data-countrycode="ZM" value="260">Zambia (+260)</option>
                                     <option data-countrycode="ZW" value="263">Zimbabwe (+263)</option>
                                 </select>
-                                <br>
+                             
                             </div>
                             <div class="pfl2">
-                                <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone">
+                                <input type="text" class="form-control" id="phonei" name="phonei" placeholder="Phone">
                             </div>
                         </div>
                     </div>
                                   <div class="mtmin8">
                                     <label class="form-label" for="Companycode">Message</label>
-                                      <textarea name="" id="" class="form-control" placeholder="Describe the role you are hiring" cols="30" rows="5"></textarea>
+                                      <textarea name="messagei" id="messagei" class="form-control" placeholder="Describe the role you are hiring" cols="30" rows="5"></textarea>
                                 </div>
-                                  <button class="btnsec position-unset">Submit</button>
+                                  <button class="btnsec position-unset" type="submit" name="submit" >Submit</button>
 
                         </form>
-                  </div>
+          
+                    </div>
              </div>
             </div>
 
@@ -804,7 +806,7 @@
                             <h4>site map</h4>
                             <div class="footerlinks">
                                 <p><a href="search-jobs.html">Search Jobs</a></p>
-                                <p><a href="job-seekers.html">Job seekers</a></p>
+                                <p><a href="job-seekers.html">Job Seekers</a></p>
                                 <p><a href="employers.html">Employers</a></p>
                                 <p><a href="about-us.html">About Us</a></p>
                                 <p><a href="join-us.html">Join Us</a></p>
@@ -840,7 +842,7 @@
                         <div class="footerdiv">
 
                             <div class="footerlinks martopfooter">
-                                <p><b>China Branch</b></p>
+                                <p><b>Shanghai</b></p>
                                 <p>Suntime International Tower 8F. 8F-1</p>
                                 <p>450 Fushan Road, Pudong,</p>
                                 <p>Shanghai, 200120 China</p>
@@ -865,15 +867,17 @@
     </footer>
 
     <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
-   <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-3.5.1.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"
-    ></script>
-    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
+          <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
+<script>
+
+    </script>
+          
     <!-- slick slider -->
     <script
       type="text/javascript"
@@ -937,11 +941,11 @@ $('#return-to-top').click(function() {      // When arrow is clicked
 });
     </script>
 <!-- Start of LiveChat (www.livechatinc.com) code -->
-<script>
+<!-- <script>
     window.__lc = window.__lc || {};
     window.__lc.license = 13538502;
     ;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.livechatinc.com/tracking.js",t.head.appendChild(n)}};!n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))
-</script>
+</script> -->
 </body>
 
 </html>

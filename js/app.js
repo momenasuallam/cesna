@@ -22,8 +22,53 @@ $(document).ready(function () {
 
 });
 
-
-
+$(document).ready(function () {
+  $("#rollbackform").validate({
+    // initialize the plugin
+    rules: {
+      finame: {
+        required: true,
+      },
+      liname: {
+        required: true,
+      },
+      emaiil: {
+        required: true,
+        email: true,
+      },
+      jobititle: {
+        required: true,
+      },
+      Companyiname: {
+        required: true,
+      },
+      Companyiadd: {
+        required: true,
+      },
+      countryiCode: {
+        required: true,
+        min: 1,
+      },
+      phonei: {
+        required: true,
+      },
+      messagei: {
+        required: true,
+      },
+      messages: {
+        emaiil: "Please enter the correct email address",
+        finame: "Please fill out this field",
+        liname: "Please fill out this field",
+        jobititle: "Please fill out this field",
+        Companyiname: "Please fill out this field",
+        Companyiadd: "Please fill out this field",
+        countryiCode: "Please fill out this field",
+        phonei: "Please fill out this field",
+        messagei: "Please fill out this field",
+      },
+    },
+  });
+});
 
         // wow Animation
         new WOW().init();

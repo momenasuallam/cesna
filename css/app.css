@@ -3242,7 +3242,7 @@ input::placeholder {
   cursor: pointer;
   background: transparent;
   color: transparent;
-  top: 50%;
+  top: 38%;
   margin-top: -10px;
   padding: 0;
   border: none;
@@ -3360,12 +3360,13 @@ input::placeholder {
 
 .pfl1 {
   width: 40%;
-
+margin-top: 6px;
 }
 
 .pfl2 {
   padding-left: 4px;
   width: 60%;
+    margin-top: 6px;
 }
 
 @media(max-width:600px) {
@@ -3376,7 +3377,8 @@ input::placeholder {
 
   .pfl2 {
     padding-left: 0px;
-    padding-top: 4px;
+    padding-top: 0px;
+    margin-top: -2px;
     width: 100%;
   }
 }
@@ -3984,6 +3986,7 @@ table>:not(:last-child)>:last-child>* {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .rightchatd {
@@ -4026,9 +4029,14 @@ table>:not(:last-child)>:last-child>* {
 }
 
 .chatbodycl {
-  padding: 0 15px 20px;
+  padding: 0 15px 2px;
+  overflow-y: auto;
+  max-height: 525px;
 }
-
+.formchat .form-control:focus{
+box-shadow: 0 0 0 0 #0000 !important;
+border: 1px solid #ced4da !important;
+}
 .chatbodycl small {
   margin: 10px 0;
   color: rgb(110, 120, 121);
@@ -4090,7 +4098,7 @@ table>:not(:last-child)>:last-child>* {
 .formchat input {
   height: 22px;
   font-size: 10px;
-  margin: 0 0 6px;
+  margin: 6px 0 0px;
 }
 
 .formchat button {
@@ -4103,7 +4111,11 @@ table>:not(:last-child)>:last-child>* {
 .formchat .form-control {
   padding: 4px;
 }
-
+.formchat .error{
+margin-top: 1px;
+    display: block;
+    margin-bottom: 4px;
+}
 .formchat textarea.form-control {
   min-height: calc(1.5em + (0.75rem + 2px));
   height: 46px;
@@ -4160,4 +4172,8 @@ table>:not(:last-child)>:last-child>* {
     /* line-height: 20px; */
      padding-top: 4px !important;
   }
+  .chatbodycl {
+
+  max-height: 380px;
+}
 }
