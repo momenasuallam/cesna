@@ -1,0 +1,1527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cesna</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./img/logo.svg" />
+    <link rel="stylesheet" href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/app.css" />
+    <link rel="stylesheet" href="./css/animate.css" />
+    <link rel="stylesheet" href="./css/animate.css" />
+
+
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <nav class="navbar header">
+                <div class="container">
+                    <div class="logo"><a href="index.html"><img src="img/logo.svg" alt="LOGO"></a></div>
+                    <!-- <div class="push-left"> -->
+                    <button id="menu-toggler" data-class="menu-active" class="hamburger">
+                        <span class="hamburger-line hamburger-line-top"></span>
+                        <span class="hamburger-line hamburger-line-middle"></span>
+                        <span class="hamburger-line hamburger-line-bottom"></span>
+                    </button>
+
+                    <!--  Menu compatible with wp_nav_menu  -->
+                    <ul id="primary-menu" class="menu nav-menu">
+                        <li class="menu-item current-menu-item "><a class="nav__link" href="search-jobs.html">Search
+                                Jobs</a>
+
+                        </li>
+                        <li class="menu-item current-menu-item"><a class="nav__link" href="job-seekers.html">Job
+                                Seekers</a></li>
+                        <li class="menu-item current-menu-item"><a class="nav__link" href="employers.html">Employers</a>
+                        </li>
+                        <li class="menu-item current-menu-item"><a class="nav__link" href="about-us.html">About Us</a>
+                        </li>
+                        <li class="menu-item current-menu-item"><a class="nav__link" href="./join-us.html">Join Us</a>
+                        </li>
+                        <li class="menu-item current-menu-item"><a class="nav__link" href="contact-us.html">Contact
+                                Us</a></li>
+
+                        </li>
+                    </ul>
+
+                    <div class="sidebtn">
+                        <a class="btnpri btnoutline btn-border-hover" href="login.html"><img
+                                src="./img/user-icon.svg" /> Login</a>
+                        <a class="btnpri btnfull" href="register.html"><img src="./img/user-icon.svg" /> Register</a>
+                    </div>
+
+
+                    <!-- </div> -->
+                </div>
+            </nav>
+        </div>
+        <div class="searchjobsbanner position-relative w-100">
+            <div class=" text-white d-flex flex-column positingd1">
+                <div class="container">
+                    <div class="headerdivtxt wow fadeIn" data-wow-duration="2s">
+                        <h1 class="fontjost">Worldwide recruitment company</h1>
+
+
+                        <div class="jobform">
+                            <h2 class="fontrale">Job Search</h2>
+                            <form>
+                                <div class="groupinputf">
+                                    <input type="text" placeholder="Job Title, Skills or Key words" />
+                                    <!-- <span class="lineborder"></span> -->
+                                    <select name="p2" class="form-select newsselect"
+                                        aria-label="Default select example">
+                                        <option value="">Country</option>
+
+                                        <option value="52">Albania</option>
+
+
+                                        <option value="48">Algeria</option>
+
+
+                                        <option value="53">Andorra</option>
+
+
+                                        <option value="54">Angola</option>
+
+
+                                        <option value="55">Antigua and Barbuda</option>
+
+
+                                        <option value="1">Argentina</option>
+
+
+                                        <option value="56">Armenia</option>
+
+
+                                        <option value="2">Australia</option>
+
+
+                                        <option value="3">Austria</option>
+
+
+                                        <option value="57">Azerbaijan</option>
+
+
+                                        <option value="58">Bahamas</option>
+
+
+                                        <option value="35">Bahrain</option>
+
+
+                                        <option value="59">Bangladesh</option>
+
+
+                                        <option value="60">Barbados</option>
+
+
+                                        <option value="61">Belarus</option>
+
+
+                                        <option value="4">Belgium</option>
+
+
+                                        <option value="62">Belize</option>
+
+
+                                        <option value="63">Benin</option>
+
+
+                                        <option value="64">Bhutan</option>
+
+
+                                        <option value="65">Bolivia</option>
+
+
+                                        <option value="66">Bosnia and Herzegovina</option>
+
+
+                                        <option value="67">Botswana</option>
+
+
+                                        <option value="33">Brazil</option>
+
+
+                                        <option value="68">Brunei Darussalam</option>
+
+
+                                        <option value="69">Bulgaria</option>
+
+
+                                        <option value="70">Burkina Faso</option>
+
+
+                                        <option value="71">Burma</option>
+
+
+                                        <option value="72">Burundi</option>
+
+
+                                        <option value="73">Cambodia</option>
+
+
+                                        <option value="74">Cameroon</option>
+
+
+                                        <option value="5">Canada</option>
+
+
+                                        <option value="75">Cape Verde</option>
+
+
+                                        <option value="76">Central African Republic</option>
+
+
+                                        <option value="77">Chad</option>
+
+
+                                        <option value="6">Chile</option>
+
+
+                                        <option value="7">China</option>
+
+
+                                        <option value="8">Colombia</option>
+
+
+                                        <option value="78">Comoros</option>
+
+
+                                        <option value="79">Congo (Brazzaville)</option>
+
+
+                                        <option value="80">Congo (Kinshasa)</option>
+
+
+                                        <option value="81">Costa Rica</option>
+
+
+                                        <option value="82">Cote d'Ivoire</option>
+
+
+                                        <option value="83">Croatia</option>
+
+
+                                        <option value="84">Cuba</option>
+
+
+                                        <option value="85">Cyprus</option>
+
+
+                                        <option value="86">Czech Republic</option>
+
+
+                                        <option value="9">Denmark</option>
+
+
+                                        <option value="87">Djibouti</option>
+
+
+                                        <option value="88">Dominica</option>
+
+
+                                        <option value="89">Dominican Republic</option>
+
+
+                                        <option value="90">East Timor</option>
+
+
+                                        <option value="91">Ecuador</option>
+
+
+                                        <option value="92">Egypt</option>
+
+
+                                        <option value="93">El Salvador</option>
+
+
+                                        <option value="94">Equatorial Guinea</option>
+
+
+                                        <option value="95">Eritrea</option>
+
+
+                                        <option value="96">Estonia</option>
+
+
+                                        <option value="97">Ethiopia</option>
+
+
+                                        <option value="98">Fiji</option>
+
+
+                                        <option value="10">Finland</option>
+
+
+                                        <option value="11">France</option>
+
+
+                                        <option value="99">Gabon</option>
+
+
+                                        <option value="100">Gambia</option>
+
+
+                                        <option value="101">Georgia</option>
+
+
+                                        <option value="12">Germany</option>
+
+
+                                        <option value="102">Ghana</option>
+
+
+                                        <option value="103">Greece</option>
+
+
+                                        <option value="104">Grenada</option>
+
+
+                                        <option value="105">Guatemala</option>
+
+
+                                        <option value="106">Guinea</option>
+
+
+                                        <option value="107">Guinea-Bissau</option>
+
+
+                                        <option value="108">Guyana</option>
+
+
+                                        <option value="109">Haiti</option>
+
+
+                                        <option value="110">Holy See</option>
+
+
+                                        <option value="111">Honduras</option>
+
+
+                                        <option value="112">Hong Kong</option>
+
+
+                                        <option value="113">Hungary</option>
+
+
+                                        <option value="114">Iceland</option>
+
+
+                                        <option value="13">India</option>
+
+
+                                        <option value="115">Indonesia</option>
+
+
+                                        <option value="45">Iran</option>
+
+
+                                        <option value="116">Iraq</option>
+
+
+                                        <option value="117">Ireland</option>
+
+
+                                        <option value="118">Israel</option>
+
+
+                                        <option value="14">Italy</option>
+
+
+                                        <option value="119">Jamaica</option>
+
+
+                                        <option value="15">Japan</option>
+
+
+                                        <option value="43">Jordan</option>
+
+
+                                        <option value="120">Kazakhstan</option>
+
+
+                                        <option value="121">Kenya</option>
+
+
+                                        <option value="122">Kiribati</option>
+
+
+                                        <option value="16">Korea</option>
+
+
+                                        <option value="123">Kosovo</option>
+
+
+                                        <option value="36">Kuwait</option>
+
+
+                                        <option value="124">Kyrgyzstan</option>
+
+
+                                        <option value="125">Laos</option>
+
+
+                                        <option value="126">Latvia</option>
+
+
+                                        <option value="42">Lebanon</option>
+
+
+                                        <option value="127">Lesotho</option>
+
+
+                                        <option value="128">Liberia</option>
+
+
+                                        <option value="49">Libya</option>
+
+
+                                        <option value="129">Liechtenstein</option>
+
+
+                                        <option value="130">Lithuania</option>
+
+
+                                        <option value="131">Luxembourg</option>
+
+
+                                        <option value="132">Macau</option>
+
+
+                                        <option value="133">Macedonia</option>
+
+
+                                        <option value="134">Madagascar</option>
+
+
+                                        <option value="135">Malawi</option>
+
+
+                                        <option value="136">Malaysia</option>
+
+
+                                        <option value="137">Maldives</option>
+
+
+                                        <option value="138">Mali</option>
+
+
+                                        <option value="139">Malta</option>
+
+
+                                        <option value="140">Marshall Islands</option>
+
+
+                                        <option value="141">Mauritania</option>
+
+
+                                        <option value="142">Mauritius</option>
+
+
+                                        <option value="17">Mexico</option>
+
+
+                                        <option value="143">Micronesia</option>
+
+
+                                        <option value="144">Moldova</option>
+
+
+                                        <option value="145">Monaco</option>
+
+
+                                        <option value="146">Mongolia</option>
+
+
+                                        <option value="147">Montenegro</option>
+
+
+                                        <option value="50">Morocco</option>
+
+
+                                        <option value="148">Mozambique</option>
+
+
+                                        <option value="149">Namibia</option>
+
+
+                                        <option value="150">Nauru</option>
+
+
+                                        <option value="151">Nepal</option>
+
+
+                                        <option value="152">Netherlands Antilles</option>
+
+
+                                        <option value="153">New Zealand</option>
+
+
+                                        <option value="154">Nicaragua</option>
+
+
+                                        <option value="155">Niger</option>
+
+
+                                        <option value="156">Nigeria</option>
+
+
+                                        <option value="157">Norway</option>
+
+
+                                        <option value="37">Oman</option>
+
+
+                                        <option value="31">Other</option>
+
+
+                                        <option value="158">Pakistan</option>
+
+
+                                        <option value="159">Palau</option>
+
+
+                                        <option value="160">Palestinian Territories</option>
+
+
+                                        <option value="161">Panama</option>
+
+
+                                        <option value="162">Papua New Guinea</option>
+
+
+                                        <option value="163">Paraguay</option>
+
+
+                                        <option value="19">Peru</option>
+
+
+                                        <option value="164">Philippines</option>
+
+
+                                        <option value="20">Poland</option>
+
+
+                                        <option value="21">Portugal</option>
+
+
+                                        <option value="38">Qatar</option>
+
+
+                                        <option value="165">Romania</option>
+
+
+                                        <option value="34">Russia</option>
+
+
+                                        <option value="166">Rwanda</option>
+
+
+                                        <option value="167">Saint Kitts and Nevis</option>
+
+
+                                        <option value="168">Saint Lucia</option>
+
+
+                                        <option value="169">Saint Vincent and the Grenadines</option>
+
+
+                                        <option value="170">Samoa</option>
+
+
+                                        <option value="171">San Marino</option>
+
+
+                                        <option value="172">Sao Tome and Principe</option>
+
+
+                                        <option value="39">Saudi Arabia</option>
+
+
+                                        <option value="173">Senegal</option>
+
+
+                                        <option value="174">Serbia</option>
+
+
+                                        <option value="175">Seychelles</option>
+
+
+                                        <option value="176">Sierra Leone</option>
+
+
+                                        <option value="22">Singapore</option>
+
+
+                                        <option value="177">Slovakia</option>
+
+
+                                        <option value="178">Slovenia</option>
+
+
+                                        <option value="179">Solomon Islands</option>
+
+
+                                        <option value="180">Somalia</option>
+
+
+                                        <option value="23">South Africa</option>
+
+
+                                        <option value="24">Spain</option>
+
+
+                                        <option value="181">Sri Lanka</option>
+
+
+                                        <option value="46">Sudan</option>
+
+
+                                        <option value="182">Suriname</option>
+
+
+                                        <option value="183">Swaziland</option>
+
+
+                                        <option value="32">Sweden</option>
+
+
+                                        <option value="25">Switzerland</option>
+
+
+                                        <option value="44">Syria</option>
+
+
+                                        <option value="26">Taiwan</option>
+
+
+                                        <option value="184">Tajikistan</option>
+
+
+                                        <option value="185">Tanzania</option>
+
+
+                                        <option value="51">Thailand</option>
+
+
+                                        <option value="18">The Netherlands</option>
+
+
+                                        <option value="186">Togo</option>
+
+
+                                        <option value="187">Tonga</option>
+
+
+                                        <option value="188">Trinidad and Tobago</option>
+
+
+                                        <option value="47">Tunisia</option>
+
+
+                                        <option value="27">Turkey</option>
+
+
+                                        <option value="189">Turkmenistan</option>
+
+
+                                        <option value="190">Tuvalu</option>
+
+
+                                        <option value="40">UAE</option>
+
+
+                                        <option value="191">Uganda</option>
+
+
+                                        <option value="192">Ukraine</option>
+
+
+                                        <option value="28">United Kingdom</option>
+
+
+                                        <option value="29">United States</option>
+
+
+                                        <option value="193">Uruguay</option>
+
+
+                                        <option value="194">Uzbekistan</option>
+
+
+                                        <option value="195">Vanuatu</option>
+
+
+                                        <option value="30">Venezuela</option>
+
+
+                                        <option value="196">Vietnam</option>
+
+
+                                        <option value="41">Yemen</option>
+
+
+                                        <option value="197">Zambia</option>
+
+
+                                        <option value="198">Zimbabwe</option>
+
+                                    </select>
+                                    <input type="text" placeholder="City, Town or State" class="" />
+                                    <button type="submit" class="btnpri showondesk">Search</button>
+                                    <button type="submit" class="btnpri showoffdesk"><img
+                                            src="./img/search.svg" /></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="linkingsec abu1sec">
+        <img class="printimg" src="./img/home-print.svg" />
+        <div class="container">
+            <div class="row rowjobserach">
+                <div class="col-md-12">
+                    <div class="filterdiv1 row">
+                        <div class="col-md-6">
+                            <h2 class="h2tag">Search result</h2>
+                            <hr class="hrwid" />
+                        </div>
+                        <div class="col-md-6">
+                            <span>filter</span>
+                            <form>
+                                <select class="form-select" aria-label="Default select example" name="p1">
+                                    <option value="0">Number</option>
+                                    <option value="1" selected="selected">Subject</option>
+                                    <option value="2">Contents</option>
+                                    <option value="3">Writer</option>
+                                </select>
+                                <input class="searchjob_title" type="text" name="p2"
+                                    placeholder="Please enter a search term.">
+
+                                <button type="submit" class="btnoutline2 borderpink">Update</button>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="newsdivsb ">
+                        <div class="newsmain row">
+                            <div class="newsdivs wow fadeIn article-loop col-md-4" data-wow-duration="1s">
+                                <img src="./img/1.jpg" />
+                                <div class="infometa">
+                                    <span class="metaby">Writer : Ella CHIN </span>
+                                    <span class="metsdate">Regday : 05.20.2022, Read : 60</span>
+                                </div>
+                                <h3>No.92. Cesna Group Commits to Corporate Social Responsibility to Support the Society
+                                </h3>
+
+                                <p>At present, the global new crown epidemic is still in a pandemic state, and all walks
+                                    of life are trying to adapt to the new normal after the epidemic. Under the epidemic
+                                    situation, as an international professional human resources recruitment consulting
+                                    company, Cesna Group Worldwide Shanghai Inc. (referred to as "Cesna") still actively
+                                    adheres to fulfilling its social corporate responsibility, relying on its own
+                                    resources and channels, through various ways to participate in social welfare
+                                    undertakings, give back to the society, and play value. Recently, Cesna has carried
+                                    out a number of public welfare activities, using practical actions to practice the
+                                    company's corporate responsibility of insisting on interacting with and giving back
+                                    to the community. Since its establishment 23 years ago, Cesna hopes to continuously
+                                    delivering positive energy to the international community.</p>
+
+                               
+
+                                <a href="news-detail.html" class="btnsec btnsecWidth">Read more</a>
+                            </div>
+
+                            <div class="newsdivs wow fadeIn article-loop col-md-4" data-wow-duration="1s">
+                                <img src="./img/1.jpg" />
+                                <div class="infometa">
+                                    <span class="metaby">Writer : Ella CHIN </span>
+                                    <span class="metsdate">Regday : 05.20.2022, Read : 60</span>
+                                </div>
+                                <h3>No.92. Cesna Group Commits to Corporate Social Responsibility to Support the Society
+                                </h3>
+
+                                <p>At present, the global new crown epidemic is still in a pandemic state, and all walks
+                                    of life are trying to adapt to the new normal after the epidemic. Under the epidemic
+                                    situation, as an international professional human resources recruitment consulting
+                                    company, Cesna Group Worldwide Shanghai Inc. (referred to as "Cesna") still actively
+                                    adheres to fulfilling its social corporate responsibility, relying on its own
+                                    resources and channels, through various ways to participate in social welfare
+                                    undertakings, give back to the society, and play value. Recently, Cesna has carried
+                                    out a number of public welfare activities, using practical actions to practice the
+                                    company's corporate responsibility of insisting on interacting with and giving back
+                                    to the community. Since its establishment 23 years ago, Cesna hopes to continuously
+                                    delivering positive energy to the international community.</p>
+
+                              
+
+                                <a href="news-detail.html" class="btnsec btnsecWidth">Read more</a>
+                            </div>
+
+                            <div class="newsdivs wow fadeIn article-loop col-md-4" data-wow-duration="1s">
+                                <img src="./img/1.jpg" />
+                                <div class="infometa">
+                                    <span class="metaby">Writer : Ella CHIN </span>
+                                    <span class="metsdate">Regday : 05.20.2022, Read : 60</span>
+                                </div>
+                                <h3>No.92. Cesna Group Commits to Corporate Social Responsibility to Support the Society
+                                </h3>
+
+                                <p>At present, the global new crown epidemic is still in a pandemic state, and all walks
+                                    of life are trying to adapt to the new normal after the epidemic. Under the epidemic
+                                    situation, as an international professional human resources recruitment consulting
+                                    company, Cesna Group Worldwide Shanghai Inc. (referred to as "Cesna") still actively
+                                    adheres to fulfilling its social corporate responsibility, relying on its own
+                                    resources and channels, through various ways to participate in social welfare
+                                    undertakings, give back to the society, and play value. Recently, Cesna has carried
+                                    out a number of public welfare activities, using practical actions to practice the
+                                    company's corporate responsibility of insisting on interacting with and giving back
+                                    to the community. Since its establishment 23 years ago, Cesna hopes to continuously
+                                    delivering positive energy to the international community.</p>
+
+                               
+
+                                <a href="news-detail.html" class="btnsec btnsecWidth">Read more</a>
+                            </div>
+
+                            <div class="newsdivs wow fadeIn article-loop col-md-4" data-wow-duration="1s">
+                                <img src="./img/1.jpg" />
+                                <div class="infometa">
+                                    <span class="metaby">Writer : Ella CHIN </span>
+                                    <span class="metsdate">Regday : 05.20.2022, Read : 60</span>
+                                </div>
+                                <h3>No.92. Cesna Group Commits to Corporate Social Responsibility to Support the Society
+                                </h3>
+
+                                <p>At present, the global new crown epidemic is still in a pandemic state, and all walks
+                                    of life are trying to adapt to the new normal after the epidemic. Under the epidemic
+                                    situation, as an international professional human resources recruitment consulting
+                                    company, Cesna Group Worldwide Shanghai Inc. (referred to as "Cesna") still actively
+                                    adheres to fulfilling its social corporate responsibility, relying on its own
+                                    resources and channels, through various ways to participate in social welfare
+                                    undertakings, give back to the society, and play value. Recently, Cesna has carried
+                                    out a number of public welfare activities, using practical actions to practice the
+                                    company's corporate responsibility of insisting on interacting with and giving back
+                                    to the community. Since its establishment 23 years ago, Cesna hopes to continuously
+                                    delivering positive energy to the international community.</p>
+
+                              
+
+                                <a href="news-detail.html" class="btnsec btnsecWidth">Read more</a>
+                            </div>
+
+                            <div class="newsdivs wow fadeIn article-loop col-md-4" data-wow-duration="1s">
+                                <img src="./img/1.jpg" />
+                                <div class="infometa">
+                                    <span class="metaby">Writer : Ella CHIN </span>
+                                    <span class="metsdate">Regday : 05.20.2022, Read : 60</span>
+                                </div>
+                                <h3>No.92. Cesna Group Commits to Corporate Social Responsibility to Support the Society
+                                </h3>
+
+                                <p>At present, the global new crown epidemic is still in a pandemic state, and all walks
+                                    of life are trying to adapt to the new normal after the epidemic. Under the epidemic
+                                    situation, as an international professional human resources recruitment consulting
+                                    company, Cesna Group Worldwide Shanghai Inc. (referred to as "Cesna") still actively
+                                    adheres to fulfilling its social corporate responsibility, relying on its own
+                                    resources and channels, through various ways to participate in social welfare
+                                    undertakings, give back to the society, and play value. Recently, Cesna has carried
+                                    out a number of public welfare activities, using practical actions to practice the
+                                    company's corporate responsibility of insisting on interacting with and giving back
+                                    to the community. Since its establishment 23 years ago, Cesna hopes to continuously
+                                    delivering positive energy to the international community.</p>
+
+                               
+
+                                <a href="news-detail.html" class="btnsec btnsecWidth">Read more</a>
+                            </div>
+
+                            <div class="newsdivs wow fadeIn article-loop col-md-4" data-wow-duration="1s">
+                                <img src="./img/1.jpg" />
+                                <div class="infometa">
+                                    <span class="metaby">Writer : Ella CHIN </span>
+                                    <span class="metsdate">Regday : 05.20.2022, Read : 60</span>
+                                </div>
+                                <h3>No.92. Cesna Group Commits to Corporate Social Responsibility to Support the Society
+                                </h3>
+
+                                <p>At present, the global new crown epidemic is still in a pandemic state, and all walks
+                                    of life are trying to adapt to the new normal after the epidemic. Under the epidemic
+                                    situation, as an international professional human resources recruitment consulting
+                                    company, Cesna Group Worldwide Shanghai Inc. (referred to as "Cesna") still actively
+                                    adheres to fulfilling its social corporate responsibility, relying on its own
+                                    resources and channels, through various ways to participate in social welfare
+                                    undertakings, give back to the society, and play value. Recently, Cesna has carried
+                                    out a number of public welfare activities, using practical actions to practice the
+                                    company's corporate responsibility of insisting on interacting with and giving back
+                                    to the community. Since its establishment 23 years ago, Cesna hopes to continuously
+                                    delivering positive energy to the international community.</p>
+
+                              
+
+                                <a href="news-detail.html" class="btnsec btnsecWidth">Read more</a>
+                            </div>
+
+                            <div class="newsdivs wow fadeIn article-loop col-md-4" data-wow-duration="1s">
+                                <img src="./img/1.jpg" />
+                                <div class="infometa">
+                                    <span class="metaby">Writer : Ella CHIN </span>
+                                    <span class="metsdate">Regday : 05.20.2022, Read : 60</span>
+                                </div>
+                                <h3>No.92. Cesna Group Commits to Corporate Social Responsibility to Support the Society
+                                </h3>
+
+                                <p>At present, the global new crown epidemic is still in a pandemic state, and all walks
+                                    of life are trying to adapt to the new normal after the epidemic. Under the epidemic
+                                    situation, as an international professional human resources recruitment consulting
+                                    company, Cesna Group Worldwide Shanghai Inc. (referred to as "Cesna") still actively
+                                    adheres to fulfilling its social corporate responsibility, relying on its own
+                                    resources and channels, through various ways to participate in social welfare
+                                    undertakings, give back to the society, and play value. Recently, Cesna has carried
+                                    out a number of public welfare activities, using practical actions to practice the
+                                    company's corporate responsibility of insisting on interacting with and giving back
+                                    to the community. Since its establishment 23 years ago, Cesna hopes to continuously
+                                    delivering positive energy to the international community.</p>
+
+                               
+
+                                <a href="news-detail.html" class="btnsec btnsecWidth">Read more</a>
+                            </div>
+
+                            <div class="newsdivs wow fadeIn article-loop col-md-4" data-wow-duration="1s">
+                                <img src="./img/1.jpg" />
+                                <div class="infometa">
+                                    <span class="metaby">Writer : Ella CHIN </span>
+                                    <span class="metsdate">Regday : 05.20.2022, Read : 60</span>
+                                </div>
+                                <h3>No.92. Cesna Group Commits to Corporate Social Responsibility to Support the Society
+                                </h3>
+
+                                <p>At present, the global new crown epidemic is still in a pandemic state, and all walks
+                                    of life are trying to adapt to the new normal after the epidemic. Under the epidemic
+                                    situation, as an international professional human resources recruitment consulting
+                                    company, Cesna Group Worldwide Shanghai Inc. (referred to as "Cesna") still actively
+                                    adheres to fulfilling its social corporate responsibility, relying on its own
+                                    resources and channels, through various ways to participate in social welfare
+                                    undertakings, give back to the society, and play value. Recently, Cesna has carried
+                                    out a number of public welfare activities, using practical actions to practice the
+                                    company's corporate responsibility of insisting on interacting with and giving back
+                                    to the community. Since its establishment 23 years ago, Cesna hopes to continuously
+                                    delivering positive energy to the international community.</p>
+
+                              
+
+                                <a href="news-detail.html" class="btnsec btnsecWidth">Read more</a>
+                            </div>
+
+                            <div class="newsdivs wow fadeIn article-loop col-md-4" data-wow-duration="1s">
+                                <img src="./img/1.jpg" />
+                                <div class="infometa">
+                                    <span class="metaby">Writer : Ella CHIN </span>
+                                    <span class="metsdate">Regday : 05.20.2022, Read : 60</span>
+                                </div>
+                                <h3>No.92. Cesna Group Commits to Corporate Social Responsibility to Support the Society
+                                </h3>
+
+                                <p>At present, the global new crown epidemic is still in a pandemic state, and all walks
+                                    of life are trying to adapt to the new normal after the epidemic. Under the epidemic
+                                    situation, as an international professional human resources recruitment consulting
+                                    company, Cesna Group Worldwide Shanghai Inc. (referred to as "Cesna") still actively
+                                    adheres to fulfilling its social corporate responsibility, relying on its own
+                                    resources and channels, through various ways to participate in social welfare
+                                    undertakings, give back to the society, and play value. Recently, Cesna has carried
+                                    out a number of public welfare activities, using practical actions to practice the
+                                    company's corporate responsibility of insisting on interacting with and giving back
+                                    to the community. Since its establishment 23 years ago, Cesna hopes to continuously
+                                    delivering positive energy to the international community.</p>
+
+                               
+
+                                <a href="news-detail.html" class="btnsec btnsecWidth">Read more</a>
+                            </div>
+
+                            <div class="newsdivs wow fadeIn article-loop col-md-4" data-wow-duration="1s">
+                                <img src="./img/1.jpg" />
+                                <div class="infometa">
+                                    <span class="metaby">Writer : Ella CHIN </span>
+                                    <span class="metsdate">Regday : 05.20.2022, Read : 60</span>
+                                </div>
+                                <h3>No.92. Cesna Group Commits to Corporate Social Responsibility to Support the Society
+                                </h3>
+
+                                <p>At present, the global new crown epidemic is still in a pandemic state, and all walks
+                                    of life are trying to adapt to the new normal after the epidemic. Under the epidemic
+                                    situation, as an international professional human resources recruitment consulting
+                                    company, Cesna Group Worldwide Shanghai Inc. (referred to as "Cesna") still actively
+                                    adheres to fulfilling its social corporate responsibility, relying on its own
+                                    resources and channels, through various ways to participate in social welfare
+                                    undertakings, give back to the society, and play value. Recently, Cesna has carried
+                                    out a number of public welfare activities, using practical actions to practice the
+                                    company's corporate responsibility of insisting on interacting with and giving back
+                                    to the community. Since its establishment 23 years ago, Cesna hopes to continuously
+                                    delivering positive energy to the international community.</p>
+
+                              
+
+                                <a href="news-detail.html" class="btnsec btnsecWidth">Read more</a>
+                            </div>
+
+                            <div class="newsdivs wow fadeIn article-loop col-md-4" data-wow-duration="1s">
+                                <img src="./img/1.jpg" />
+                                <div class="infometa">
+                                    <span class="metaby">Writer : Ella CHIN </span>
+                                    <span class="metsdate">Regday : 05.20.2022, Read : 60</span>
+                                </div>
+                                <h3>No.92. Cesna Group Commits to Corporate Social Responsibility to Support the Society
+                                </h3>
+
+                                <p>At present, the global new crown epidemic is still in a pandemic state, and all walks
+                                    of life are trying to adapt to the new normal after the epidemic. Under the epidemic
+                                    situation, as an international professional human resources recruitment consulting
+                                    company, Cesna Group Worldwide Shanghai Inc. (referred to as "Cesna") still actively
+                                    adheres to fulfilling its social corporate responsibility, relying on its own
+                                    resources and channels, through various ways to participate in social welfare
+                                    undertakings, give back to the society, and play value. Recently, Cesna has carried
+                                    out a number of public welfare activities, using practical actions to practice the
+                                    company's corporate responsibility of insisting on interacting with and giving back
+                                    to the community. Since its establishment 23 years ago, Cesna hopes to continuously
+                                    delivering positive energy to the international community.</p>
+
+                               
+
+                                <a href="news-detail.html" class="btnsec btnsecWidth">Read more</a>
+                            </div>
+
+                            <div class="newsdivs wow fadeIn article-loop col-md-4" data-wow-duration="1s">
+                                <img src="./img/1.jpg" />
+                                <div class="infometa">
+                                    <span class="metaby">Writer : Ella CHIN </span>
+                                    <span class="metsdate">Regday : 05.20.2022, Read : 60</span>
+                                </div>
+                                <h3>No.92. Cesna Group Commits to Corporate Social Responsibility to Support the Society
+                                </h3>
+
+                                <p>At present, the global new crown epidemic is still in a pandemic state, and all walks
+                                    of life are trying to adapt to the new normal after the epidemic. Under the epidemic
+                                    situation, as an international professional human resources recruitment consulting
+                                    company, Cesna Group Worldwide Shanghai Inc. (referred to as "Cesna") still actively
+                                    adheres to fulfilling its social corporate responsibility, relying on its own
+                                    resources and channels, through various ways to participate in social welfare
+                                    undertakings, give back to the society, and play value. Recently, Cesna has carried
+                                    out a number of public welfare activities, using practical actions to practice the
+                                    company's corporate responsibility of insisting on interacting with and giving back
+                                    to the community. Since its establishment 23 years ago, Cesna hopes to continuously
+                                    delivering positive energy to the international community.</p>
+
+                              
+
+                                <a href="news-detail.html" class="btnsec btnsecWidth">Read more</a>
+                            </div>
+
+
+                        </div>
+
+                        <ul id="pagin" class="pagination justify-content-center"></ul>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <div class="mainchatbox">
+        <button class="">
+            <svg viewBox="0 0 18 18" width="20" height="20">
+                <path
+                    d="M9 0C4.05 0 0 3.487 0 7.875s4.05 7.875 9 7.875a4.218 4.218 0 001.238-.113L15.75 18v-4.95A7.324 7.324 0 0018 7.875C18 3.487 13.95 0 9 0z">
+                </path>
+            </svg>
+        </button>
+    </div>
+
+    <div class="chatdiv">
+        <div class="topchatbar">
+            <div class="rightchatd">
+                <img src="./img/cesna-c.jpg" />
+                <h2>Request a call back</h2>
+            </div>
+            <div>
+                <a class="closechatbox"> <i class="fa fa-times"></i></a>
+            </div>
+        </div>
+        <div class="chatbodycl">
+
+            <div class="chatbg1">
+                <h2>Welcome to Cesna!</h2>
+                <p>
+                    Please fill in the form and request for a call back.
+                </p>
+            </div>
+
+            <div class="formchat">
+                <form role="form" id="rollbackform">
+                    <div class="">
+                        <input type="text" name="finame" id="finame" class="form-control" placeholder="First name">
+                    </div>
+                    <div class="">
+                        <input type="text" name="liname" id="liname" class="form-control" placeholder="Last name">
+                    </div>
+                    <div class="">
+                        <input type="email" name="emaiil" id="emaiil" placeholder="Email" class="form-control">
+                    </div>
+                    <div class="">
+                        <input type="text" name="jobititle" id="jobititle" class="form-control" placeholder="Job title">
+                    </div>
+                    <div class="">
+                        <input type="text" name="Companyiname" id="Companyiname" class="form-control"
+                            placeholder="Company name">
+                    </div>
+                    <div class="">
+                        <input type="text" name="Companyiadd" id="Companyiadd" placeholder="Company address"
+                            class="form-control">
+                    </div>
+                    <div class="loginpageform phonedvj mt0">
+                        <div class="phoneflex">
+                            <div class="pfl1">
+                                <select name="countryiCode" id="countryiCode" size='1'>
+                                    <option value=''>Select</option>
+                                    <option data-countrycode="DZ" value="213">Algeria (+213)</option>
+                                    <option data-countrycode="AD" value="376">Andorra (+376)</option>
+                                    <option data-countrycode="AO" value="244">Angola (+244)</option>
+                                    <option data-countrycode="AI" value="1264">Anguilla (+1264)</option>
+                                    <option data-countrycode="AG" value="1268">Antigua &amp; Barbuda (+1268)</option>
+                                    <option data-countrycode="AR" value="54">Argentina (+54)</option>
+                                    <option data-countrycode="AM" value="374">Armenia (+374)</option>
+                                    <option data-countrycode="AW" value="297">Aruba (+297)</option>
+                                    <option data-countrycode="AU" value="61">Australia (+61)</option>
+                                    <option data-countrycode="AT" value="43">Austria (+43)</option>
+                                    <option data-countrycode="AZ" value="994">Azerbaijan (+994)</option>
+                                    <option data-countrycode="BS" value="1242">Bahamas (+1242)</option>
+                                    <option data-countrycode="BH" value="973">Bahrain (+973)</option>
+                                    <option data-countrycode="BD" value="880">Bangladesh (+880)</option>
+                                    <option data-countrycode="BB" value="1246">Barbados (+1246)</option>
+                                    <option data-countrycode="BY" value="375">Belarus (+375)</option>
+                                    <option data-countrycode="BE" value="32">Belgium (+32)</option>
+                                    <option data-countrycode="BZ" value="501">Belize (+501)</option>
+                                    <option data-countrycode="BJ" value="229">Benin (+229)</option>
+                                    <option data-countrycode="BM" value="1441">Bermuda (+1441)</option>
+                                    <option data-countrycode="BT" value="975">Bhutan (+975)</option>
+                                    <option data-countrycode="BO" value="591">Bolivia (+591)</option>
+                                    <option data-countrycode="BA" value="387">Bosnia Herzegovina (+387)</option>
+                                    <option data-countrycode="BW" value="267">Botswana (+267)</option>
+                                    <option data-countrycode="BR" value="55">Brazil (+55)</option>
+                                    <option data-countrycode="BN" value="673">Brunei (+673)</option>
+                                    <option data-countrycode="BG" value="359">Bulgaria (+359)</option>
+                                    <option data-countrycode="BF" value="226">Burkina Faso (+226)</option>
+                                    <option data-countrycode="BI" value="257">Burundi (+257)</option>
+                                    <option data-countrycode="KH" value="855">Cambodia (+855)</option>
+                                    <option data-countrycode="CM" value="237">Cameroon (+237)</option>
+                                    <option data-countrycode="CA" value="1">Canada (+1)</option>
+                                    <option data-countrycode="CV" value="238">Cape Verde Islands (+238)</option>
+                                    <option data-countrycode="KY" value="1345">Cayman Islands (+1345)</option>
+                                    <option data-countrycode="CF" value="236">Central African Republic (+236)</option>
+                                    <option data-countrycode="CL" value="56">Chile (+56)</option>
+                                    <option data-countrycode="CN" value="86">China (+86)</option>
+                                    <option data-countrycode="CO" value="57">Colombia (+57)</option>
+                                    <option data-countrycode="KM" value="269">Comoros (+269)</option>
+                                    <option data-countrycode="CG" value="242">Congo (+242)</option>
+                                    <option data-countrycode="CK" value="682">Cook Islands (+682)</option>
+                                    <option data-countrycode="CR" value="506">Costa Rica (+506)</option>
+                                    <option data-countrycode="HR" value="385">Croatia (+385)</option>
+                                    <option data-countrycode="CU" value="53">Cuba (+53)</option>
+                                    <option data-countrycode="CY" value="90392">Cyprus North (+90392)</option>
+                                    <option data-countrycode="CY" value="357">Cyprus South (+357)</option>
+                                    <option data-countrycode="CZ" value="42">Czech Republic (+42)</option>
+                                    <option data-countrycode="DK" value="45">Denmark (+45)</option>
+                                    <option data-countrycode="DJ" value="253">Djibouti (+253)</option>
+                                    <option data-countrycode="DM" value="1809">Dominica (+1809)</option>
+                                    <option data-countrycode="DO" value="1809">Dominican Republic (+1809)</option>
+                                    <option data-countrycode="EC" value="593">Ecuador (+593)</option>
+                                    <option data-countrycode="EG" value="20">Egypt (+20)</option>
+                                    <option data-countrycode="SV" value="503">El Salvador (+503)</option>
+                                    <option data-countrycode="GQ" value="240">Equatorial Guinea (+240)</option>
+                                    <option data-countrycode="ER" value="291">Eritrea (+291)</option>
+                                    <option data-countrycode="EE" value="372">Estonia (+372)</option>
+                                    <option data-countrycode="ET" value="251">Ethiopia (+251)</option>
+                                    <option data-countrycode="FK" value="500">Falkland Islands (+500)</option>
+                                    <option data-countrycode="FO" value="298">Faroe Islands (+298)</option>
+                                    <option data-countrycode="FJ" value="679">Fiji (+679)</option>
+                                    <option data-countrycode="FI" value="358">Finland (+358)</option>
+                                    <option data-countrycode="FR" value="33">France (+33)</option>
+                                    <option data-countrycode="GF" value="594">French Guiana (+594)</option>
+                                    <option data-countrycode="PF" value="689">French Polynesia (+689)</option>
+                                    <option data-countrycode="GA" value="241">Gabon (+241)</option>
+                                    <option data-countrycode="GM" value="220">Gambia (+220)</option>
+                                    <option data-countrycode="GE" value="7880">Georgia (+7880)</option>
+                                    <option data-countrycode="DE" value="49">Germany (+49)</option>
+                                    <option data-countrycode="GH" value="233">Ghana (+233)</option>
+                                    <option data-countrycode="GI" value="350">Gibraltar (+350)</option>
+                                    <option data-countrycode="GR" value="30">Greece (+30)</option>
+                                    <option data-countrycode="GL" value="299">Greenland (+299)</option>
+                                    <option data-countrycode="GD" value="1473">Grenada (+1473)</option>
+                                    <option data-countrycode="GP" value="590">Guadeloupe (+590)</option>
+                                    <option data-countrycode="GU" value="671">Guam (+671)</option>
+                                    <option data-countrycode="GT" value="502">Guatemala (+502)</option>
+                                    <option data-countrycode="GN" value="224">Guinea (+224)</option>
+                                    <option data-countrycode="GW" value="245">Guinea - Bissau (+245)</option>
+                                    <option data-countrycode="GY" value="592">Guyana (+592)</option>
+                                    <option data-countrycode="HT" value="509">Haiti (+509)</option>
+                                    <option data-countrycode="HN" value="504">Honduras (+504)</option>
+                                    <option data-countrycode="HK" value="852">Hong Kong (+852)</option>
+                                    <option data-countrycode="HU" value="36">Hungary (+36)</option>
+                                    <option data-countrycode="IS" value="354">Iceland (+354)</option>
+                                    <option data-countrycode="IN" value="91">India (+91)</option>
+                                    <option data-countrycode="ID" value="62">Indonesia (+62)</option>
+                                    <option data-countrycode="IR" value="98">Iran (+98)</option>
+                                    <option data-countrycode="IQ" value="964">Iraq (+964)</option>
+                                    <option data-countrycode="IE" value="353">Ireland (+353)</option>
+                                    <option data-countrycode="IL" value="972">Israel (+972)</option>
+                                    <option data-countrycode="IT" value="39">Italy (+39)</option>
+                                    <option data-countrycode="JM" value="1876">Jamaica (+1876)</option>
+                                    <option data-countrycode="JP" value="81">Japan (+81)</option>
+                                    <option data-countrycode="JO" value="962">Jordan (+962)</option>
+                                    <option data-countrycode="KZ" value="7">Kazakhstan (+7)</option>
+                                    <option data-countrycode="KE" value="254">Kenya (+254)</option>
+                                    <option data-countrycode="KI" value="686">Kiribati (+686)</option>
+                                    <option data-countrycode="KP" value="850">Korea North (+850)</option>
+                                    <option data-countrycode="KR" value="82">Korea South (+82)</option>
+                                    <option data-countrycode="KW" value="965">Kuwait (+965)</option>
+                                    <option data-countrycode="KG" value="996">Kyrgyzstan (+996)</option>
+                                    <option data-countrycode="LA" value="856">Laos (+856)</option>
+                                    <option data-countrycode="LV" value="371">Latvia (+371)</option>
+                                    <option data-countrycode="LB" value="961">Lebanon (+961)</option>
+                                    <option data-countrycode="LS" value="266">Lesotho (+266)</option>
+                                    <option data-countrycode="LR" value="231">Liberia (+231)</option>
+                                    <option data-countrycode="LY" value="218">Libya (+218)</option>
+                                    <option data-countrycode="LI" value="417">Liechtenstein (+417)</option>
+                                    <option data-countrycode="LT" value="370">Lithuania (+370)</option>
+                                    <option data-countrycode="LU" value="352">Luxembourg (+352)</option>
+                                    <option data-countrycode="MO" value="853">Macao (+853)</option>
+                                    <option data-countrycode="MK" value="389">Macedonia (+389)</option>
+                                    <option data-countrycode="MG" value="261">Madagascar (+261)</option>
+                                    <option data-countrycode="MW" value="265">Malawi (+265)</option>
+                                    <option data-countrycode="MY" value="60">Malaysia (+60)</option>
+                                    <option data-countrycode="MV" value="960">Maldives (+960)</option>
+                                    <option data-countrycode="ML" value="223">Mali (+223)</option>
+                                    <option data-countrycode="MT" value="356">Malta (+356)</option>
+                                    <option data-countrycode="MH" value="692">Marshall Islands (+692)</option>
+                                    <option data-countrycode="MQ" value="596">Martinique (+596)</option>
+                                    <option data-countrycode="MR" value="222">Mauritania (+222)</option>
+                                    <option data-countrycode="YT" value="269">Mayotte (+269)</option>
+                                    <option data-countrycode="MX" value="52">Mexico (+52)</option>
+                                    <option data-countrycode="FM" value="691">Micronesia (+691)</option>
+                                    <option data-countrycode="MD" value="373">Moldova (+373)</option>
+                                    <option data-countrycode="MC" value="377">Monaco (+377)</option>
+                                    <option data-countrycode="MN" value="976">Mongolia (+976)</option>
+                                    <option data-countrycode="MS" value="1664">Montserrat (+1664)</option>
+                                    <option data-countrycode="MA" value="212">Morocco (+212)</option>
+                                    <option data-countrycode="MZ" value="258">Mozambique (+258)</option>
+                                    <option data-countrycode="MN" value="95">Myanmar (+95)</option>
+                                    <option data-countrycode="NA" value="264">Namibia (+264)</option>
+                                    <option data-countrycode="NR" value="674">Nauru (+674)</option>
+                                    <option data-countrycode="NP" value="977">Nepal (+977)</option>
+                                    <option data-countrycode="NL" value="31">Netherlands (+31)</option>
+                                    <option data-countrycode="NC" value="687">New Caledonia (+687)</option>
+                                    <option data-countrycode="NZ" value="64">New Zealand (+64)</option>
+                                    <option data-countrycode="NI" value="505">Nicaragua (+505)</option>
+                                    <option data-countrycode="NE" value="227">Niger (+227)</option>
+                                    <option data-countrycode="NG" value="234">Nigeria (+234)</option>
+                                    <option data-countrycode="NU" value="683">Niue (+683)</option>
+                                    <option data-countrycode="NF" value="672">Norfolk Islands (+672)</option>
+                                    <option data-countrycode="NP" value="670">Northern Marianas (+670)</option>
+                                    <option data-countrycode="NO" value="47">Norway (+47)</option>
+                                    <option data-countrycode="OM" value="968">Oman (+968)</option>
+                                    <option data-countrycode="PW" value="680">Palau (+680)</option>
+                                    <option data-countrycode="PA" value="507">Panama (+507)</option>
+                                    <option data-countrycode="PG" value="675">Papua New Guinea (+675)</option>
+                                    <option data-countrycode="PY" value="595">Paraguay (+595)</option>
+                                    <option data-countrycode="PE" value="51">Peru (+51)</option>
+                                    <option data-countrycode="PH" value="63">Philippines (+63)</option>
+                                    <option data-countrycode="PL" value="48">Poland (+48)</option>
+                                    <option data-countrycode="PT" value="351">Portugal (+351)</option>
+                                    <option data-countrycode="PR" value="1787">Puerto Rico (+1787)</option>
+                                    <option data-countrycode="QA" value="974">Qatar (+974)</option>
+                                    <option data-countrycode="RE" value="262">Reunion (+262)</option>
+                                    <option data-countrycode="RO" value="40">Romania (+40)</option>
+                                    <option data-countrycode="RU" value="7">Russia (+7)</option>
+                                    <option data-countrycode="RW" value="250">Rwanda (+250)</option>
+                                    <option data-countrycode="SM" value="378">San Marino (+378)</option>
+                                    <option data-countrycode="ST" value="239">Sao Tome &amp; Principe (+239)</option>
+                                    <option data-countrycode="SA" value="966">Saudi Arabia (+966)</option>
+                                    <option data-countrycode="SN" value="221">Senegal (+221)</option>
+                                    <option data-countrycode="CS" value="381">Serbia (+381)</option>
+                                    <option data-countrycode="SC" value="248">Seychelles (+248)</option>
+                                    <option data-countrycode="SL" value="232">Sierra Leone (+232)</option>
+                                    <option data-countrycode="SG" value="65">Singapore (+65)</option>
+                                    <option data-countrycode="SK" value="421">Slovak Republic (+421)</option>
+                                    <option data-countrycode="SI" value="386">Slovenia (+386)</option>
+                                    <option data-countrycode="SB" value="677">Solomon Islands (+677)</option>
+                                    <option data-countrycode="SO" value="252">Somalia (+252)</option>
+                                    <option data-countrycode="ZA" value="27">South Africa (+27)</option>
+                                    <option data-countrycode="ES" value="34">Spain (+34)</option>
+                                    <option data-countrycode="LK" value="94">Sri Lanka (+94)</option>
+                                    <option data-countrycode="SH" value="290">St. Helena (+290)</option>
+                                    <option data-countrycode="KN" value="1869">St. Kitts (+1869)</option>
+                                    <option data-countrycode="SC" value="1758">St. Lucia (+1758)</option>
+                                    <option data-countrycode="SD" value="249">Sudan (+249)</option>
+                                    <option data-countrycode="SR" value="597">Suriname (+597)</option>
+                                    <option data-countrycode="SZ" value="268">Swaziland (+268)</option>
+                                    <option data-countrycode="SE" value="46">Sweden (+46)</option>
+                                    <option data-countrycode="CH" value="41">Switzerland (+41)</option>
+                                    <option data-countrycode="SI" value="963">Syria (+963)</option>
+                                    <option data-countrycode="TW" value="886">Taiwan (+886)</option>
+                                    <option data-countrycode="TJ" value="7">Tajikstan (+7)</option>
+                                    <option data-countrycode="TH" value="66">Thailand (+66)</option>
+                                    <option data-countrycode="TG" value="228">Togo (+228)</option>
+                                    <option data-countrycode="TO" value="676">Tonga (+676)</option>
+                                    <option data-countrycode="TT" value="1868">Trinidad &amp; Tobago (+1868)</option>
+                                    <option data-countrycode="TN" value="216">Tunisia (+216)</option>
+                                    <option data-countrycode="TR" value="90">Turkey (+90)</option>
+                                    <option data-countrycode="TM" value="7">Turkmenistan (+7)</option>
+                                    <option data-countrycode="TM" value="993">Turkmenistan (+993)</option>
+                                    <option data-countrycode="TC" value="1649">Turks &amp; Caicos Islands (+1649)
+                                    </option>
+                                    <option data-countrycode="TV" value="688">Tuvalu (+688)</option>
+                                    <option data-countrycode="UG" value="256">Uganda (+256)</option>
+                                    <option data-countrycode="GB" value="44">United Kingdom (+44)</option>
+                                    <option data-countrycode="UA" value="380">Ukraine (+380)</option>
+                                    <option data-countrycode="AE" value="971">United Arab Emirates (+971)</option>
+                                    <option data-countrycode="UY" value="598">Uruguay (+598)</option>
+                                    <option data-countrycode="US" value="1">United States (+1)</option>
+                                    <option data-countrycode="UZ" value="7">Uzbekistan (+7)</option>
+                                    <option data-countrycode="VU" value="678">Vanuatu (+678)</option>
+                                    <option data-countrycode="VA" value="379">Vatican City (+379)</option>
+                                    <option data-countrycode="VE" value="58">Venezuela (+58)</option>
+                                    <option data-countrycode="VN" value="84">Vietnam (+84)</option>
+                                    <option data-countrycode="VG" value="84">Virgin Islands - British (+1284)</option>
+                                    <option data-countrycode="VI" value="84">Virgin Islands - US (+1340)</option>
+                                    <option data-countrycode="WF" value="681">Wallis &amp; Futuna (+681)</option>
+                                    <option data-countrycode="YE" value="969">Yemen (North)(+969)</option>
+                                    <option data-countrycode="YE" value="967">Yemen (South)(+967)</option>
+                                    <option data-countrycode="ZM" value="260">Zambia (+260)</option>
+                                    <option data-countrycode="ZW" value="263">Zimbabwe (+263)</option>
+                                </select>
+
+                            </div>
+                            <div class="pfl2">
+                                <input type="text" class="form-control" id="phonei" name="phonei" placeholder="Phone">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mtmin8">
+                        <label class="form-label" for="Companycode">Message</label>
+                        <textarea name="messagei" id="messagei" class="form-control"
+                            placeholder="Describe the role you are hiring" cols="30" rows="5"></textarea>
+                    </div>
+                    <button class="btnsec position-unset" type="submit" name="submit">Submit</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-top">
+                <div>
+                    <a href="index.html"><img src="./img/logo-footer.svg" /></a>
+                </div>
+                <div class="socialmediafooter">
+                    <a href="https://www.linkedin.com/company/cesna/" target="_blank"><img
+                            src="./img/linkedin-icon.svg" /></a>
+                    <a href="https://twitter.com/CESNA_Group" target="_blank"><img src="./img/twitter-icon.svg" /></a>
+                    <a href="https://www.facebook.com/Cesna-Recruitment-Global-201572080777004" target="_blank"><img
+                            src="./img/facebook-icon.svg" /></a>
+                    <a href="https://www.instagram.com/cesnagroup.usa/" target="_blank"><img
+                            src="./img/instagram-icon.svg" /></a>
+                    <a href="https://www.youtube.com/channel/UC-xaOpTN26DbPNWFnt0LTdg" target="_blank"><img
+                            src="./img/youtube-icon.svg" /></a>
+                    <a href="https://mp.weixin.qq.com/s/s-GEsGa2gwTpGFY2aWQN6g" target="_blank"><img
+                            src="./img/weixin-icon.svg" /></a>
+                    <a href="https://weibo.com/5592511674/profile?topnav=1&wvr=6" target="_blank"><img
+                            src="./img/weibo-icon.svg" /></a>
+                </div>
+            </div>
+            <div class="footer-main">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="footerdiv">
+                            <h4>site map</h4>
+                            <div class="footerlinks">
+                                <p><a href="search-jobs.html">Search Jobs</a></p>
+                                <p><a href="job-seekers.html">Job Seekers</a></p>
+                                <p><a href="employers.html">Employers</a></p>
+                                <p><a href="about-us.html">About Us</a></p>
+                                <p><a href="join-us.html">Join Us</a></p>
+                                <p><a href="contact-us.html">Contact Us</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footerdiv">
+                            <h4>CESNA Locations</h4>
+                            <div class="footerlinks">
+                                <p>United States</p>
+                                <p>Korea</p>
+                                <p>China</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footerdiv">
+                            <h4>Contact Us</h4>
+                            <div class="footerlinks">
+                                <p><b>Head Office</b></p>
+                                <p>560 Sylvan Ave. 2nd Floor </p>
+                                <p>Englewood Cliffs, NJ</p>
+                                <p>07632 USA </p>
+                                <p><a href="tel:+12015678886">+1 201 567 8886</a></p>
+                                <p><a href="mailto:service@cesna.com">service@cesna.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footerdiv">
+
+                            <div class="footerlinks martopfooter">
+                                <p><b>Shanghai</b></p>
+                                <p>Suntime International Tower 8F. 8F-1</p>
+                                <p>450 Fushan Road, Pudong,</p>
+                                <p>Shanghai, 200120 China</p>
+                                <p><a href="tel:+862168527877">+86 21 6852 7877</a></p>
+                                <p><a href="mailto:sh@cesna.com">sh@cesna.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright-area">
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 text-center text-lg-left">
+                            <div class="copyright-text">
+                                <p>© 2022 Cesna Group – Recruitment experts worldwide</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
+    <script src="./js/wow-js/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script type="text/javascript" src="./js/app.js"></script>
+    <script>
+        // ===== Scroll to Top ==== 
+        $(window).scroll(function () {
+            if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+                $('#return-to-top').fadeIn(200);    // Fade in the arrow
+            } else {
+                $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+            }
+        });
+        $('#return-to-top').click(function () {      // When arrow is clicked
+            $('body,html').animate({
+                scrollTop: 0                       // Scroll to top of body
+            }, 500);
+        });
+    </script>
+    <script>
+        var pageSize = 2;
+        var currentPage = 0;
+        var pageCount;
+
+        $(document).ready(function () {
+            pageCount = $(".article-loop").length / pageSize;
+            // alert($(".article-loop").length);
+
+            // first/prev links
+            $("#pagin").append('<li class="page-item"><a href="#" class="hidden bglightlinknew page-link" data-index="0">First</a></li>');
+            $("#pagin").append('<li class="page-item"><a href="#" class="hidden page-link" data-index="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a></li>');
+
+            for (var i = 0; i < 2; i++) {
+                $("#pagin").append('<li class="page-item"><a href="#" class="page-link pageind'+i+'" data-index="' + i + '">' + (i + 1) + '</a></li>');
+            }
+
+            // next/last links
+            $("#pagin").append('<li class="page-item"><a href="#" class="hidden page-link" data-index="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>');
+            $("#pagin").append('<li class="page-item"><a href="#" class="hidden page-link" data-index="' + pageCount + '">Last</a></li>');
+
+            selectPage(0);
+
+            $("#pagin li a").click(function () {
+                selectPage($(this).data('index'));
+            });
+        });
+
+        function selectPage(page) {
+            if (page == 'prev') { page = currentPage - 1; }
+            if (page == 'next') { page = currentPage + 1; }
+
+            // ensure it's within bounds
+            if (page < 0) { page = 0; }
+            if (page >= pageCount) { page = Math.floor(pageCount); }
+
+            // store the current page
+            currentPage = page;
+
+            var minGroupIndex = (page * pageCount);
+            var maxGroupIndex = minGroupIndex + (pageCount - 1);
+
+            // remove selected page highight
+            $('#pagin .current').removeClass('current');
+
+            // add current page highlight
+            $("#pagin li a[data-index='" + page + "']").addClass("current");
+
+            // hide all groups
+            $('.article-loop').hide();
+
+            // show correct groups
+            $('.article-loop').each(function (i) {
+                if (i >= minGroupIndex && i <= maxGroupIndex) {
+                    $(this).fadeIn();
+                }
+               
+            });
+        }
+    </script>
+    <!-- Start of LiveChat (www.livechatinc.com) code -->
+    <script>
+        window.__lc = window.__lc || {};
+        window.__lc.license = 13538502;
+        ; (function (n, t, c) { function i(n) { return e._h ? e._h.apply(null, n) : e._q.push(n) } var e = { _q: [], _h: null, _v: "2.0", on: function () { i(["on", c.call(arguments)]) }, once: function () { i(["once", c.call(arguments)]) }, off: function () { i(["off", c.call(arguments)]) }, get: function () { if (!e._h) throw new Error("[LiveChatWidget] You can't use getters before load."); return i(["get", c.call(arguments)]) }, call: function () { i(["call", c.call(arguments)]) }, init: function () { var n = t.createElement("script"); n.async = !0, n.type = "text/javascript", n.src = "https://cdn.livechatinc.com/tracking.js", t.head.appendChild(n) } }; !n.__lc.asyncInit && e.init(), n.LiveChatWidget = n.LiveChatWidget || e }(window, document, [].slice))
+    </script>
+    <noscript><a href="https://www.livechatinc.com/chat-with/13538502/" rel="nofollow">Chat with us</a>, powered by <a
+            href="https://www.livechatinc.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript>
+    <!-- End of LiveChat code -->
+</body>
+
+</html>
