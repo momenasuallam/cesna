@@ -2523,6 +2523,7 @@ padding: 20px;
   -webkit-line-clamp: 2;
   overflow: hidden;
   margin-bottom: 8px;
+  height: 45px;
 }
 .newsdivs p{
 font-size: 14px;
@@ -2530,6 +2531,7 @@ display: -webkit-box;
 -webkit-box-orient: vertical;
 -webkit-line-clamp: 5; 
 overflow: hidden;
+height: 105px;
 }
 .newsdivs a{
   width: 100% !important;
@@ -2538,6 +2540,7 @@ overflow: hidden;
   padding: 10px 0;
   display: flex;
   justify-content: space-between;
+  height: 38px;
 }
 .infometa span{
   font-size: 12px;
